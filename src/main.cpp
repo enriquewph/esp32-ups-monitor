@@ -15,9 +15,8 @@ void setup()
         ESP.restart();
     }
 
-    ArduinoOTA.setPort(3232);
+    //ArduinoOTA.setPort(3232);  //default port is 3232
     ArduinoOTA.setHostname("esp32ups");
-    ArduinoOTA.setPasswordHash("ce22fd5685dc3566154739a2a8afde3d");
 
     ArduinoOTA
         .onStart([]() {
