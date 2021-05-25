@@ -38,4 +38,9 @@ void cmd_reset(Stream &StreamPort, char *param);
 void cmd_help(Stream &StreamPort, char *param);
 
 
+void cmd_setRelay1(Stream &StreamPort, char *param);
+void cmd_getRelay1(Stream &StreamPort, char *param);
+void cmd_setRelay2(Stream &StreamPort, char *param);
+void cmd_getRelay2(Stream &StreamPort, char *param);
+
 #endif
