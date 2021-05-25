@@ -13,6 +13,6 @@
 
 
 
-extern uint16_t fan_duty = 0; //used for pwm duty set & get functions.
+extern uint16_t fan_duty; //used for pwm duty set & get functions.
 
 #endif

@@ -10,7 +10,7 @@ void setup()
     pinMode(PIN_VBAT, INPUT);
     pinMode(PIN_TBAT, INPUT);
     pinMode(PIN_IBAT, INPUT);
-    pinMode(PIN_UPS_ON, OUTPUT);
+    pinMode(PIN_UPS_OFF, OUTPUT);
     pinMode(PIN_UPS_NORMAL, INPUT);
     pinMode(PIN_UPS_CARGA, INPUT);
     pinMode(PIN_UPS_INVERTER, INPUT);

@@ -7,7 +7,7 @@
 #define PIN_VBAT            36
 #define PIN_TBAT            39
 #define PIN_IBAT            34
-#define PIN_UPS_ON          32
+#define PIN_UPS_OFF          32
 #define PIN_UPS_NORMAL      33
 #define PIN_UPS_CARGA       25
 #define PIN_UPS_INVERTER    26
@@ -19,7 +19,7 @@
 #define PIN_VBAT_GPIONUM            GPIO_NUM_36
 #define PIN_TBAT_GPIONUM            GPIO_NUM_39
 #define PIN_IBAT_GPIONUM            GPIO_NUM_34
-#define PIN_UPS_ON_GPIONUM          GPIO_NUM_32
+#define PIN_UPS_OFF_GPIONUM          GPIO_NUM_32
 #define PIN_UPS_NORMAL_GPIONUM      GPIO_NUM_33
 #define PIN_UPS_CARGA_GPIONUM       GPIO_NUM_25
 #define PIN_UPS_INVERTER_GPIONUM    GPIO_NUM_26
