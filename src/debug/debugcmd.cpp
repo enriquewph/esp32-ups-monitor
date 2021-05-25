@@ -65,8 +65,8 @@ void cmd_getUPSOFF(Stream &StreamPort, char *param)
 
 void cmd_getUPSSTATE(Stream &StreamPort, char *param)
 {
-    StreamPort.printf("      UPS_OFF: %u\n", digitalRead(PIN_UPS_OFF));
+    StreamPort.printf("     UPS_OFF: %u\n", digitalRead(PIN_UPS_OFF));
     StreamPort.printf("  UPS_NORMAL: %u\n", !digitalRead(PIN_UPS_NORMAL)); //TODO: agregar estas lecturas a hal. Deben estar invertidas.
     StreamPort.printf("   UPS_CARGA: %u\n", !digitalRead(PIN_UPS_CARGA));
-    StreamPort.printf("UPS_INVERTER: %u\n", !digitalRead(PIN_UPS_INVERTER));
+    StreamPort.printf("UPS_INVERTER: %u\n", !digitalRead(PIN_UPS_INVERTER)); //Este pin prende y apaga cuando funciona a BAT.
 }
