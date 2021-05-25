@@ -1,37 +1,35 @@
 #include "debug.h"
-
+#include <StreamUtils.h>
 
 const char *strNone = "none";
-cmd_t cmdList[] = {
-    {"HELP", cmd_help, "Show help window.", strNone},
-    {"RESET", cmd_reset, "Reset microcontroller.", strNone}
-};
 
 void debug_init()
 {
-#ifdef DEBUG_ENABLE_TCP
-    
+#ifdef DEBUG_TCP_ENABLE
+    debug_tcp_init();
+    Serial.printf("[DEBUG] Modulo debug habilitado por puerto TCP (%u)\n", DEBUG_TCP_PORT);
 #endif
-    Serial.println(F("[DEBUG] Modulo debug habilitado, ingrese --help para ver los comandos disponibles."));
+    Serial.println(F("[DEBUG] Modulo debug habilitado por este canal."));
+    Serial.println(DEBUG_GREETING);
 }
 
 void debug_yield()
 {
     /* Atender los comandos de debug. */
     if (Serial.available())
-        serialReceived(Serial);
+        debug_serial_received(Serial, Serial.readStringUntil('\n'));
 }
 
-void serialReceived(Stream &StreamPort)
+void debug_serial_received(Stream &StreamPort, String inputStr)
 {
-    String inputStr = StreamPort.readStringUntil('\n'); //Guardar comando en un string.
-
     bool noCMD = true;                                    //Si se pone en 0, se interpreto correctamente un comando.
     char *strPointer = (char *)malloc(inputStr.length()); //Reservar un espacio en memoria HEAP para almacenar texto
 
+    WriteBufferingStream bufferedStream{StreamPort, 64};
+
     if (inputStr.charAt(0) == '-' && inputStr.charAt(1) == '-') //Si la inicializacion del comando es correcta.
     {
-        for (uint16_t i = 0; i < (sizeof(cmdList) / sizeof(cmdList[0])); i++) //Ciclar por toda la lista de comandos
+        for (uint16_t i = 0; i < cmdList_len; i++) //Ciclar por toda la lista de comandos
         {
             String cmdstring = inputStr.substring(2, (2 + strlen(cmdList[i].name)));
             cmdstring.toUpperCase();
@@ -46,38 +44,39 @@ void serialReceived(Stream &StreamPort)
                 //Copiar str del parametro a la memoria reservada previamente
                 strcpy(strPointer, inputStr.substring(3 + strlen(cmdList[i].name), inputStr.length() - 1).c_str());
                 //ejectuar la funcion:
-                cmdList[i].func_ptr(StreamPort, strPointer);
+                cmdList[i].func_ptr(bufferedStream, strPointer);
             }
         }
     }
 
     if (noCMD)
     {
-        StreamPort.println(F("Comando desconocido. Escribe \"--help\" para ver la ayuda"));
+        bufferedStream.println(F("Comando desconocido. Escribe \"--help\" para ver la ayuda"));
     }
-
-    inputStr = ""; //Desalocar string de la memoria.
+    
     free(strPointer);
-    StreamPort.flush();
+    bufferedStream.flush();
 }
 
 
 void cmd_reset(Stream &StreamPort, char *param)
 {
     StreamPort.println(F("Reseting device..."));
+    StreamPort.flush();
+    delay(500);
     ESP.restart();
 }
 void cmd_help(Stream &StreamPort, char *param)
 {
     uint16_t longestCmdNameSize = 0;
-    for (uint16_t i = 0; i < (sizeof(cmdList) / sizeof(cmdList[0])); i++) //Ciclar por toda la lista de comandos
+    for (uint16_t i = 0; i < cmdList_len; i++) //Ciclar por toda la lista de comandos
     {
         if (strlen(cmdList[i].name) > longestCmdNameSize)
             longestCmdNameSize = strlen(cmdList[i].name);
     }
 
     uint16_t longestCmdInfoSize = 0;
-    for (uint16_t i = 0; i < (sizeof(cmdList) / sizeof(cmdList[0])); i++) //Ciclar por toda la lista de comandos
+    for (uint16_t i = 0; i < cmdList_len; i++) //Ciclar por toda la lista de comandos
     {
         if (strlen(cmdList[i].info) > longestCmdInfoSize)
             longestCmdInfoSize = strlen(cmdList[i].info);
@@ -88,7 +87,7 @@ void cmd_help(Stream &StreamPort, char *param)
     StreamPort.flush();
 
     uint16_t space_size;
-    for (uint16_t i = 0; i < (sizeof(cmdList) / sizeof(cmdList[0])); i++) //Ciclar por toda la lista de comandos
+    for (uint16_t i = 0; i < cmdList_len; i++) //Ciclar por toda la lista de comandos
     {
         StreamPort.printf(" > --%s", cmdList[i].name);
         space_size = 1 + longestCmdNameSize - strlen(cmdList[i].name);
@@ -103,4 +102,5 @@ void cmd_help(Stream &StreamPort, char *param)
     StreamPort.println(F("---------------------------"));
     StreamPort.flush();
 }
+
 

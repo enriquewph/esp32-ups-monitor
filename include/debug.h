@@ -3,7 +3,12 @@
 
 #include <Arduino.h>
 
-#define DEBUG_ENABLE_TCP
+
+#define DEBUG_GREETING "Ingrese --help para ver los comandos disponibles."
+
+//Comentar para usar la funcionalidad TCP.
+#define DEBUG_TCP_ENABLE
+#define DEBUG_TCP_PORT 8000
 
 typedef struct ov_s
 {
@@ -15,11 +20,18 @@ typedef struct ov_s
 
 extern const char *strNone;
 extern cmd_t cmdList[];
+extern uint16_t cmdList_len;
 
 
 void debug_init();
 void debug_yield();
-void serialReceived(Stream &StreamPort);
+void debug_serial_received(Stream &StreamPort, String inputStr);
+
+//debug tcp
+#ifdef DEBUG_TCP_ENABLE
+void debug_tcp_init();
+#endif
+
 
 //Comandos:
 void cmd_reset(Stream &StreamPort, char *param);
