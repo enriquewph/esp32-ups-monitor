@@ -42,5 +42,11 @@ void cmd_setRelay1(Stream &StreamPort, char *param);
 void cmd_getRelay1(Stream &StreamPort, char *param);
 void cmd_setRelay2(Stream &StreamPort, char *param);
 void cmd_getRelay2(Stream &StreamPort, char *param);
+void cmd_setFan(Stream &StreamPort, char *param);
+void cmd_getFan(Stream &StreamPort, char *param);
+void cmd_setUPSON(Stream &StreamPort, char *param);
+void cmd_getUPSON(Stream &StreamPort, char *param);
+void cmd_getUPSSTATE(Stream &StreamPort, char *param);
+
 
 #endif

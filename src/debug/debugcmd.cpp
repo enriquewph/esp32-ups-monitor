@@ -7,7 +7,12 @@ cmd_t cmdList[] = {
     {"SETRELAY1", cmd_setRelay1, "Set relay 1 output state", "<0,1> output level"},
     {"SETRELAY2", cmd_setRelay2, "Set relay 2 output state", "<0,1> output level"},
     {"GETRELAY1", cmd_getRelay1, "Get relay 1 output state", strNone},
-    {"GETRELAY2", cmd_getRelay2, "Get relay 2 output state", strNone}
+    {"GETRELAY2", cmd_getRelay2, "Get relay 2 output state", strNone},
+    {"SETFAN", cmd_setFan, "Set fan duty cycle", "<0-255> duty cycle %"},
+    {"GETFAN", cmd_getFan, "Get fan duty cycle", strNone},
+    {"SETUPSON", cmd_setUPSON, "Set UPS_ON state", "<0,1> output level"},
+    {"GETUPSON", cmd_getUPSON, "Get UPS_ON state", strNone},
+    {"GETUPSSTATE", cmd_getUPSSTATE, "Get all UPS led values", strNone}
 };
 uint16_t cmdList_len = sizeof(cmdList) / sizeof(cmdList[0]);
 
@@ -31,4 +36,37 @@ void cmd_setRelay2(Stream &StreamPort, char *param)
 void cmd_getRelay2(Stream &StreamPort, char *param)
 {
     StreamPort.printf("relay - 2: %u\n", digitalRead(PIN_RELAY_2));
+}
+
+uint16_t fan_duty = 0; //used for pwm duty set & get functions.
+
+void cmd_setFan(Stream &StreamPort, char *param)
+{
+    fan_duty = atoi(param);
+    StreamPort.printf("fan: %u\n", fan_duty);
+    ledcWrite(FAN_PWM_CH, fan_duty);
+}
+void cmd_getFan(Stream &StreamPort, char *param)
+{
+    StreamPort.printf("fan: %u\n", fan_duty);
+}
+
+
+void cmd_setUPSON(Stream &StreamPort, char *param)
+{
+    int set = atoi(param);
+    StreamPort.printf("UPS_ON: %u\n", set);
+    digitalWrite(PIN_UPS_ON, set);
+}
+void cmd_getUPSON(Stream &StreamPort, char *param)
+{
+    StreamPort.printf("UPS_ON: %u\n", digitalRead(PIN_UPS_ON));
+}
+
+void cmd_getUPSSTATE(Stream &StreamPort, char *param)
+{
+    StreamPort.printf("      UPS_ON: %u\n", digitalRead(PIN_UPS_ON));
+    StreamPort.printf("  UPS_NORMAL: %u\n", digitalRead(PIN_UPS_NORMAL));
+    StreamPort.printf("   UPS_CARGA: %u\n", digitalRead(PIN_UPS_CARGA));
+    StreamPort.printf("UPS_INVERTER: %u\n", digitalRead(PIN_UPS_INVERTER));
 }

@@ -11,4 +11,8 @@
 
 #include "debug.h"
 
+
+
+extern uint16_t fan_duty = 0; //used for pwm duty set & get functions.
+
 #endif
