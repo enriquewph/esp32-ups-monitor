@@ -31,9 +31,18 @@ void setup()
 
     IPAddress localIp = WiFi.localIP();
     Serial.printf("Ready - IP: %i.%i.%i.%i\n", localIp[0], localIp[1], localIp[2], localIp[3]);
+
+    
+    Serial.printf("[BOOT] INIT DEBUG\n");
+    Serial.setTimeout(100);
+    debug_init();
+    Serial.printf("[BOOT] END DEBUG\n");
+
+    
 }
 
 void loop()
 {
     ota_yield();
+    debug_yield();
 }

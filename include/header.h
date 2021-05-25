@@ -9,4 +9,6 @@
 #include <secrets.h>
 #include <ota.h>
 
+#include "debug.h"
+
 #endif
