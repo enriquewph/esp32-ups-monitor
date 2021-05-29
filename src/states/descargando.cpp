@@ -1,6 +1,6 @@
 #include "header.h"
 
-void state_descargando(sysDischargeState_t sub1, sysSubDischargeState_t sub2)
+void state_descargando(sysDischargeMode_t mode, sysDischargeState_t sub)
 {
     
 }

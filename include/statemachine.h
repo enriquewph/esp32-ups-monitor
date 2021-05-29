@@ -5,20 +5,6 @@
  * @version 0.1
  * @date 2021-05-28
  * 
- * Esquema general de estados
- * 
- * - STANDBY        -> El sistema funciona normalmente, la energia proviene de la red.
- * - CARGANDO       -> El sistema funciona normalmente, la energia proviene de la red. Se esta cargando la bateria.
- * - DESCARGANDO    -> La energia proviene de la bateria.
- *   - MANUAL       -> El suministro electrico funciona correctamente, pero se descargara hasta acabar por activacion manual.
- *      - L1        -> Todas las salidas estan encendidas.
- *      - L2        -> Se apago la salida secundaria para ahorrar energia. Le da prioridad a la salida principal.
- *   - AUTO         -> El suministro electrico no funciona. Se entro automaticamente a este estado por el UPS.
- *      - L1        -> Todas las salidas estan encendidas.
- *      - L2        -> Se apago la salida secundaria para ahorrar energia. Le da prioridad a la salida principal.
- * - BATTERYLOW     -> Todas las salidas se han apagado. No hay bateria restante para restaurar la energia electrica.
- * - APAGADO        -> Todas las salidas se han apagado de forma manual. No se saldra de este estado hasta cumplir un criterio.
- * 
  * Estados de ejecucion automatica:
  * - STANDBY
  * - CARGANDO
@@ -30,7 +16,7 @@
  * 
  * Estados de ejecucion manual:
  * - DESCARGANDO
- *   - MANUAL
+ *   - MANUAL_*
  *      - L1
  *      - L2
  * - APAGADO
@@ -50,45 +36,68 @@
  */
 typedef enum 
 {
-    STANDBY,
-    CARGANDO,
-    DESCARGANDO,
-    BATTERYLOW,
-    APAGADO
+    STANDBY,        //!< El sistema funciona normalmente, la energia proviene de la red.
+    CARGANDO,       //!< El sistema funciona normalmente, la energia proviene de la red. Se carga la bateria.
+    DESCARGANDO,    //!< La energia proviene de la bateria.
+    BATTERYLOW      //!< Todas las salidas se han apagado. No hay bateria restante para restaurar la energia electrica.
 } sysState_t;
 extern sysState_t sysState;
 
 /**
- * @brief Sub estados cuando se encuentra en DESCARGANDO
+ * @brief Modo de descarga del sistema
  * 
  */
 typedef enum
 {
-    MANUAL,
-    AUTO
+    AUTO,           //!< El suministro electrico no funciona. Se entro automaticamente a este estado por el UPS.
+    MANUAl          //!< El suministro electrico funciona correctamente, pero se descargara hasta acabar por activacion manual, luego se pasara a modo automatico.
+} sysDischargeMode_t;
+extern sysDischargeMode_t sysDischargeMode;
+
+/**
+ * @brief Sub estados cuando se encuentra en DESCARGANDO-X
+ * 
+ */
+typedef enum
+{
+    L1,             //!< Todas las salidas estan encendidas.
+    L2              //!< Se apago la salida secundaria para ahorrar energia. Le da prioridad a la salida principal.
 } sysDischargeState_t;
 extern sysDischargeState_t sysDischargeState;
 
 /**
- * @brief Sub-sub estados cuando se encuentra en DESCARGANDO-X
+ * @brief Ejecuta cada estado, y cambia de estado si pasa los requisitos.
  * 
  */
-typedef enum
-{
-    L1,
-    L2
-} sysSubDischargeState_t;
-extern sysSubDischargeState_t sysSubDischargeState;
-
-//Funcion ejecutora
 void stateMachine_yield();
 
 //Funciones de estados
+
+/**
+ * @brief El sistema funciona normalmente, la energia proviene de la red.
+ * 
+ */
 void state_standby();
+
+/**
+ * @brief El sistema funciona normalmente, la energia proviene de la red. Se carga la bateria.
+ * 
+ */
 void state_cargando();
-void state_descargando(sysDischargeState_t sub1, sysSubDischargeState_t sub2);
+
+/**
+ * @brief La energia proviene de la bateria.
+ * 
+ * @param trigger De que manera se ingreso al estado.
+ * @param sub Subestado de descarga
+ */
+void state_descargando(sysDischargeMode_t trigger, sysDischargeState_t sub);
+
+/**
+ * @brief Todas las salidas se han apagado. No hay bateria restante para restaurar la energia electrica.
+ * 
+ */
 void state_batterylow();
-void state_apagado();
 
 
 #endif
