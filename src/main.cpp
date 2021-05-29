@@ -50,4 +50,5 @@ void loop()
 {
     ota_yield();
     debug_yield();
+    stateMachine_yield();
 }
