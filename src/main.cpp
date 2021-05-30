@@ -17,12 +17,6 @@ void setup()
     pinMode(PIN_RELAY_1, OUTPUT);
     pinMode(PIN_RELAY_2, OUTPUT);
 
-    //PWM Setup
-    ledcSetup(FAN_PWM_CH, FAN_PWM_FR, FAN_PWM_RS);
-    ledcAttachPin(PIN_FAN, FAN_PWM_CH);
-    ledcWrite(FAN_PWM_CH, 0);
-    // TODO: Create hal functions, recordar que es inverso!!!! el duty 0 equivale al 100%.
-
     WiFi.mode(WIFI_STA);
     WiFi.begin(WIFI_SSID, WIFI_PW);
     while (WiFi.waitForConnectResult() != WL_CONNECTED)

@@ -32,10 +32,4 @@
 #define PIN_TBAT_ADC_CH ADC1_CHANNEL_3 //GPIO39 - ADC1_CH3 - RTCIO_3
 #define PIN_IBAT_ADC_CH ADC1_CHANNEL_6 //GPIO34 - ADC1_CH6 - RTCIO_4
 
-//PWM Setup
-
-#define FAN_PWM_CH 0    //Channel
-#define FAN_PWM_FR 30   //Frequency (Hz)
-#define FAN_PWM_RS 8    //Resolution (bits)
-
 #endif
