@@ -1,5 +1,5 @@
-#ifndef DEFINE_Y
-#define DEFINE_Y
+#ifndef HW_DEFINE_Y
+#define HW_DEFINE_Y
 
 // GPIO DEFINITIONS
 
@@ -7,7 +7,7 @@
 #define PIN_VBAT            36
 #define PIN_TBAT            39
 #define PIN_IBAT            34
-#define PIN_UPS_OFF          32
+#define PIN_UPS_OFF         32
 #define PIN_UPS_NORMAL      33
 #define PIN_UPS_CARGA       25
 #define PIN_UPS_INVERTER    26

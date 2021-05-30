@@ -1,4 +1,4 @@
-#include "hal/cooling.h"
+#include "cooling.h"
 
 fan_mode_e _cooling_fan_mode = COOLING_DEFAULT_FANMODE;
 uint8_t _cooling_fan_pwm = 0;

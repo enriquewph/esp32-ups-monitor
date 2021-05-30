@@ -2,7 +2,7 @@
 #define COOLING_H
 
 #include <Arduino.h>
-#include "define.h"
+#include <hw_define.h>
 
 /**
  * @brief Modo de funcionamiento del cooler.

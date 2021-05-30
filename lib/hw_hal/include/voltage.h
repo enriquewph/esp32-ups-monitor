@@ -2,7 +2,7 @@
 #define VOLTAGE_H
 
 #include <Arduino.h>
-#include "define.h"
+#include <hw_define.h>
 
 
 

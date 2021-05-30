@@ -8,7 +8,6 @@ void setup()
 
     //Initialize gpio
     pinMode(PIN_VBAT, INPUT);
-    pinMode(PIN_TBAT, INPUT);
     pinMode(PIN_IBAT, INPUT);
     pinMode(PIN_UPS_OFF, OUTPUT);
     pinMode(PIN_UPS_NORMAL, INPUT);
