@@ -1,20 +1,16 @@
 #include "temp.h"
 
-void temp_init()
+void hal_temp_init()
 {
-    pinMode(PIN_TBAT, INPUT);
+    adc1_config_channel_atten(PIN_TBAT_ADC_CH, ADC_ATTEN_DB_0);
 }
 
 uint16_t temp_get_reading()
 {
-    uint32_t prom = 0;
-    for (uint_fast8_t i = 0; i < PROM_READING; i++)
-        prom += analogRead(PIN_TBAT);
-
-    return (prom / PROM_READING);
+    return hal_adc_get(PIN_TBAT_ADC_CH);
 }
 
 float temp_reading_to_degrees(uint16_t reading)
 {
-    return LM35READMACRO(reading);
+    return LM35_READ(reading);
 }
