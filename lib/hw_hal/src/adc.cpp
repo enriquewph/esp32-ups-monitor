@@ -7,8 +7,8 @@ void hal_adc_init()
 
 uint16_t hal_adc_get(adc1_channel_t ch)
 {
-    uint32_t prom = 0;
-    for (uint_fast8_t i = 0; i < HAL_ADC_PROM_READING; i++)
+    uint64_t prom = 0;
+    for (int i = 0; i < HAL_ADC_PROM_READING; i++)
         prom += adc1_get_raw(ch);
 
     return (prom / HAL_ADC_PROM_READING);
