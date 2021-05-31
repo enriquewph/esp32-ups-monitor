@@ -1,3 +1,13 @@
+/**
+ * @file cooling.h
+ * @author Enrique Walter Philippeaux (enriquewph@gmail.com)
+ * @brief Archivo header para todo lo relacionado al manejo de coolers.
+ * @version 0.1
+ * @date 2021-05-31
+ * 
+ * 
+ */
+
 #ifndef COOLING_H
 #define COOLING_H
 
@@ -18,7 +28,7 @@ enum fan_mode_e
  * @brief Modo de funcionamiento del cooler por defecto al iniciar el programa.
  * 
  */
-#define COOLING_DEFAULT_FANMODE FANMODE_PWM
+#define HAL_COOLING_DEFAULT_FANMODE FANMODE_PWM
 
 
 //PWM Setup
@@ -45,7 +55,7 @@ enum fan_mode_e
  * @brief Inicializar pwm para el cooler.
  * 
  */
-void            cooling_init();
+void            hal_cooling_init();
 
 /**
  * @brief Cambiar el duty cycle del cooler.

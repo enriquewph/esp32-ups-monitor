@@ -1,3 +1,12 @@
+/**
+ * @file temp.h
+ * @author Enrique Walter Philippeaux (enriquewph@gmail.com)
+ * @brief Archivo header para todo lo relacionado a sensores de temperatura.
+ * @version 0.1
+ * @date 2021-05-31
+ * 
+ */
+
 #ifndef TEMP_H
 #define TEMP_H
 
@@ -9,7 +18,7 @@
  * @brief LM-35, la salida representa 1ºC cada 10mV
  * 
  */
-#define MV_PER_DEGREE 10.0f
+#define HAL_TEMP_LM35_MV_PER_DEGREE 10.0f
 
 /**
  * @brief Inicializa lo necesario para usar el sensor de temperatura.
@@ -36,13 +45,13 @@ float temp_reading_to_degrees(uint16_t reading);
  * @brief Macro para convertir lectura de ADC en grados centigrados (float).
  * 
  */
-#define LM35_READ(reading) (float) ((ADC_GET_MV_0dB(reading))/( MV_PER_DEGREE ))
+#define LM35_READ(reading) (float) ((ADC_GET_MV_0dB(reading))/( HAL_TEMP_LM35_MV_PER_DEGREE ))
 
 /**
  * @brief Macro para convertir grados centigrados (float) en aprox. la lectura del ADC requerida.
  * Esto es util para comparar temperaturas mas efectivamente.
  */
-#define LM35_READ_REV(temp) ADC_GET_MV_REV_0dB((temp * MV_PER_DEGREE))
+#define LM35_READ_REV(temp) ADC_GET_MV_REV_0dB((temp * HAL_TEMP_LM35_MV_PER_DEGREE))
 
 
 #endif

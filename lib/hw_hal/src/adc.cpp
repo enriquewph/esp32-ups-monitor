@@ -1,3 +1,12 @@
+/**
+ * @file adc.cpp
+ * @author Enrique Walter Philippeaux (enriquewph@gmail.com)
+ * @brief Funciones para inicializar y leer el ADC
+ * @version 0.1
+ * @date 2021-05-31
+ * 
+ */
+
 #include "adc.h"
 
 void hal_adc_init()

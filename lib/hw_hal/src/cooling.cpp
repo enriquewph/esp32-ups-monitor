@@ -1,9 +1,18 @@
+/**
+ * @file cooling.cpp
+ * @author Enrique Walter Philippeaux (enriquewph@gmail.com)
+ * @brief Funciones para el manejo de coolers.
+ * @version 0.1
+ * @date 2021-05-31
+ * 
+ */
+
 #include "cooling.h"
 
-fan_mode_e _cooling_fan_mode = COOLING_DEFAULT_FANMODE;
+fan_mode_e _cooling_fan_mode = HAL_COOLING_DEFAULT_FANMODE;
 uint8_t _cooling_fan_pwm = 0;
 
-void cooling_init()
+void hal_cooling_init()
 {
     //PWM Setup
     ledcSetup(FAN_PWM_CH, FAN_PWM_FR, FAN_PWM_RS);

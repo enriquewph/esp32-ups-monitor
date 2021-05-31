@@ -1,3 +1,12 @@
+/**
+ * @file temp.cpp
+ * @author Enrique Walter Philippeaux (enriquewph@gmail.com)
+ * @brief Funciones para leer sensores de temperatura y convertir mediciones.
+ * @version 0.1
+ * @date 2021-05-31
+ * 
+ */
+
 #include "temp.h"
 
 void hal_temp_init()
