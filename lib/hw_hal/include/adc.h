@@ -9,7 +9,7 @@
 #define ADC_RES 4096
 #define CORRECCION_PORCENTUAL 1.0f
 #define OFFSET 151.18f
-#define HAL_ADC_PROM_READING 50
+#define HAL_ADC_PROM_READING 256
 
 //Valores para 0dB
 #define VCC_MV_0dB 1100.0f
