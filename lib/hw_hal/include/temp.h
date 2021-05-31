@@ -31,7 +31,7 @@ void hal_temp_init();
  * 
  * @return uint16_t lectura del adc. 0-4095 (12bits)
  */
-uint16_t temp_get_reading();
+uint16_t hal_temp_get_reading();
 
 /**
  * @brief Convierte una lectura del ADC en grados centigrados.
@@ -39,7 +39,7 @@ uint16_t temp_get_reading();
  * @param reading Lectura a convertir
  * @return float Grados centigrados
  */
-float temp_reading_to_degrees(uint16_t reading);
+float hal_temp_reading_to_degrees(uint16_t reading);
 
 /**
  * @brief Macro para convertir lectura de ADC en grados centigrados (float).

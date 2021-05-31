@@ -7,7 +7,7 @@
 #include "relays.h"
 #include "temp.h"
 #include "ups.h"
-#include "voltage.h"
+#include "vbat.h"
 
 /**
  * @brief Inicializar la capa HAL

@@ -15,7 +15,7 @@ void setup()
     {
         while (!Serial.available());
         real = Serial.readStringUntil('\n').toFloat();
-        reading = temp_get_reading();
+        reading = hal_temp_get_reading();
         read = ADC_GET_MV_0dB(reading);
         Serial.printf("%3.6f;%3.6f;%u\n", real, read, reading);
     }
