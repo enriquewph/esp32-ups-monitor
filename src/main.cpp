@@ -13,8 +13,6 @@ void setup()
     pinMode(PIN_UPS_NORMAL, INPUT);
     pinMode(PIN_UPS_CARGA, INPUT);
     pinMode(PIN_UPS_INVERTER, INPUT);
-    pinMode(PIN_RELAY_1, OUTPUT);
-    pinMode(PIN_RELAY_2, OUTPUT);
 
     WiFi.mode(WIFI_STA);
     WiFi.begin(WIFI_SSID, WIFI_PW);

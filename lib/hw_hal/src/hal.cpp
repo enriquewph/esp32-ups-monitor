@@ -14,4 +14,5 @@ void hal_init()
     hal_adc_init();
     hal_temp_init();
     hal_cooling_init();
+    hal_relays_init();
 }
