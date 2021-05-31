@@ -13,7 +13,7 @@
 
 //Valores para 0dB
 #define VCC_MV_0dB 1100.0f
-#define OFFSET_0dB 62.66f
+#define OFFSET_0dB 82.66f
 #define CORRECCION_PORCENTUAL_0dB 1.0f
 
 /**
