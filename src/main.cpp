@@ -6,13 +6,7 @@ void setup()
     Serial.begin(115200);
     Serial.println("Booting");
 
-    //Initialize gpio
-    pinMode(PIN_VBAT, INPUT);
-    pinMode(PIN_IBAT, INPUT);
-    pinMode(PIN_UPS_OFF, OUTPUT);
-    pinMode(PIN_UPS_NORMAL, INPUT);
-    pinMode(PIN_UPS_CARGA, INPUT);
-    pinMode(PIN_UPS_INVERTER, INPUT);
+    hal_init();
 
     WiFi.mode(WIFI_STA);
     WiFi.begin(WIFI_SSID, WIFI_PW);
