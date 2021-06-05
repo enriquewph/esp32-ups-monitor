@@ -43,6 +43,9 @@ typedef enum
 } sysState_t;
 extern sysState_t sysState;
 
+extern const char *sysState_t_c_str[];
+#define sysState_t_c_str_values {"STANDBY", "CARGANDO", "DESCARGANDO", "BATTERYLOW"}
+
 /**
  * @brief Modo de descarga del sistema
  * 
@@ -50,9 +53,12 @@ extern sysState_t sysState;
 typedef enum
 {
     AUTO,           //!< El suministro electrico no funciona. Se entro automaticamente a este estado por el UPS.
-    MANUAl          //!< El suministro electrico funciona correctamente, pero se descargara hasta acabar por activacion manual, luego se pasara a modo automatico.
+    MANUAL          //!< El suministro electrico funciona correctamente, pero se descargara hasta acabar por activacion manual, luego se pasara a modo automatico.
 } sysDischargeMode_t;
 extern sysDischargeMode_t sysDischargeMode;
+
+extern const char *sysDischargeMode_t_c_str[];
+#define sysDischargeMode_t_c_str_values {"AUTO", "MANUAL"}
 
 /**
  * @brief Sub estados cuando se encuentra en DESCARGANDO-X
@@ -64,6 +70,30 @@ typedef enum
     L2              //!< Se apago la salida secundaria para ahorrar energia. Le da prioridad a la salida principal.
 } sysDischargeState_t;
 extern sysDischargeState_t sysDischargeState;
+
+extern const char *sysDischargeState_t_c_str[];
+#define sysDischargeState_t_c_str_values {"L1", "L2"}
+
+/**
+ * @brief Set the Sys State
+ * 
+ * @param target 
+ */
+void setSysState(sysState_t target);
+
+/**
+ * @brief Set the Discharge State
+ * 
+ * @param target 
+ */
+void setDischargeState(sysDischargeState_t target);
+
+/**
+ * @brief Set the Discharge Mode
+ * 
+ * @param target 
+ */
+void setDischargeMode(sysDischargeMode_t target);
 
 /**
  * @brief Ejecuta cada estado, y cambia de estado si pasa los requisitos.
