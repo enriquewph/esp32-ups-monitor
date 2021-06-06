@@ -129,17 +129,20 @@ void stateMachine_yield()
 void setSysState(sysState_t target)
 {
     Serial.printf("SET sysState: %s\n", sysState_t_c_str[(uint8_t) target]);
+    DEBUG_TCP_OUT.printf("SET sysState: %s\n", sysState_t_c_str[(uint8_t) target]);
     sysState = target;
 }
 
 void setDischargeState(sysDischargeState_t target)
 {
     Serial.printf("SET sysDischargeState: %s\n", sysDischargeState_t_c_str[(uint8_t) target]);
+    DEBUG_TCP_OUT.printf("SET sysDischargeState: %s\n", sysDischargeState_t_c_str[(uint8_t) target]);
     sysDischargeState = target;
 }
 
 void setDischargeMode(sysDischargeMode_t target)
 {
     Serial.printf("SET sysDischargeMode: %s\n", sysDischargeMode_t_c_str[(uint8_t) target]);
+    DEBUG_TCP_OUT.printf("SET sysDischargeMode: %s\n", sysDischargeMode_t_c_str[(uint8_t) target]);
     sysDischargeMode = target;
 }

@@ -9,6 +9,7 @@
 //Comentar para usar la funcionalidad TCP.
 #define DEBUG_TCP_ENABLE
 #define DEBUG_TCP_PORT 8000
+#define DEBUG_TCP_BUFFER 512
 
 typedef struct ov_s
 {
@@ -29,7 +30,13 @@ void debug_serial_received(Stream &StreamPort, String inputStr);
 
 //debug tcp
 #ifdef DEBUG_TCP_ENABLE
+#include <AsyncTCP.h>
+#include <LoopbackStream.h>
 void debug_tcp_init();
+#define DEBUG_TCP_OUT debugTcpStream
+extern LoopbackStream debugTcpStream;
+extern AsyncClient *debugTcpClient;
+void debugTcpStreamSend();
 #endif
 
 

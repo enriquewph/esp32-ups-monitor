@@ -18,6 +18,14 @@ void debug_yield()
     /* Atender los comandos de debug. */
     if (Serial.available())
         debug_serial_received(Serial, Serial.readStringUntil('\n'));
+
+#ifdef DEBUG_TCP_ENABLE
+    if (debugTcpClient != NULL)
+        if (debugTcpStream.available())
+        {
+            debugTcpStreamSend();
+        }
+#endif
 }
 
 void debug_serial_received(Stream &StreamPort, String inputStr)
@@ -53,11 +61,10 @@ void debug_serial_received(Stream &StreamPort, String inputStr)
     {
         bufferedStream.println(F("Comando desconocido. Escribe \"--help\" para ver la ayuda"));
     }
-    
+
     free(strPointer);
     bufferedStream.flush();
 }
-
 
 void cmd_reset(Stream &StreamPort, char *param)
 {
@@ -66,6 +73,7 @@ void cmd_reset(Stream &StreamPort, char *param)
     delay(500);
     ESP.restart();
 }
+
 void cmd_help(Stream &StreamPort, char *param)
 {
     uint16_t longestCmdNameSize = 0;
@@ -102,5 +110,3 @@ void cmd_help(Stream &StreamPort, char *param)
     StreamPort.println(F("---------------------------"));
     StreamPort.flush();
 }
-
-
