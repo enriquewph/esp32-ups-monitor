@@ -20,7 +20,7 @@ void hal_cooling_init()
     ledcWrite(FAN_PWM_CH, UINT8_MAX); //Iniciar apagado.
 }
 
-void cooling_set_fan_pwm(uint8_t pwm)
+void hal_cooling_set_fan_pwm(uint8_t pwm)
 {
     if (_cooling_fan_mode == FANMODE_PWM)
     {
@@ -33,37 +33,37 @@ void cooling_set_fan_pwm(uint8_t pwm)
         ledcWrite(FAN_PWM_CH, UINT8_MAX - _cooling_fan_pwm); //Polaridad inversa para el mosfet
 }
 
-uint8_t cooling_get_fan_pwm()
+uint8_t hal_cooling_get_fan_pwm()
 {
     return _cooling_fan_pwm;
 }
 
-uint8_t cooling_fan_pwm_to_percentage(uint8_t pwm)
+uint8_t hal_cooling_fan_pwm_to_percentage(uint8_t pwm)
 {
     return round((pwm / 255.0) * 100.0);
 }
 
-bool cooling_fan_get_state()
+bool hal_cooling_fan_get_state()
 {
     return _cooling_fan_pwm ? 1 : 0;
 }
 
-const char *cooling_fan_get_state_str()
+const char *hal_cooling_fan_get_state_str()
 {
     static char _buffer[6]; //Slightly bigger than neccesary to avoid format-overflow error.
     if (_cooling_fan_mode == FANMODE_PWM)
-        sprintf(_buffer, "%3i%%", cooling_fan_pwm_to_percentage(_cooling_fan_pwm));
+        sprintf(_buffer, "%3i%%", hal_cooling_fan_pwm_to_percentage(_cooling_fan_pwm));
     else
         sprintf(_buffer, "%4s", _cooling_fan_pwm ? "ON" : "OFF");
     return (const char *)_buffer;
 }
 
-void cooling_set_fan_mode(fan_mode_e mode)
+void hal_cooling_set_fan_mode(fan_mode_e mode)
 {
     _cooling_fan_mode = mode;
 }
 
-fan_mode_e cooling_get_fan_mode()
+fan_mode_e hal_cooling_get_fan_mode()
 {
     return _cooling_fan_mode;
 }

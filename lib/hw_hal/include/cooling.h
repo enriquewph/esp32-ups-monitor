@@ -62,14 +62,14 @@ void            hal_cooling_init();
  * 
  * @param pwm Duty cycle (0 - 255).
  */
-void            cooling_set_fan_pwm(uint8_t pwm);
+void            hal_cooling_set_fan_pwm(uint8_t pwm);
 
 /**
  * @brief Retorna el duty cycle del cooler.
  * 
  * @return uint8_t duty cycle (0 - 255).
  */
-uint8_t         cooling_get_fan_pwm();
+uint8_t         hal_cooling_get_fan_pwm();
 
 /**
  * @brief Retorna el estado del cooler.
@@ -77,28 +77,28 @@ uint8_t         cooling_get_fan_pwm();
  * @return true -> Esta encendido.
  * @return false -> Esta apagado.
  */
-bool            cooling_fan_get_state();
+bool            hal_cooling_fan_get_state();
 
 /**
  * @brief Retorna un string que contiene ON/OFF o 0%-100% segun el modo de funcionamiento.
  * 
  * @return const char * Puntero a cadena de texto que devuelve la funcion.
  */
-const char *    cooling_fan_get_state_str();
+const char *    hal_cooling_fan_get_state_str();
 
 /**
  * @brief Cambiar el modo de funcionamiento del cooler.
  * 
  * @param mode puede ser: FANMODE_PWM o FANMODE_ONOFF
  */
-void            cooling_set_fan_mode(fan_mode_e mode);
+void            hal_cooling_set_fan_mode(fan_mode_e mode);
 
 /**
  * @brief Retorna el modo de funcionamiento del cooler.
  * 
  * @return fan_mode_e puede ser: FANMODE_PWM o FANMODE_ONOFF
  */
-fan_mode_e      cooling_get_fan_mode();
+fan_mode_e      hal_cooling_get_fan_mode();
 
 /**
  * @brief Almacena el modo del cooler.
