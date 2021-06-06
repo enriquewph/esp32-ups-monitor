@@ -1,0 +1,3 @@
+[submodule "lib/BufferedStreams"]
+	path = lib/BufferedStreams
+	url = https://github.com/paulo-raca/ArduinoBufferedStreams.git
