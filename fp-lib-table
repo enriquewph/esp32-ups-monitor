@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name esp32_devkit_v1_doit)(type KiCad)(uri ${KIPRJMOD}/libs/esp32devkitv1/footprints/esp32_devkit_v1_doit.pretty)(options "")(descr ""))
+)

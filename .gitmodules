@@ -1,0 +1,3 @@
+[submodule "libs/esp32devkitv1"]
+	path = libs/esp32devkitv1
+	url = https://gitlab.com/VictorLamoine/kicad.git

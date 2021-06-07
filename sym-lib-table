@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name esp32_devkit_v1_doit)(type Legacy)(uri ${KIPRJMOD}/libs/esp32devkitv1/symbols/esp32_devkit_v1_doit.lib)(options "")(descr ""))
+)
