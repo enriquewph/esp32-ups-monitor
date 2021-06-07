@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Fichero Fuente lib/hw_hal/include/temp.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">temp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="temp_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef TEMP_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define TEMP_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="hw__define_8h.html">hw_define.h</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="adc_8h.html">adc.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="temp_8h.html#a6e561a7911faf1816198bab953092cad">   21</a></span>&#160;<span class="preprocessor">#define HAL_TEMP_LM35_MV_PER_DEGREE 10.0f</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="temp_8h.html#a02e75fa005d35e4f6cdd732c4ee959a1">hal_temp_init</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;uint16_t <a class="code" href="temp_8h.html#afdea34f3328e97c58863b70872d8535a">hal_temp_get_reading</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">float</span> <a class="code" href="temp_8h.html#aa63f204d995c5f0a0590d70cde8ed4a7">hal_temp_reading_to_degrees</a>(uint16_t reading);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="temp_8h.html#a30b3acaf19807b7d905b31e33bbf5e60">   48</a></span>&#160;<span class="preprocessor">#define LM35_READ(reading) (float) ((ADC_GET_MV_0dB(reading))/( HAL_TEMP_LM35_MV_PER_DEGREE ))</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="temp_8h.html#a30020b7f8b0de9dd06168f11516610cd">   54</a></span>&#160;<span class="preprocessor">#define LM35_READ_REV(temp) ADC_GET_MV_REV_0dB((temp * HAL_TEMP_LM35_MV_PER_DEGREE))</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aadc_8h_html"><div class="ttname"><a href="adc_8h.html">adc.h</a></div><div class="ttdoc">Macros, definiciones y valores de calibracion para el uso del ADC.</div></div>
+<div class="ttc" id="ahw__define_8h_html"><div class="ttname"><a href="hw__define_8h.html">hw_define.h</a></div></div>
+<div class="ttc" id="atemp_8h_html_a02e75fa005d35e4f6cdd732c4ee959a1"><div class="ttname"><a href="temp_8h.html#a02e75fa005d35e4f6cdd732c4ee959a1">hal_temp_init</a></div><div class="ttdeci">void hal_temp_init()</div><div class="ttdoc">Inicializa lo necesario para usar el sensor de temperatura.</div><div class="ttdef"><b>Definition:</b> temp.cpp:12</div></div>
+<div class="ttc" id="atemp_8h_html_aa63f204d995c5f0a0590d70cde8ed4a7"><div class="ttname"><a href="temp_8h.html#aa63f204d995c5f0a0590d70cde8ed4a7">hal_temp_reading_to_degrees</a></div><div class="ttdeci">float hal_temp_reading_to_degrees(uint16_t reading)</div><div class="ttdoc">Convierte una lectura del ADC en grados centigrados.</div><div class="ttdef"><b>Definition:</b> temp.cpp:22</div></div>
+<div class="ttc" id="atemp_8h_html_afdea34f3328e97c58863b70872d8535a"><div class="ttname"><a href="temp_8h.html#afdea34f3328e97c58863b70872d8535a">hal_temp_get_reading</a></div><div class="ttdeci">uint16_t hal_temp_get_reading()</div><div class="ttdoc">Usa el adc y devuelve la lectura del sensor de temperatura.</div><div class="ttdef"><b>Definition:</b> temp.cpp:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

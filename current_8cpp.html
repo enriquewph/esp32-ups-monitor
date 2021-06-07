@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Referencia del Archivo lib/hw_hal/src/current.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_9a983c0815bc7edc0eda3719f46316b1.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo current.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="current_8h_source.html">current.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a404dbf4d07c4549e6da1772da056b444"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="current_8cpp.html#a404dbf4d07c4549e6da1772da056b444">hal_current_init</a> ()</td></tr>
+<tr class="memdesc:a404dbf4d07c4549e6da1772da056b444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa lo necesario para el sensor de corriente de la bateria.  <a href="current_8cpp.html#a404dbf4d07c4549e6da1772da056b444">Más...</a><br /></td></tr>
+<tr class="separator:a404dbf4d07c4549e6da1772da056b444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f53be43643cb64975bf0a79af6e4c4a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="current_8cpp.html#a3f53be43643cb64975bf0a79af6e4c4a">hal_current_get_reading</a> ()</td></tr>
+<tr class="memdesc:a3f53be43643cb64975bf0a79af6e4c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usa el adc y devuelve la lectura de la corriente de la bateria.  <a href="current_8cpp.html#a3f53be43643cb64975bf0a79af6e4c4a">Más...</a><br /></td></tr>
+<tr class="separator:a3f53be43643cb64975bf0a79af6e4c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5350e8dc0907dc9def9223f6a86453"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="current_8cpp.html#aed5350e8dc0907dc9def9223f6a86453">hal_current_reading_to_amp</a> (uint16_t reading)</td></tr>
+<tr class="memdesc:aed5350e8dc0907dc9def9223f6a86453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convierte una lectura de adc en amperes. valores negativos -&gt; la corriente SALE de la bateria. valores positivos -&gt; la corriente ENTRA a la bateria.  <a href="current_8cpp.html#aed5350e8dc0907dc9def9223f6a86453">Más...</a><br /></td></tr>
+<tr class="separator:aed5350e8dc0907dc9def9223f6a86453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Enrique Walter Philippeaux (<a href="#" onclick="location.href='mai'+'lto:'+'enr'+'iq'+'uew'+'ph'+'@gm'+'ai'+'l.c'+'om'; return false;">enriq<span style="display: none;">.nosp@m.</span>uewp<span style="display: none;">.nosp@m.</span>h@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2021-06-01</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a3f53be43643cb64975bf0a79af6e4c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f53be43643cb64975bf0a79af6e4c4a">&#9670;&nbsp;</a></span>hal_current_get_reading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hal_current_get_reading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usa el adc y devuelve la lectura de la corriente de la bateria. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>uint16_t lectura del adc. 0-4095 (12bits) </dd></dl>
+
+</div>
+</div>
+<a id="a404dbf4d07c4549e6da1772da056b444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404dbf4d07c4549e6da1772da056b444">&#9670;&nbsp;</a></span>hal_current_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_current_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa lo necesario para el sensor de corriente de la bateria. </p>
+
+</div>
+</div>
+<a id="aed5350e8dc0907dc9def9223f6a86453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5350e8dc0907dc9def9223f6a86453">&#9670;&nbsp;</a></span>hal_current_reading_to_amp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hal_current_reading_to_amp </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>reading</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convierte una lectura de adc en amperes. valores negativos -&gt; la corriente SALE de la bateria. valores positivos -&gt; la corriente ENTRA a la bateria. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reading</td><td>lectura a convertir. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>float A - amper </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

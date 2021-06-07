@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Fichero Fuente include/statemachine.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">statemachine.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="statemachine_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef STATEMACHINE_H</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define STATEMACHINE_H</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17f">   37</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fae4634ae4352b512b38c5da9dc1610ca6">   39</a></span>&#160;    <a class="code" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fae4634ae4352b512b38c5da9dc1610ca6">STANDBY</a>,        </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa3337db0aa6370714691cefd63ccbe5e8">   40</a></span>&#160;    <a class="code" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa3337db0aa6370714691cefd63ccbe5e8">CARGANDO</a>,       </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa19b180bf392deea64159af662d6c6f4f">   41</a></span>&#160;    <a class="code" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa19b180bf392deea64159af662d6c6f4f">DESCARGANDO</a>,    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa44f2a0f7431dbe780bb10e0c85a39b0b">BATTERYLOW</a>      </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa44f2a0f7431dbe780bb10e0c85a39b0b">   43</a></span>&#160;} <a class="code" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17f">sysState_t</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <a class="code" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17f">sysState_t</a> <a class="code" href="statemachine_8h.html#a1d1df7e43aa1e157d429710eb8454965">sysState</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="statemachine_8h.html#afe9a9f1068d0865f65ff6a003512b7c1">sysState_t_c_str</a>[];</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="statemachine_8h.html#ac4fd46c9b4651aa9430498fb7224e3e4">   47</a></span>&#160;<span class="preprocessor">#define sysState_t_c_str_values {&quot;STANDBY&quot;</span>, &quot;CARGANDO&quot;, &quot;DESCARGANDO&quot;, &quot;BATTERYLOW&quot;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273aeef9468d1b98bca652a04bf5063fd9d6">   55</a></span>&#160;    <a class="code" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273aeef9468d1b98bca652a04bf5063fd9d6">AUTO</a>,           </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273a506e8dd29460ea318b68d035f679b01b">MANUAL</a>          </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273a506e8dd29460ea318b68d035f679b01b">   57</a></span>&#160;} <a class="code" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273">sysDischargeMode_t</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">extern</span> <a class="code" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273">sysDischargeMode_t</a> <a class="code" href="statemachine_8h.html#af986f7c6ddc0118be88ef90338ed3f67">sysDischargeMode</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="statemachine_8h.html#ad35a32274018f16916589bdc5b408b05">sysDischargeMode_t_c_str</a>[];</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="statemachine_8h.html#aeba054b4c2bac5709f266140c28a3a97">   61</a></span>&#160;<span class="preprocessor">#define sysDischargeMode_t_c_str_values {&quot;AUTO&quot;</span>, &quot;MANUAL&quot;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012d">   67</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012dae5bc7ee7d6dda5340a28f91834f10543">   69</a></span>&#160;    <a class="code" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012dae5bc7ee7d6dda5340a28f91834f10543">L1</a>,             </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012da0adffb24dae0c41be5b803f4d444f066">L2</a>              </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012da0adffb24dae0c41be5b803f4d444f066">   71</a></span>&#160;} <a class="code" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012d">sysDischargeState_t</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">extern</span> <a class="code" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012d">sysDischargeState_t</a> <a class="code" href="statemachine_8h.html#a9c4ed42d57cccc51a89933091b643209">sysDischargeState</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="statemachine_8h.html#afdd4490a01683bf7491b6f7c55fe5a9a">sysDischargeState_t_c_str</a>[];</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="statemachine_8h.html#a23d0f6943c27d0d4cdc8260711d03e3e">   75</a></span>&#160;<span class="preprocessor">#define sysDischargeState_t_c_str_values {&quot;L1&quot;</span>, &quot;L2&quot;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="statemachine_8h.html#a9936b80faae1f13ef2973d0527f40edd">setSysState</a>(<a class="code" href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17f">sysState_t</a> target);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> <a class="code" href="statemachine_8h.html#a9e3aebb3e24085fdfe9be70cc95cd81c">setDischargeState</a>(<a class="code" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012d">sysDischargeState_t</a> target);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="statemachine_8h.html#a46ed4763c1f306e5b0ad29a6830086f2">setDischargeMode</a>(<a class="code" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273">sysDischargeMode_t</a> target);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> <a class="code" href="statemachine_8h.html#a03dc06e4fe3cbed83839732af297da84">stateMachine_yield</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//Funciones de estados</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> <a class="code" href="statemachine_8h.html#accfc3f5714c8b493fa10b5043ce39b4d">state_standby</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span> <a class="code" href="statemachine_8h.html#a30911fbdf23fdbc39e1d17290e2a4bd5">state_cargando</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="statemachine_8h.html#a4075085354ec5dba0d466e259b243655">state_descargando</a>(<a class="code" href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273">sysDischargeMode_t</a> trigger, <a class="code" href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012d">sysDischargeState_t</a> sub);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">void</span> <a class="code" href="statemachine_8h.html#a2dca2b9fcd710ee40f76cfe3963562c8">state_batterylow</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astatemachine_8h_html_a03dc06e4fe3cbed83839732af297da84"><div class="ttname"><a href="statemachine_8h.html#a03dc06e4fe3cbed83839732af297da84">stateMachine_yield</a></div><div class="ttdeci">void stateMachine_yield()</div><div class="ttdoc">Ejecuta cada estado, y cambia de estado si pasa los requisitos.</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:12</div></div>
+<div class="ttc" id="astatemachine_8h_html_a1d1df7e43aa1e157d429710eb8454965"><div class="ttname"><a href="statemachine_8h.html#a1d1df7e43aa1e157d429710eb8454965">sysState</a></div><div class="ttdeci">sysState_t sysState</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:7</div></div>
+<div class="ttc" id="astatemachine_8h_html_a2da8af8f5ebef75fe9fdf212ddf1d17f"><div class="ttname"><a href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17f">sysState_t</a></div><div class="ttdeci">sysState_t</div><div class="ttdoc">Estados posibles del sistema.</div><div class="ttdef"><b>Definition:</b> statemachine.h:38</div></div>
+<div class="ttc" id="astatemachine_8h_html_a2da8af8f5ebef75fe9fdf212ddf1d17fa19b180bf392deea64159af662d6c6f4f"><div class="ttname"><a href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa19b180bf392deea64159af662d6c6f4f">DESCARGANDO</a></div><div class="ttdeci">@ DESCARGANDO</div><div class="ttdoc">La energia proviene de la bateria.</div><div class="ttdef"><b>Definition:</b> statemachine.h:41</div></div>
+<div class="ttc" id="astatemachine_8h_html_a2da8af8f5ebef75fe9fdf212ddf1d17fa3337db0aa6370714691cefd63ccbe5e8"><div class="ttname"><a href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa3337db0aa6370714691cefd63ccbe5e8">CARGANDO</a></div><div class="ttdeci">@ CARGANDO</div><div class="ttdoc">El sistema funciona normalmente, la energia proviene de la red. Se carga la bateria.</div><div class="ttdef"><b>Definition:</b> statemachine.h:40</div></div>
+<div class="ttc" id="astatemachine_8h_html_a2da8af8f5ebef75fe9fdf212ddf1d17fa44f2a0f7431dbe780bb10e0c85a39b0b"><div class="ttname"><a href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fa44f2a0f7431dbe780bb10e0c85a39b0b">BATTERYLOW</a></div><div class="ttdeci">@ BATTERYLOW</div><div class="ttdoc">Todas las salidas se han apagado. No hay bateria restante para restaurar la energia electrica.</div><div class="ttdef"><b>Definition:</b> statemachine.h:42</div></div>
+<div class="ttc" id="astatemachine_8h_html_a2da8af8f5ebef75fe9fdf212ddf1d17fae4634ae4352b512b38c5da9dc1610ca6"><div class="ttname"><a href="statemachine_8h.html#a2da8af8f5ebef75fe9fdf212ddf1d17fae4634ae4352b512b38c5da9dc1610ca6">STANDBY</a></div><div class="ttdeci">@ STANDBY</div><div class="ttdoc">El sistema funciona normalmente, la energia proviene de la red.</div><div class="ttdef"><b>Definition:</b> statemachine.h:39</div></div>
+<div class="ttc" id="astatemachine_8h_html_a2dca2b9fcd710ee40f76cfe3963562c8"><div class="ttname"><a href="statemachine_8h.html#a2dca2b9fcd710ee40f76cfe3963562c8">state_batterylow</a></div><div class="ttdeci">void state_batterylow()</div><div class="ttdoc">Todas las salidas se han apagado. No hay bateria restante para restaurar la energia electrica.</div><div class="ttdef"><b>Definition:</b> batterylow.cpp:3</div></div>
+<div class="ttc" id="astatemachine_8h_html_a30911fbdf23fdbc39e1d17290e2a4bd5"><div class="ttname"><a href="statemachine_8h.html#a30911fbdf23fdbc39e1d17290e2a4bd5">state_cargando</a></div><div class="ttdeci">void state_cargando()</div><div class="ttdoc">El sistema funciona normalmente, la energia proviene de la red. Se carga la bateria.</div><div class="ttdef"><b>Definition:</b> cargando.cpp:3</div></div>
+<div class="ttc" id="astatemachine_8h_html_a4075085354ec5dba0d466e259b243655"><div class="ttname"><a href="statemachine_8h.html#a4075085354ec5dba0d466e259b243655">state_descargando</a></div><div class="ttdeci">void state_descargando(sysDischargeMode_t trigger, sysDischargeState_t sub)</div><div class="ttdoc">La energia proviene de la bateria.</div><div class="ttdef"><b>Definition:</b> descargando.cpp:3</div></div>
+<div class="ttc" id="astatemachine_8h_html_a46ed4763c1f306e5b0ad29a6830086f2"><div class="ttname"><a href="statemachine_8h.html#a46ed4763c1f306e5b0ad29a6830086f2">setDischargeMode</a></div><div class="ttdeci">void setDischargeMode(sysDischargeMode_t target)</div><div class="ttdoc">Set the Discharge Mode.</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:143</div></div>
+<div class="ttc" id="astatemachine_8h_html_a54c5c7bdad82325e14ab3076e7f0012d"><div class="ttname"><a href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012d">sysDischargeState_t</a></div><div class="ttdeci">sysDischargeState_t</div><div class="ttdoc">Sub estados cuando se encuentra en DESCARGANDO-X.</div><div class="ttdef"><b>Definition:</b> statemachine.h:68</div></div>
+<div class="ttc" id="astatemachine_8h_html_a54c5c7bdad82325e14ab3076e7f0012da0adffb24dae0c41be5b803f4d444f066"><div class="ttname"><a href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012da0adffb24dae0c41be5b803f4d444f066">L2</a></div><div class="ttdeci">@ L2</div><div class="ttdoc">Se apago la salida secundaria para ahorrar energia. Le da prioridad a la salida principal.</div><div class="ttdef"><b>Definition:</b> statemachine.h:70</div></div>
+<div class="ttc" id="astatemachine_8h_html_a54c5c7bdad82325e14ab3076e7f0012dae5bc7ee7d6dda5340a28f91834f10543"><div class="ttname"><a href="statemachine_8h.html#a54c5c7bdad82325e14ab3076e7f0012dae5bc7ee7d6dda5340a28f91834f10543">L1</a></div><div class="ttdeci">@ L1</div><div class="ttdoc">Todas las salidas estan encendidas.</div><div class="ttdef"><b>Definition:</b> statemachine.h:69</div></div>
+<div class="ttc" id="astatemachine_8h_html_a9936b80faae1f13ef2973d0527f40edd"><div class="ttname"><a href="statemachine_8h.html#a9936b80faae1f13ef2973d0527f40edd">setSysState</a></div><div class="ttdeci">void setSysState(sysState_t target)</div><div class="ttdoc">Set the Sys State.</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:129</div></div>
+<div class="ttc" id="astatemachine_8h_html_a9c4ed42d57cccc51a89933091b643209"><div class="ttname"><a href="statemachine_8h.html#a9c4ed42d57cccc51a89933091b643209">sysDischargeState</a></div><div class="ttdeci">sysDischargeState_t sysDischargeState</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:9</div></div>
+<div class="ttc" id="astatemachine_8h_html_a9e3aebb3e24085fdfe9be70cc95cd81c"><div class="ttname"><a href="statemachine_8h.html#a9e3aebb3e24085fdfe9be70cc95cd81c">setDischargeState</a></div><div class="ttdeci">void setDischargeState(sysDischargeState_t target)</div><div class="ttdoc">Set the Discharge State.</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:136</div></div>
+<div class="ttc" id="astatemachine_8h_html_accfc3f5714c8b493fa10b5043ce39b4d"><div class="ttname"><a href="statemachine_8h.html#accfc3f5714c8b493fa10b5043ce39b4d">state_standby</a></div><div class="ttdeci">void state_standby()</div><div class="ttdoc">El sistema funciona normalmente, la energia proviene de la red.</div><div class="ttdef"><b>Definition:</b> standby.cpp:3</div></div>
+<div class="ttc" id="astatemachine_8h_html_ad35a32274018f16916589bdc5b408b05"><div class="ttname"><a href="statemachine_8h.html#ad35a32274018f16916589bdc5b408b05">sysDischargeMode_t_c_str</a></div><div class="ttdeci">const char * sysDischargeMode_t_c_str[]</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:4</div></div>
+<div class="ttc" id="astatemachine_8h_html_af986f7c6ddc0118be88ef90338ed3f67"><div class="ttname"><a href="statemachine_8h.html#af986f7c6ddc0118be88ef90338ed3f67">sysDischargeMode</a></div><div class="ttdeci">sysDischargeMode_t sysDischargeMode</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:8</div></div>
+<div class="ttc" id="astatemachine_8h_html_afdd4490a01683bf7491b6f7c55fe5a9a"><div class="ttname"><a href="statemachine_8h.html#afdd4490a01683bf7491b6f7c55fe5a9a">sysDischargeState_t_c_str</a></div><div class="ttdeci">const char * sysDischargeState_t_c_str[]</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:5</div></div>
+<div class="ttc" id="astatemachine_8h_html_afe9a9f1068d0865f65ff6a003512b7c1"><div class="ttname"><a href="statemachine_8h.html#afe9a9f1068d0865f65ff6a003512b7c1">sysState_t_c_str</a></div><div class="ttdeci">const char * sysState_t_c_str[]</div><div class="ttdef"><b>Definition:</b> statemachine.cpp:3</div></div>
+<div class="ttc" id="astatemachine_8h_html_afeb87861c5c9c5c279f164d035d8b273"><div class="ttname"><a href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273">sysDischargeMode_t</a></div><div class="ttdeci">sysDischargeMode_t</div><div class="ttdoc">Modo de descarga del sistema.</div><div class="ttdef"><b>Definition:</b> statemachine.h:54</div></div>
+<div class="ttc" id="astatemachine_8h_html_afeb87861c5c9c5c279f164d035d8b273a506e8dd29460ea318b68d035f679b01b"><div class="ttname"><a href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273a506e8dd29460ea318b68d035f679b01b">MANUAL</a></div><div class="ttdeci">@ MANUAL</div><div class="ttdoc">El suministro electrico funciona correctamente, pero se descargara hasta acabar por activacion manual...</div><div class="ttdef"><b>Definition:</b> statemachine.h:56</div></div>
+<div class="ttc" id="astatemachine_8h_html_afeb87861c5c9c5c279f164d035d8b273aeef9468d1b98bca652a04bf5063fd9d6"><div class="ttname"><a href="statemachine_8h.html#afeb87861c5c9c5c279f164d035d8b273aeef9468d1b98bca652a04bf5063fd9d6">AUTO</a></div><div class="ttdeci">@ AUTO</div><div class="ttdoc">El suministro electrico no funciona. Se entro automaticamente a este estado por el UPS.</div><div class="ttdef"><b>Definition:</b> statemachine.h:55</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

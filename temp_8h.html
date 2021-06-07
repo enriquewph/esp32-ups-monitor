@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Referencia del Archivo lib/hw_hal/include/temp.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo temp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Archivo header para todo lo relacionado a sensores de temperatura.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="hw__define_8h_source.html">hw_define.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="adc_8h_source.html">adc.h</a>&quot;</code><br />
+</div>
+<p><a href="temp_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a6e561a7911faf1816198bab953092cad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_8h.html#a6e561a7911faf1816198bab953092cad">HAL_TEMP_LM35_MV_PER_DEGREE</a>&#160;&#160;&#160;10.0f</td></tr>
+<tr class="memdesc:a6e561a7911faf1816198bab953092cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">LM-35, la salida representa 1ºC cada 10mV.  <a href="temp_8h.html#a6e561a7911faf1816198bab953092cad">Más...</a><br /></td></tr>
+<tr class="separator:a6e561a7911faf1816198bab953092cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b3acaf19807b7d905b31e33bbf5e60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_8h.html#a30b3acaf19807b7d905b31e33bbf5e60">LM35_READ</a>(reading)&#160;&#160;&#160;(float) ((<a class="el" href="adc_8h.html#a679438251f8e1c9e07fc844780e1546a">ADC_GET_MV_0dB</a>(reading))/( <a class="el" href="temp_8h.html#a6e561a7911faf1816198bab953092cad">HAL_TEMP_LM35_MV_PER_DEGREE</a> ))</td></tr>
+<tr class="memdesc:a30b3acaf19807b7d905b31e33bbf5e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro para convertir lectura de ADC en grados centigrados (float).  <a href="temp_8h.html#a30b3acaf19807b7d905b31e33bbf5e60">Más...</a><br /></td></tr>
+<tr class="separator:a30b3acaf19807b7d905b31e33bbf5e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30020b7f8b0de9dd06168f11516610cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_8h.html#a30020b7f8b0de9dd06168f11516610cd">LM35_READ_REV</a>(temp)&#160;&#160;&#160;<a class="el" href="adc_8h.html#a601fcae78ec47f71e654e854247befd8">ADC_GET_MV_REV_0dB</a>((temp * <a class="el" href="temp_8h.html#a6e561a7911faf1816198bab953092cad">HAL_TEMP_LM35_MV_PER_DEGREE</a>))</td></tr>
+<tr class="memdesc:a30020b7f8b0de9dd06168f11516610cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro para convertir grados centigrados (float) en aprox. la lectura del ADC requerida. Esto es util para comparar temperaturas mas efectivamente.  <a href="temp_8h.html#a30020b7f8b0de9dd06168f11516610cd">Más...</a><br /></td></tr>
+<tr class="separator:a30020b7f8b0de9dd06168f11516610cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a02e75fa005d35e4f6cdd732c4ee959a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_8h.html#a02e75fa005d35e4f6cdd732c4ee959a1">hal_temp_init</a> ()</td></tr>
+<tr class="memdesc:a02e75fa005d35e4f6cdd732c4ee959a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa lo necesario para usar el sensor de temperatura.  <a href="temp_8h.html#a02e75fa005d35e4f6cdd732c4ee959a1">Más...</a><br /></td></tr>
+<tr class="separator:a02e75fa005d35e4f6cdd732c4ee959a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdea34f3328e97c58863b70872d8535a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_8h.html#afdea34f3328e97c58863b70872d8535a">hal_temp_get_reading</a> ()</td></tr>
+<tr class="memdesc:afdea34f3328e97c58863b70872d8535a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usa el adc y devuelve la lectura del sensor de temperatura.  <a href="temp_8h.html#afdea34f3328e97c58863b70872d8535a">Más...</a><br /></td></tr>
+<tr class="separator:afdea34f3328e97c58863b70872d8535a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63f204d995c5f0a0590d70cde8ed4a7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_8h.html#aa63f204d995c5f0a0590d70cde8ed4a7">hal_temp_reading_to_degrees</a> (uint16_t reading)</td></tr>
+<tr class="memdesc:aa63f204d995c5f0a0590d70cde8ed4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convierte una lectura del ADC en grados centigrados.  <a href="temp_8h.html#aa63f204d995c5f0a0590d70cde8ed4a7">Más...</a><br /></td></tr>
+<tr class="separator:aa63f204d995c5f0a0590d70cde8ed4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Archivo header para todo lo relacionado a sensores de temperatura. </p>
+<dl class="section author"><dt>Autor</dt><dd>Enrique Walter Philippeaux (<a href="#" onclick="location.href='mai'+'lto:'+'enr'+'iq'+'uew'+'ph'+'@gm'+'ai'+'l.c'+'om'; return false;">enriq<span style="display: none;">.nosp@m.</span>uewp<span style="display: none;">.nosp@m.</span>h@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2021-05-31 </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a6e561a7911faf1816198bab953092cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e561a7911faf1816198bab953092cad">&#9670;&nbsp;</a></span>HAL_TEMP_LM35_MV_PER_DEGREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_TEMP_LM35_MV_PER_DEGREE&#160;&#160;&#160;10.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>LM-35, la salida representa 1ºC cada 10mV. </p>
+
+</div>
+</div>
+<a id="a30b3acaf19807b7d905b31e33bbf5e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b3acaf19807b7d905b31e33bbf5e60">&#9670;&nbsp;</a></span>LM35_READ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LM35_READ</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reading</td><td>)</td>
+          <td>&#160;&#160;&#160;(float) ((<a class="el" href="adc_8h.html#a679438251f8e1c9e07fc844780e1546a">ADC_GET_MV_0dB</a>(reading))/( <a class="el" href="temp_8h.html#a6e561a7911faf1816198bab953092cad">HAL_TEMP_LM35_MV_PER_DEGREE</a> ))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro para convertir lectura de ADC en grados centigrados (float). </p>
+
+</div>
+</div>
+<a id="a30020b7f8b0de9dd06168f11516610cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30020b7f8b0de9dd06168f11516610cd">&#9670;&nbsp;</a></span>LM35_READ_REV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LM35_READ_REV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">temp</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="adc_8h.html#a601fcae78ec47f71e654e854247befd8">ADC_GET_MV_REV_0dB</a>((temp * <a class="el" href="temp_8h.html#a6e561a7911faf1816198bab953092cad">HAL_TEMP_LM35_MV_PER_DEGREE</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro para convertir grados centigrados (float) en aprox. la lectura del ADC requerida. Esto es util para comparar temperaturas mas efectivamente. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="afdea34f3328e97c58863b70872d8535a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdea34f3328e97c58863b70872d8535a">&#9670;&nbsp;</a></span>hal_temp_get_reading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hal_temp_get_reading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usa el adc y devuelve la lectura del sensor de temperatura. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>uint16_t lectura del adc. 0-4095 (12bits) </dd></dl>
+
+</div>
+</div>
+<a id="a02e75fa005d35e4f6cdd732c4ee959a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e75fa005d35e4f6cdd732c4ee959a1">&#9670;&nbsp;</a></span>hal_temp_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_temp_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa lo necesario para usar el sensor de temperatura. </p>
+
+</div>
+</div>
+<a id="aa63f204d995c5f0a0590d70cde8ed4a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63f204d995c5f0a0590d70cde8ed4a7">&#9670;&nbsp;</a></span>hal_temp_reading_to_degrees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hal_temp_reading_to_degrees </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>reading</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convierte una lectura del ADC en grados centigrados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reading</td><td>Lectura a convertir </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>float Grados centigrados </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

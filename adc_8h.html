@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Referencia del Archivo lib/hw_hal/include/adc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo adc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Macros, definiciones y valores de calibracion para el uso del ADC.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &lt;driver/adc.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="hw__define_8h_source.html">hw_define.h</a>&gt;</code><br />
+</div>
+<p><a href="adc_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ab3765ae1b75ece06dfb9d8893cd81a5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#ab3765ae1b75ece06dfb9d8893cd81a5e">HAL_ADC_VCC_MV</a>&#160;&#160;&#160;3300.0f</td></tr>
+<tr class="memdesc:ab3765ae1b75ece06dfb9d8893cd81a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltaje de referencia para macros de conversion del ADC.  <a href="adc_8h.html#ab3765ae1b75ece06dfb9d8893cd81a5e">Más...</a><br /></td></tr>
+<tr class="separator:ab3765ae1b75ece06dfb9d8893cd81a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f59b0528dd0b8b527d0aeb97b693729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="memdesc:a9f59b0528dd0b8b527d0aeb97b693729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolucion de 12 bits, indica 4096 divisiones.  <a href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">Más...</a><br /></td></tr>
+<tr class="separator:a9f59b0528dd0b8b527d0aeb97b693729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079fd533b23e14b328595a12e140e702"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a079fd533b23e14b328595a12e140e702">HAL_ADC_CORRECCION_PORCENTUAL</a>&#160;&#160;&#160;1.0f</td></tr>
+<tr class="memdesc:a079fd533b23e14b328595a12e140e702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correccion porcentual para ajustar el ADC.  <a href="adc_8h.html#a079fd533b23e14b328595a12e140e702">Más...</a><br /></td></tr>
+<tr class="separator:a079fd533b23e14b328595a12e140e702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13ddaec9e227b793239a09e6d7b2e25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#af13ddaec9e227b793239a09e6d7b2e25">HAL_ADC_OFFSET</a>&#160;&#160;&#160;151.18f</td></tr>
+<tr class="memdesc:af13ddaec9e227b793239a09e6d7b2e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset para ajustar el ADC.  <a href="adc_8h.html#af13ddaec9e227b793239a09e6d7b2e25">Más...</a><br /></td></tr>
+<tr class="separator:af13ddaec9e227b793239a09e6d7b2e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646561f8ef51dfb0a96f703892801ef8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a646561f8ef51dfb0a96f703892801ef8">HAL_ADC_PROM_READING</a>&#160;&#160;&#160;256</td></tr>
+<tr class="memdesc:a646561f8ef51dfb0a96f703892801ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numero de lecturas a realizar y promediar.  <a href="adc_8h.html#a646561f8ef51dfb0a96f703892801ef8">Más...</a><br /></td></tr>
+<tr class="separator:a646561f8ef51dfb0a96f703892801ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64ab7089523495b64c5f8f2a0410390"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#ab64ab7089523495b64c5f8f2a0410390">HAL_ADC_VCC_MV_0dB</a>&#160;&#160;&#160;1100.0f</td></tr>
+<tr class="memdesc:ab64ab7089523495b64c5f8f2a0410390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltaje de referencia para macros de conversion del ADC al usar atenuacion de 0dB.  <a href="adc_8h.html#ab64ab7089523495b64c5f8f2a0410390">Más...</a><br /></td></tr>
+<tr class="separator:ab64ab7089523495b64c5f8f2a0410390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb63020a76467932111edee53f15a749"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#acb63020a76467932111edee53f15a749">HAL_ADC_OFFSET_0dB</a>&#160;&#160;&#160;82.66f</td></tr>
+<tr class="memdesc:acb63020a76467932111edee53f15a749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset para ajustar el ADC al usar atenuacion de 0dB.  <a href="adc_8h.html#acb63020a76467932111edee53f15a749">Más...</a><br /></td></tr>
+<tr class="separator:acb63020a76467932111edee53f15a749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe41853217ebef3911f14c73aca2004"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a0fe41853217ebef3911f14c73aca2004">HAL_ADC_CORRECCION_PORCENTUAL_0dB</a>&#160;&#160;&#160;1.0f</td></tr>
+<tr class="memdesc:a0fe41853217ebef3911f14c73aca2004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correccion porcentual para ajustar el ADC al usar atenuacion de 0dB.  <a href="adc_8h.html#a0fe41853217ebef3911f14c73aca2004">Más...</a><br /></td></tr>
+<tr class="separator:a0fe41853217ebef3911f14c73aca2004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950fa50538c3b64b9395c308d5d1d5b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a950fa50538c3b64b9395c308d5d1d5b7">ADC_GET_MV</a>(reading)&#160;&#160;&#160;(float) (<a class="el" href="adc_8h.html#a079fd533b23e14b328595a12e140e702">HAL_ADC_CORRECCION_PORCENTUAL</a> * ((float) reading + <a class="el" href="adc_8h.html#af13ddaec9e227b793239a09e6d7b2e25">HAL_ADC_OFFSET</a>) * <a class="el" href="adc_8h.html#ab3765ae1b75ece06dfb9d8893cd81a5e">HAL_ADC_VCC_MV</a>) / (<a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>)</td></tr>
+<tr class="memdesc:a950fa50538c3b64b9395c308d5d1d5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro para convertir lectura de ADC en milivoltios.  <a href="adc_8h.html#a950fa50538c3b64b9395c308d5d1d5b7">Más...</a><br /></td></tr>
+<tr class="separator:a950fa50538c3b64b9395c308d5d1d5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645373d9aa49a7751981e7db0db212f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a645373d9aa49a7751981e7db0db212f1">ADC_GET_MV_REV</a>(mV)&#160;&#160;&#160;(uint16_t) ((mV) * ((<a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>) / (<a class="el" href="adc_8h.html#a079fd533b23e14b328595a12e140e702">HAL_ADC_CORRECCION_PORCENTUAL</a> * VCC_MV)) - <a class="el" href="adc_8h.html#af13ddaec9e227b793239a09e6d7b2e25">HAL_ADC_OFFSET</a>)</td></tr>
+<tr class="memdesc:a645373d9aa49a7751981e7db0db212f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro para convertir milivoltios en la lectura del ADC requerida.  <a href="adc_8h.html#a645373d9aa49a7751981e7db0db212f1">Más...</a><br /></td></tr>
+<tr class="separator:a645373d9aa49a7751981e7db0db212f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679438251f8e1c9e07fc844780e1546a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a679438251f8e1c9e07fc844780e1546a">ADC_GET_MV_0dB</a>(reading)&#160;&#160;&#160;(float) (<a class="el" href="adc_8h.html#a0fe41853217ebef3911f14c73aca2004">HAL_ADC_CORRECCION_PORCENTUAL_0dB</a> * ((float) reading + <a class="el" href="adc_8h.html#acb63020a76467932111edee53f15a749">HAL_ADC_OFFSET_0dB</a>) * <a class="el" href="adc_8h.html#ab64ab7089523495b64c5f8f2a0410390">HAL_ADC_VCC_MV_0dB</a>) / (<a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>)</td></tr>
+<tr class="memdesc:a679438251f8e1c9e07fc844780e1546a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro para convertir lectura de ADC en milivoltios. USAR CON ATENUACION DE 0dB.  <a href="adc_8h.html#a679438251f8e1c9e07fc844780e1546a">Más...</a><br /></td></tr>
+<tr class="separator:a679438251f8e1c9e07fc844780e1546a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601fcae78ec47f71e654e854247befd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a601fcae78ec47f71e654e854247befd8">ADC_GET_MV_REV_0dB</a>(mV)&#160;&#160;&#160;(uint16_t) ((mV) * ((<a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>) / (<a class="el" href="adc_8h.html#a0fe41853217ebef3911f14c73aca2004">HAL_ADC_CORRECCION_PORCENTUAL_0dB</a> * <a class="el" href="adc_8h.html#ab64ab7089523495b64c5f8f2a0410390">HAL_ADC_VCC_MV_0dB</a>)) - <a class="el" href="adc_8h.html#acb63020a76467932111edee53f15a749">HAL_ADC_OFFSET_0dB</a>)</td></tr>
+<tr class="memdesc:a601fcae78ec47f71e654e854247befd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro para convertir milivoltios en la lectura del ADC requerida. USAR CON ATENUACION DE 0dB.  <a href="adc_8h.html#a601fcae78ec47f71e654e854247befd8">Más...</a><br /></td></tr>
+<tr class="separator:a601fcae78ec47f71e654e854247befd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a555afe23d9ec17f8da5e1aaf5d29a2f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a555afe23d9ec17f8da5e1aaf5d29a2f0">hal_adc_init</a> ()</td></tr>
+<tr class="memdesc:a555afe23d9ec17f8da5e1aaf5d29a2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializar adc del dispositivo.  <a href="adc_8h.html#a555afe23d9ec17f8da5e1aaf5d29a2f0">Más...</a><br /></td></tr>
+<tr class="separator:a555afe23d9ec17f8da5e1aaf5d29a2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1707c0b5644b779d8487f4cee2e65aec"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8h.html#a1707c0b5644b779d8487f4cee2e65aec">hal_adc_get</a> (adc1_channel_t ch)</td></tr>
+<tr class="memdesc:a1707c0b5644b779d8487f4cee2e65aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ejecuta HAL_ADC_PROM_READING lecturas y devuelve el promedio.  <a href="adc_8h.html#a1707c0b5644b779d8487f4cee2e65aec">Más...</a><br /></td></tr>
+<tr class="separator:a1707c0b5644b779d8487f4cee2e65aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Macros, definiciones y valores de calibracion para el uso del ADC. </p>
+<dl class="section author"><dt>Autor</dt><dd>Enrique Walter Philippeaux (<a href="#" onclick="location.href='mai'+'lto:'+'enr'+'iq'+'uew'+'ph'+'@gm'+'ai'+'l.c'+'om'; return false;">enriq<span style="display: none;">.nosp@m.</span>uewp<span style="display: none;">.nosp@m.</span>h@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2021-05-31 </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a950fa50538c3b64b9395c308d5d1d5b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a950fa50538c3b64b9395c308d5d1d5b7">&#9670;&nbsp;</a></span>ADC_GET_MV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_GET_MV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reading</td><td>)</td>
+          <td>&#160;&#160;&#160;(float) (<a class="el" href="adc_8h.html#a079fd533b23e14b328595a12e140e702">HAL_ADC_CORRECCION_PORCENTUAL</a> * ((float) reading + <a class="el" href="adc_8h.html#af13ddaec9e227b793239a09e6d7b2e25">HAL_ADC_OFFSET</a>) * <a class="el" href="adc_8h.html#ab3765ae1b75ece06dfb9d8893cd81a5e">HAL_ADC_VCC_MV</a>) / (<a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro para convertir lectura de ADC en milivoltios. </p>
+
+</div>
+</div>
+<a id="a679438251f8e1c9e07fc844780e1546a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679438251f8e1c9e07fc844780e1546a">&#9670;&nbsp;</a></span>ADC_GET_MV_0dB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_GET_MV_0dB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reading</td><td>)</td>
+          <td>&#160;&#160;&#160;(float) (<a class="el" href="adc_8h.html#a0fe41853217ebef3911f14c73aca2004">HAL_ADC_CORRECCION_PORCENTUAL_0dB</a> * ((float) reading + <a class="el" href="adc_8h.html#acb63020a76467932111edee53f15a749">HAL_ADC_OFFSET_0dB</a>) * <a class="el" href="adc_8h.html#ab64ab7089523495b64c5f8f2a0410390">HAL_ADC_VCC_MV_0dB</a>) / (<a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro para convertir lectura de ADC en milivoltios. USAR CON ATENUACION DE 0dB. </p>
+
+</div>
+</div>
+<a id="a645373d9aa49a7751981e7db0db212f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645373d9aa49a7751981e7db0db212f1">&#9670;&nbsp;</a></span>ADC_GET_MV_REV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_GET_MV_REV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mV</td><td>)</td>
+          <td>&#160;&#160;&#160;(uint16_t) ((mV) * ((<a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>) / (<a class="el" href="adc_8h.html#a079fd533b23e14b328595a12e140e702">HAL_ADC_CORRECCION_PORCENTUAL</a> * VCC_MV)) - <a class="el" href="adc_8h.html#af13ddaec9e227b793239a09e6d7b2e25">HAL_ADC_OFFSET</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro para convertir milivoltios en la lectura del ADC requerida. </p>
+
+</div>
+</div>
+<a id="a601fcae78ec47f71e654e854247befd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601fcae78ec47f71e654e854247befd8">&#9670;&nbsp;</a></span>ADC_GET_MV_REV_0dB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_GET_MV_REV_0dB</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mV</td><td>)</td>
+          <td>&#160;&#160;&#160;(uint16_t) ((mV) * ((<a class="el" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">HAL_ADC_RES</a>) / (<a class="el" href="adc_8h.html#a0fe41853217ebef3911f14c73aca2004">HAL_ADC_CORRECCION_PORCENTUAL_0dB</a> * <a class="el" href="adc_8h.html#ab64ab7089523495b64c5f8f2a0410390">HAL_ADC_VCC_MV_0dB</a>)) - <a class="el" href="adc_8h.html#acb63020a76467932111edee53f15a749">HAL_ADC_OFFSET_0dB</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro para convertir milivoltios en la lectura del ADC requerida. USAR CON ATENUACION DE 0dB. </p>
+
+</div>
+</div>
+<a id="a079fd533b23e14b328595a12e140e702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079fd533b23e14b328595a12e140e702">&#9670;&nbsp;</a></span>HAL_ADC_CORRECCION_PORCENTUAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_ADC_CORRECCION_PORCENTUAL&#160;&#160;&#160;1.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Correccion porcentual para ajustar el ADC. </p>
+
+</div>
+</div>
+<a id="a0fe41853217ebef3911f14c73aca2004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe41853217ebef3911f14c73aca2004">&#9670;&nbsp;</a></span>HAL_ADC_CORRECCION_PORCENTUAL_0dB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_ADC_CORRECCION_PORCENTUAL_0dB&#160;&#160;&#160;1.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Correccion porcentual para ajustar el ADC al usar atenuacion de 0dB. </p>
+
+</div>
+</div>
+<a id="af13ddaec9e227b793239a09e6d7b2e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13ddaec9e227b793239a09e6d7b2e25">&#9670;&nbsp;</a></span>HAL_ADC_OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_ADC_OFFSET&#160;&#160;&#160;151.18f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Offset para ajustar el ADC. </p>
+
+</div>
+</div>
+<a id="acb63020a76467932111edee53f15a749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb63020a76467932111edee53f15a749">&#9670;&nbsp;</a></span>HAL_ADC_OFFSET_0dB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_ADC_OFFSET_0dB&#160;&#160;&#160;82.66f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Offset para ajustar el ADC al usar atenuacion de 0dB. </p>
+
+</div>
+</div>
+<a id="a646561f8ef51dfb0a96f703892801ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646561f8ef51dfb0a96f703892801ef8">&#9670;&nbsp;</a></span>HAL_ADC_PROM_READING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_ADC_PROM_READING&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Numero de lecturas a realizar y promediar. </p>
+
+</div>
+</div>
+<a id="a9f59b0528dd0b8b527d0aeb97b693729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f59b0528dd0b8b527d0aeb97b693729">&#9670;&nbsp;</a></span>HAL_ADC_RES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_ADC_RES&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolucion de 12 bits, indica 4096 divisiones. </p>
+
+</div>
+</div>
+<a id="ab3765ae1b75ece06dfb9d8893cd81a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3765ae1b75ece06dfb9d8893cd81a5e">&#9670;&nbsp;</a></span>HAL_ADC_VCC_MV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_ADC_VCC_MV&#160;&#160;&#160;3300.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Voltaje de referencia para macros de conversion del ADC. </p>
+
+</div>
+</div>
+<a id="ab64ab7089523495b64c5f8f2a0410390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64ab7089523495b64c5f8f2a0410390">&#9670;&nbsp;</a></span>HAL_ADC_VCC_MV_0dB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_ADC_VCC_MV_0dB&#160;&#160;&#160;1100.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Voltaje de referencia para macros de conversion del ADC al usar atenuacion de 0dB. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a1707c0b5644b779d8487f4cee2e65aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1707c0b5644b779d8487f4cee2e65aec">&#9670;&nbsp;</a></span>hal_adc_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hal_adc_get </td>
+          <td>(</td>
+          <td class="paramtype">adc1_channel_t&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ejecuta HAL_ADC_PROM_READING lecturas y devuelve el promedio. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch</td><td>canal del adc a utilizar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>uint16_t lectura </dd></dl>
+
+</div>
+</div>
+<a id="a555afe23d9ec17f8da5e1aaf5d29a2f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555afe23d9ec17f8da5e1aaf5d29a2f0">&#9670;&nbsp;</a></span>hal_adc_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_adc_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializar adc del dispositivo. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

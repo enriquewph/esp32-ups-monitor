@@ -1,0 +1,765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Referencia del Archivo include/debug.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo debug.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &lt;AsyncTCP.h&gt;</code><br />
+<code>#include &lt;LoopbackStream.h&gt;</code><br />
+</div>
+<p><a href="debug_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structov__s.html">ov_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ab781c12cf2cee6beff7aec4744e0336e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#ab781c12cf2cee6beff7aec4744e0336e">DEBUG_GREETING</a>&#160;&#160;&#160;&quot;Ingrese --help para ver los comandos disponibles.&quot;</td></tr>
+<tr class="separator:ab781c12cf2cee6beff7aec4744e0336e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8caa49e34af729c4e97f943b0fadae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a3c8caa49e34af729c4e97f943b0fadae">DEBUG_TCP_ENABLE</a></td></tr>
+<tr class="separator:a3c8caa49e34af729c4e97f943b0fadae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3769820c5f047d7d49ac8f74acb489e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#ac3769820c5f047d7d49ac8f74acb489e">DEBUG_TCP_PORT</a>&#160;&#160;&#160;8000</td></tr>
+<tr class="separator:ac3769820c5f047d7d49ac8f74acb489e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4da5f910eb5cc6f210045bf37976a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a1e4da5f910eb5cc6f210045bf37976a3">DEBUG_TCP_BUFFER</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:a1e4da5f910eb5cc6f210045bf37976a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b11f35256f39e4f4a43fa886c914ed1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a5b11f35256f39e4f4a43fa886c914ed1">DEBUG_TCP_OUT</a>&#160;&#160;&#160;<a class="el" href="debug_8h.html#a38c7e36beb2049b1a2286ed18ee5a585">debugTcpStream</a></td></tr>
+<tr class="separator:a5b11f35256f39e4f4a43fa886c914ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:ab217b60f2d7210d78a8440b893c398d2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structov__s.html">ov_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#ab217b60f2d7210d78a8440b893c398d2">cmd_t</a></td></tr>
+<tr class="separator:ab217b60f2d7210d78a8440b893c398d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:aed51223c2946020f1b5b26af2c2fd0e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#aed51223c2946020f1b5b26af2c2fd0e9">debug_init</a> ()</td></tr>
+<tr class="separator:aed51223c2946020f1b5b26af2c2fd0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d8546151489e084f12e13f7c1fc5ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#aa2d8546151489e084f12e13f7c1fc5ce">debug_yield</a> ()</td></tr>
+<tr class="separator:aa2d8546151489e084f12e13f7c1fc5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646b1f8fc796d41c4cabf0a255592303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a646b1f8fc796d41c4cabf0a255592303">debug_serial_received</a> (Stream &amp;StreamPort, String inputStr)</td></tr>
+<tr class="separator:a646b1f8fc796d41c4cabf0a255592303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a1220846a9b0f4cccda8f570840f77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#ad7a1220846a9b0f4cccda8f570840f77">debug_tcp_init</a> ()</td></tr>
+<tr class="separator:ad7a1220846a9b0f4cccda8f570840f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843e7535f8d69616d03e3a0539a35bc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a843e7535f8d69616d03e3a0539a35bc8">debugTcpStreamSend</a> ()</td></tr>
+<tr class="separator:a843e7535f8d69616d03e3a0539a35bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f0e389db50c2f224a7327de4d593de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#aa4f0e389db50c2f224a7327de4d593de">cmd_reset</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:aa4f0e389db50c2f224a7327de4d593de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7d000d68132766e629a70937484e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a5d7d000d68132766e629a70937484e86">cmd_help</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:a5d7d000d68132766e629a70937484e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d571477c28a22ddb77f2a0cb1cff102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a1d571477c28a22ddb77f2a0cb1cff102">cmd_setRelay1</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:a1d571477c28a22ddb77f2a0cb1cff102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fa4efa46993c1d92dbd5e655f320c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a16fa4efa46993c1d92dbd5e655f320c5">cmd_getRelay1</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:a16fa4efa46993c1d92dbd5e655f320c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22790f894a18c0eec259c4664ff7f31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#ac22790f894a18c0eec259c4664ff7f31">cmd_setRelay2</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:ac22790f894a18c0eec259c4664ff7f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f448ab1a81ee2a531fe4e1bd7c8b1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#ab9f448ab1a81ee2a531fe4e1bd7c8b1b">cmd_getRelay2</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:ab9f448ab1a81ee2a531fe4e1bd7c8b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a75e23e2b50ce2c1b0e146c1f79b832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a9a75e23e2b50ce2c1b0e146c1f79b832">cmd_setFan</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:a9a75e23e2b50ce2c1b0e146c1f79b832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2e538ba459b4f499a76c64c5cf8f0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a3a2e538ba459b4f499a76c64c5cf8f0a">cmd_getFan</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:a3a2e538ba459b4f499a76c64c5cf8f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339cf0e149c3789912c358c267473a1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a339cf0e149c3789912c358c267473a1a">cmd_setUPSON</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:a339cf0e149c3789912c358c267473a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89a41613893032b22642350937f0fba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#ad89a41613893032b22642350937f0fba">cmd_getUPSON</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:ad89a41613893032b22642350937f0fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3316b71e5e113b1af73a9e396692b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a7f3316b71e5e113b1af73a9e396692b2">cmd_getUPSSTATE</a> (Stream &amp;StreamPort, char *param)</td></tr>
+<tr class="separator:a7f3316b71e5e113b1af73a9e396692b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af75ba6bb077e48e7dc8c0b4b7d0cd947"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#af75ba6bb077e48e7dc8c0b4b7d0cd947">strNone</a></td></tr>
+<tr class="separator:af75ba6bb077e48e7dc8c0b4b7d0cd947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd7c368aad19a43f10d7f8dc1d4c095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="debug_8h.html#ab217b60f2d7210d78a8440b893c398d2">cmd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#accd7c368aad19a43f10d7f8dc1d4c095">cmdList</a> []</td></tr>
+<tr class="separator:accd7c368aad19a43f10d7f8dc1d4c095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cdb04b96824a6587cb9c922ccaebb0b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a3cdb04b96824a6587cb9c922ccaebb0b">cmdList_len</a></td></tr>
+<tr class="separator:a3cdb04b96824a6587cb9c922ccaebb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c7e36beb2049b1a2286ed18ee5a585"><td class="memItemLeft" align="right" valign="top">LoopbackStream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#a38c7e36beb2049b1a2286ed18ee5a585">debugTcpStream</a></td></tr>
+<tr class="separator:a38c7e36beb2049b1a2286ed18ee5a585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a185eb5aee3ed2bb12c110137ddfca"><td class="memItemLeft" align="right" valign="top">AsyncClient *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug_8h.html#ab7a185eb5aee3ed2bb12c110137ddfca">debugTcpClient</a></td></tr>
+<tr class="separator:ab7a185eb5aee3ed2bb12c110137ddfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="ab781c12cf2cee6beff7aec4744e0336e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab781c12cf2cee6beff7aec4744e0336e">&#9670;&nbsp;</a></span>DEBUG_GREETING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_GREETING&#160;&#160;&#160;&quot;Ingrese --help para ver los comandos disponibles.&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e4da5f910eb5cc6f210045bf37976a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4da5f910eb5cc6f210045bf37976a3">&#9670;&nbsp;</a></span>DEBUG_TCP_BUFFER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_TCP_BUFFER&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c8caa49e34af729c4e97f943b0fadae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8caa49e34af729c4e97f943b0fadae">&#9670;&nbsp;</a></span>DEBUG_TCP_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_TCP_ENABLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b11f35256f39e4f4a43fa886c914ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b11f35256f39e4f4a43fa886c914ed1">&#9670;&nbsp;</a></span>DEBUG_TCP_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_TCP_OUT&#160;&#160;&#160;<a class="el" href="debug_8h.html#a38c7e36beb2049b1a2286ed18ee5a585">debugTcpStream</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3769820c5f047d7d49ac8f74acb489e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3769820c5f047d7d49ac8f74acb489e">&#9670;&nbsp;</a></span>DEBUG_TCP_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_TCP_PORT&#160;&#160;&#160;8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="ab217b60f2d7210d78a8440b893c398d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab217b60f2d7210d78a8440b893c398d2">&#9670;&nbsp;</a></span>cmd_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structov__s.html">ov_s</a> <a class="el" href="debug_8h.html#ab217b60f2d7210d78a8440b893c398d2">cmd_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a3a2e538ba459b4f499a76c64c5cf8f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2e538ba459b4f499a76c64c5cf8f0a">&#9670;&nbsp;</a></span>cmd_getFan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_getFan </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16fa4efa46993c1d92dbd5e655f320c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16fa4efa46993c1d92dbd5e655f320c5">&#9670;&nbsp;</a></span>cmd_getRelay1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_getRelay1 </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9f448ab1a81ee2a531fe4e1bd7c8b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f448ab1a81ee2a531fe4e1bd7c8b1b">&#9670;&nbsp;</a></span>cmd_getRelay2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_getRelay2 </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad89a41613893032b22642350937f0fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad89a41613893032b22642350937f0fba">&#9670;&nbsp;</a></span>cmd_getUPSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_getUPSON </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f3316b71e5e113b1af73a9e396692b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3316b71e5e113b1af73a9e396692b2">&#9670;&nbsp;</a></span>cmd_getUPSSTATE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_getUPSSTATE </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d7d000d68132766e629a70937484e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7d000d68132766e629a70937484e86">&#9670;&nbsp;</a></span>cmd_help()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_help </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4f0e389db50c2f224a7327de4d593de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f0e389db50c2f224a7327de4d593de">&#9670;&nbsp;</a></span>cmd_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_reset </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a75e23e2b50ce2c1b0e146c1f79b832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a75e23e2b50ce2c1b0e146c1f79b832">&#9670;&nbsp;</a></span>cmd_setFan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_setFan </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d571477c28a22ddb77f2a0cb1cff102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d571477c28a22ddb77f2a0cb1cff102">&#9670;&nbsp;</a></span>cmd_setRelay1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_setRelay1 </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac22790f894a18c0eec259c4664ff7f31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac22790f894a18c0eec259c4664ff7f31">&#9670;&nbsp;</a></span>cmd_setRelay2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_setRelay2 </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a339cf0e149c3789912c358c267473a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339cf0e149c3789912c358c267473a1a">&#9670;&nbsp;</a></span>cmd_setUPSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmd_setUPSON </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed51223c2946020f1b5b26af2c2fd0e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed51223c2946020f1b5b26af2c2fd0e9">&#9670;&nbsp;</a></span>debug_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void debug_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a646b1f8fc796d41c4cabf0a255592303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646b1f8fc796d41c4cabf0a255592303">&#9670;&nbsp;</a></span>debug_serial_received()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void debug_serial_received </td>
+          <td>(</td>
+          <td class="paramtype">Stream &amp;&#160;</td>
+          <td class="paramname"><em>StreamPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>inputStr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7a1220846a9b0f4cccda8f570840f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a1220846a9b0f4cccda8f570840f77">&#9670;&nbsp;</a></span>debug_tcp_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void debug_tcp_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2d8546151489e084f12e13f7c1fc5ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d8546151489e084f12e13f7c1fc5ce">&#9670;&nbsp;</a></span>debug_yield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void debug_yield </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a843e7535f8d69616d03e3a0539a35bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843e7535f8d69616d03e3a0539a35bc8">&#9670;&nbsp;</a></span>debugTcpStreamSend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void debugTcpStreamSend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="accd7c368aad19a43f10d7f8dc1d4c095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd7c368aad19a43f10d7f8dc1d4c095">&#9670;&nbsp;</a></span>cmdList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="debug_8h.html#ab217b60f2d7210d78a8440b893c398d2">cmd_t</a> cmdList[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cdb04b96824a6587cb9c922ccaebb0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cdb04b96824a6587cb9c922ccaebb0b">&#9670;&nbsp;</a></span>cmdList_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t cmdList_len</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7a185eb5aee3ed2bb12c110137ddfca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a185eb5aee3ed2bb12c110137ddfca">&#9670;&nbsp;</a></span>debugTcpClient</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AsyncClient* debugTcpClient</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38c7e36beb2049b1a2286ed18ee5a585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c7e36beb2049b1a2286ed18ee5a585">&#9670;&nbsp;</a></span>debugTcpStream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LoopbackStream debugTcpStream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af75ba6bb077e48e7dc8c0b4b7d0cd947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75ba6bb077e48e7dc8c0b4b7d0cd947">&#9670;&nbsp;</a></span>strNone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* strNone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

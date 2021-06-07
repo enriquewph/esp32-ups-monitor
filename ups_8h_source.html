@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Fichero Fuente lib/hw_hal/include/ups.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ups.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ups_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef UPS_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define UPS_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="hw__define_8h.html">hw_define.h</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* TODO: Hacer que hal_ups_get_falla() considere cuando parpadea el led... */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ups_8h.html#a5fdf3207d9b3392b54e0e84da57fb1b6">hal_ups_init</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="ups_8h.html#af4e6a68ff802984f7d2705c2a0486398">hal_ups_set_on</a>(<span class="keywordtype">bool</span> set);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ups_8h.html#a4ab06a2d7f3b7dc388f35d80352c1976">hal_ups_get_on</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ups_8h.html#a9ded0a9867aac316400c25de473a0e70">hal_ups_get_normal</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ups_8h.html#a06904c50ba1ab3c0573f91e75027b620">hal_ups_get_carga</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ups_8h.html#ad8dd3af87dcc66131ad44152babd6bb4">hal_ups_get_falla</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ahw__define_8h_html"><div class="ttname"><a href="hw__define_8h.html">hw_define.h</a></div></div>
+<div class="ttc" id="aups_8h_html_a06904c50ba1ab3c0573f91e75027b620"><div class="ttname"><a href="ups_8h.html#a06904c50ba1ab3c0573f91e75027b620">hal_ups_get_carga</a></div><div class="ttdeci">bool hal_ups_get_carga()</div><div class="ttdoc">Retorna si el UPS encendio el led de carga de bateria.</div><div class="ttdef"><b>Definition:</b> ups.cpp:31</div></div>
+<div class="ttc" id="aups_8h_html_a4ab06a2d7f3b7dc388f35d80352c1976"><div class="ttname"><a href="ups_8h.html#a4ab06a2d7f3b7dc388f35d80352c1976">hal_ups_get_on</a></div><div class="ttdeci">bool hal_ups_get_on()</div><div class="ttdoc">Retorna si se activo el encendido del UPS (no quiere decir que este encendido.)</div><div class="ttdef"><b>Definition:</b> ups.cpp:26</div></div>
+<div class="ttc" id="aups_8h_html_a5fdf3207d9b3392b54e0e84da57fb1b6"><div class="ttname"><a href="ups_8h.html#a5fdf3207d9b3392b54e0e84da57fb1b6">hal_ups_init</a></div><div class="ttdeci">void hal_ups_init()</div><div class="ttdoc">Inicializar capa HAl para manejo de UPS.</div><div class="ttdef"><b>Definition:</b> ups.cpp:13</div></div>
+<div class="ttc" id="aups_8h_html_a9ded0a9867aac316400c25de473a0e70"><div class="ttname"><a href="ups_8h.html#a9ded0a9867aac316400c25de473a0e70">hal_ups_get_normal</a></div><div class="ttdeci">bool hal_ups_get_normal()</div><div class="ttdoc">Retorna si el UPS encendio el led de estado NORMAL.</div><div class="ttdef"><b>Definition:</b> ups.cpp:36</div></div>
+<div class="ttc" id="aups_8h_html_ad8dd3af87dcc66131ad44152babd6bb4"><div class="ttname"><a href="ups_8h.html#ad8dd3af87dcc66131ad44152babd6bb4">hal_ups_get_falla</a></div><div class="ttdeci">bool hal_ups_get_falla()</div><div class="ttdoc">Retorna si el UPS encendio el led de FALLA.</div><div class="ttdef"><b>Definition:</b> ups.cpp:41</div></div>
+<div class="ttc" id="aups_8h_html_af4e6a68ff802984f7d2705c2a0486398"><div class="ttname"><a href="ups_8h.html#af4e6a68ff802984f7d2705c2a0486398">hal_ups_set_on</a></div><div class="ttdeci">void hal_ups_set_on(bool set)</div><div class="ttdoc">Encender / apagar el UPS (y todas las salidas)</div><div class="ttdef"><b>Definition:</b> ups.cpp:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

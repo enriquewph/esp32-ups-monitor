@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Fichero Fuente lib/hw_hal/include/relays.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">relays.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="relays_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef RELAYS_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define RELAYS_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="hw__define_8h.html">hw_define.h</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">   19</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9a76fc56c1fcd2865af47619cbf2e1cad7">   21</a></span>&#160;    <a class="code" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9a76fc56c1fcd2865af47619cbf2e1cad7">RELAY_1</a>, </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9ad1cdc8d161b33cdd0554aaef6232356c">RELAY_2</a>  </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9ad1cdc8d161b33cdd0554aaef6232356c">   23</a></span>&#160;} <a class="code" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="relays_8h.html#ad24d99c9f46b0c217b1ee848534b7e3f">hal_relays_init</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="relays_8h.html#a880fa1be685ef95c91f163903f1b1268">hal_relay_set</a>(<a class="code" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a> r, <span class="keywordtype">bool</span> set);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="relays_8h.html#a9a009ac3151d00d5487da8b4f82697b5">hal_relay_get</a>(<a class="code" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a> r);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ahw__define_8h_html"><div class="ttname"><a href="hw__define_8h.html">hw_define.h</a></div></div>
+<div class="ttc" id="arelays_8h_html_a880fa1be685ef95c91f163903f1b1268"><div class="ttname"><a href="relays_8h.html#a880fa1be685ef95c91f163903f1b1268">hal_relay_set</a></div><div class="ttdeci">void hal_relay_set(relay_t r, bool set)</div><div class="ttdoc">Cambiar el estado de un relay.</div><div class="ttdef"><b>Definition:</b> relays.cpp:20</div></div>
+<div class="ttc" id="arelays_8h_html_a9a009ac3151d00d5487da8b4f82697b5"><div class="ttname"><a href="relays_8h.html#a9a009ac3151d00d5487da8b4f82697b5">hal_relay_get</a></div><div class="ttdeci">bool hal_relay_get(relay_t r)</div><div class="ttdoc">Devuelve el estado de un relay.</div><div class="ttdef"><b>Definition:</b> relays.cpp:25</div></div>
+<div class="ttc" id="arelays_8h_html_abe2442d4d2299d725abf2025c7b52fd9"><div class="ttname"><a href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a></div><div class="ttdeci">relay_t</div><div class="ttdoc">Relay a utilizar.</div><div class="ttdef"><b>Definition:</b> relays.h:20</div></div>
+<div class="ttc" id="arelays_8h_html_abe2442d4d2299d725abf2025c7b52fd9a76fc56c1fcd2865af47619cbf2e1cad7"><div class="ttname"><a href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9a76fc56c1fcd2865af47619cbf2e1cad7">RELAY_1</a></div><div class="ttdeci">@ RELAY_1</div><div class="ttdoc">Conectado a PIN_RELAY_1 (GPIO13)</div><div class="ttdef"><b>Definition:</b> relays.h:21</div></div>
+<div class="ttc" id="arelays_8h_html_abe2442d4d2299d725abf2025c7b52fd9ad1cdc8d161b33cdd0554aaef6232356c"><div class="ttname"><a href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9ad1cdc8d161b33cdd0554aaef6232356c">RELAY_2</a></div><div class="ttdeci">@ RELAY_2</div><div class="ttdoc">Conectado a PIN_RELAY_2 (GPIO27)</div><div class="ttdef"><b>Definition:</b> relays.h:22</div></div>
+<div class="ttc" id="arelays_8h_html_ad24d99c9f46b0c217b1ee848534b7e3f"><div class="ttname"><a href="relays_8h.html#ad24d99c9f46b0c217b1ee848534b7e3f">hal_relays_init</a></div><div class="ttdeci">void hal_relays_init()</div><div class="ttdoc">Inicializar capa HAl para manejo de relays.</div><div class="ttdef"><b>Definition:</b> relays.cpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

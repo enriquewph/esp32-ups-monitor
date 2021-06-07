@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Referencia del Archivo lib/hw_hal/include/cooling.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo cooling.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Archivo header para todo lo relacionado al manejo de coolers.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="hw__define_8h_source.html">hw_define.h</a>&gt;</code><br />
+</div>
+<p><a href="cooling_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ad6a52fd98ae1029ddc5f8ba4ddc72e16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#ad6a52fd98ae1029ddc5f8ba4ddc72e16">HAL_COOLING_DEFAULT_FANMODE</a>&#160;&#160;&#160;<a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aaa9063e1d6123693d6e7cfbdfd20cd16b">FANMODE_PWM</a></td></tr>
+<tr class="memdesc:ad6a52fd98ae1029ddc5f8ba4ddc72e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modo de funcionamiento del cooler por defecto al iniciar el programa.  <a href="cooling_8h.html#ad6a52fd98ae1029ddc5f8ba4ddc72e16">Más...</a><br /></td></tr>
+<tr class="separator:ad6a52fd98ae1029ddc5f8ba4ddc72e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e16fa4b3ff62e3b2bcc6660b2bb1b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#a47e16fa4b3ff62e3b2bcc6660b2bb1b5">FAN_PWM_CH</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a47e16fa4b3ff62e3b2bcc6660b2bb1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Canal de ADC a utilizar.  <a href="cooling_8h.html#a47e16fa4b3ff62e3b2bcc6660b2bb1b5">Más...</a><br /></td></tr>
+<tr class="separator:a47e16fa4b3ff62e3b2bcc6660b2bb1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9058ac8ee7934e89ecbb27b7663e9800"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#a9058ac8ee7934e89ecbb27b7663e9800">FAN_PWM_FR</a>&#160;&#160;&#160;30</td></tr>
+<tr class="memdesc:a9058ac8ee7934e89ecbb27b7663e9800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frecuencia del pwm, en Hz.  <a href="cooling_8h.html#a9058ac8ee7934e89ecbb27b7663e9800">Más...</a><br /></td></tr>
+<tr class="separator:a9058ac8ee7934e89ecbb27b7663e9800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f3f0715297061756c9ea147e131ba0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#a66f3f0715297061756c9ea147e131ba0">FAN_PWM_RS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:a66f3f0715297061756c9ea147e131ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolucion del pwm, en bits.  <a href="cooling_8h.html#a66f3f0715297061756c9ea147e131ba0">Más...</a><br /></td></tr>
+<tr class="separator:a66f3f0715297061756c9ea147e131ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:ab613eefc5f16386523ff10448b5c915a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a> { <a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aaa9063e1d6123693d6e7cfbdfd20cd16b">FANMODE_PWM</a>
+, <a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aa46d0c5152e9faa7f935cca33dc86fac1">FANMODE_ONOFF</a>
+ }</td></tr>
+<tr class="memdesc:ab613eefc5f16386523ff10448b5c915a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modo de funcionamiento del cooler.  <a href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">Más...</a><br /></td></tr>
+<tr class="separator:ab613eefc5f16386523ff10448b5c915a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a34290ed51ba9dece22d0e87d26da191a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#a34290ed51ba9dece22d0e87d26da191a">hal_cooling_init</a> ()</td></tr>
+<tr class="memdesc:a34290ed51ba9dece22d0e87d26da191a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializar pwm para el cooler.  <a href="cooling_8h.html#a34290ed51ba9dece22d0e87d26da191a">Más...</a><br /></td></tr>
+<tr class="separator:a34290ed51ba9dece22d0e87d26da191a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfd366564faf96825755488a35415a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#aecfd366564faf96825755488a35415a6">hal_cooling_set_fan_pwm</a> (uint8_t pwm)</td></tr>
+<tr class="memdesc:aecfd366564faf96825755488a35415a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambiar el duty cycle del cooler.  <a href="cooling_8h.html#aecfd366564faf96825755488a35415a6">Más...</a><br /></td></tr>
+<tr class="separator:aecfd366564faf96825755488a35415a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5202efb8c44422ac02ffedf21015fd2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#aa5202efb8c44422ac02ffedf21015fd2">hal_cooling_get_fan_pwm</a> ()</td></tr>
+<tr class="memdesc:aa5202efb8c44422ac02ffedf21015fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el duty cycle del cooler.  <a href="cooling_8h.html#aa5202efb8c44422ac02ffedf21015fd2">Más...</a><br /></td></tr>
+<tr class="separator:aa5202efb8c44422ac02ffedf21015fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1ed3fcee255573d1f05795ae04604e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#aea1ed3fcee255573d1f05795ae04604e">hal_cooling_fan_get_state</a> ()</td></tr>
+<tr class="memdesc:aea1ed3fcee255573d1f05795ae04604e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el estado del cooler.  <a href="cooling_8h.html#aea1ed3fcee255573d1f05795ae04604e">Más...</a><br /></td></tr>
+<tr class="separator:aea1ed3fcee255573d1f05795ae04604e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b79bc24eaf59d51789bb4de0fdc675"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#ac5b79bc24eaf59d51789bb4de0fdc675">hal_cooling_fan_get_state_str</a> ()</td></tr>
+<tr class="memdesc:ac5b79bc24eaf59d51789bb4de0fdc675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna un string que contiene ON/OFF o 0%-100% segun el modo de funcionamiento.  <a href="cooling_8h.html#ac5b79bc24eaf59d51789bb4de0fdc675">Más...</a><br /></td></tr>
+<tr class="separator:ac5b79bc24eaf59d51789bb4de0fdc675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae500a1d9afb703cc52a2d4cda568d4c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#ae500a1d9afb703cc52a2d4cda568d4c6">hal_cooling_set_fan_mode</a> (<a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a> mode)</td></tr>
+<tr class="memdesc:ae500a1d9afb703cc52a2d4cda568d4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambiar el modo de funcionamiento del cooler.  <a href="cooling_8h.html#ae500a1d9afb703cc52a2d4cda568d4c6">Más...</a><br /></td></tr>
+<tr class="separator:ae500a1d9afb703cc52a2d4cda568d4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6e96d33d59c318c7a36c170df5b2ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#a0c6e96d33d59c318c7a36c170df5b2ed">hal_cooling_get_fan_mode</a> ()</td></tr>
+<tr class="memdesc:a0c6e96d33d59c318c7a36c170df5b2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna el modo de funcionamiento del cooler.  <a href="cooling_8h.html#a0c6e96d33d59c318c7a36c170df5b2ed">Más...</a><br /></td></tr>
+<tr class="separator:a0c6e96d33d59c318c7a36c170df5b2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1632e0502fa3fd4991a0fe4c8eee02cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#a1632e0502fa3fd4991a0fe4c8eee02cf">_cooling_fan_mode</a></td></tr>
+<tr class="memdesc:a1632e0502fa3fd4991a0fe4c8eee02cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena el modo del cooler.  <a href="cooling_8h.html#a1632e0502fa3fd4991a0fe4c8eee02cf">Más...</a><br /></td></tr>
+<tr class="separator:a1632e0502fa3fd4991a0fe4c8eee02cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f96eb962b6395bcb04c54d9a7f8dc7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cooling_8h.html#ad7f96eb962b6395bcb04c54d9a7f8dc7">_cooling_fan_pwm</a></td></tr>
+<tr class="memdesc:ad7f96eb962b6395bcb04c54d9a7f8dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Almacena el duty cycle de funcionamiento del cooler.  <a href="cooling_8h.html#ad7f96eb962b6395bcb04c54d9a7f8dc7">Más...</a><br /></td></tr>
+<tr class="separator:ad7f96eb962b6395bcb04c54d9a7f8dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Archivo header para todo lo relacionado al manejo de coolers. </p>
+<dl class="section author"><dt>Autor</dt><dd>Enrique Walter Philippeaux (<a href="#" onclick="location.href='mai'+'lto:'+'enr'+'iq'+'uew'+'ph'+'@gm'+'ai'+'l.c'+'om'; return false;">enriq<span style="display: none;">.nosp@m.</span>uewp<span style="display: none;">.nosp@m.</span>h@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2021-05-31 </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a47e16fa4b3ff62e3b2bcc6660b2bb1b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e16fa4b3ff62e3b2bcc6660b2bb1b5">&#9670;&nbsp;</a></span>FAN_PWM_CH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAN_PWM_CH&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Canal de ADC a utilizar. </p>
+
+</div>
+</div>
+<a id="a9058ac8ee7934e89ecbb27b7663e9800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9058ac8ee7934e89ecbb27b7663e9800">&#9670;&nbsp;</a></span>FAN_PWM_FR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAN_PWM_FR&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frecuencia del pwm, en Hz. </p>
+
+</div>
+</div>
+<a id="a66f3f0715297061756c9ea147e131ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f3f0715297061756c9ea147e131ba0">&#9670;&nbsp;</a></span>FAN_PWM_RS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAN_PWM_RS&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolucion del pwm, en bits. </p>
+
+</div>
+</div>
+<a id="ad6a52fd98ae1029ddc5f8ba4ddc72e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a52fd98ae1029ddc5f8ba4ddc72e16">&#9670;&nbsp;</a></span>HAL_COOLING_DEFAULT_FANMODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HAL_COOLING_DEFAULT_FANMODE&#160;&#160;&#160;<a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aaa9063e1d6123693d6e7cfbdfd20cd16b">FANMODE_PWM</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modo de funcionamiento del cooler por defecto al iniciar el programa. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="ab613eefc5f16386523ff10448b5c915a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab613eefc5f16386523ff10448b5c915a">&#9670;&nbsp;</a></span>fan_mode_e</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modo de funcionamiento del cooler. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="ab613eefc5f16386523ff10448b5c915aaa9063e1d6123693d6e7cfbdfd20cd16b"></a>FANMODE_PWM&#160;</td><td class="fielddoc"><p>Funciona con PWM. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab613eefc5f16386523ff10448b5c915aa46d0c5152e9faa7f935cca33dc86fac1"></a>FANMODE_ONOFF&#160;</td><td class="fielddoc"><p>Solo lo encendemos y apagamos. Se enciende si el duty_cycle &gt; 0. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="aea1ed3fcee255573d1f05795ae04604e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1ed3fcee255573d1f05795ae04604e">&#9670;&nbsp;</a></span>hal_cooling_fan_get_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hal_cooling_fan_get_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna el estado del cooler. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true -&gt; Esta encendido. </dd>
+<dd>
+false -&gt; Esta apagado. </dd></dl>
+
+</div>
+</div>
+<a id="ac5b79bc24eaf59d51789bb4de0fdc675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b79bc24eaf59d51789bb4de0fdc675">&#9670;&nbsp;</a></span>hal_cooling_fan_get_state_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* hal_cooling_fan_get_state_str </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna un string que contiene ON/OFF o 0%-100% segun el modo de funcionamiento. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>const char * Puntero a cadena de texto que devuelve la funcion. </dd></dl>
+
+</div>
+</div>
+<a id="a0c6e96d33d59c318c7a36c170df5b2ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c6e96d33d59c318c7a36c170df5b2ed">&#9670;&nbsp;</a></span>hal_cooling_get_fan_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a> hal_cooling_get_fan_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna el modo de funcionamiento del cooler. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>fan_mode_e puede ser: FANMODE_PWM o FANMODE_ONOFF </dd></dl>
+
+</div>
+</div>
+<a id="aa5202efb8c44422ac02ffedf21015fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5202efb8c44422ac02ffedf21015fd2">&#9670;&nbsp;</a></span>hal_cooling_get_fan_pwm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t hal_cooling_get_fan_pwm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna el duty cycle del cooler. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>uint8_t duty cycle (0 - 255). </dd></dl>
+
+</div>
+</div>
+<a id="a34290ed51ba9dece22d0e87d26da191a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34290ed51ba9dece22d0e87d26da191a">&#9670;&nbsp;</a></span>hal_cooling_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_cooling_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializar pwm para el cooler. </p>
+
+</div>
+</div>
+<a id="ae500a1d9afb703cc52a2d4cda568d4c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae500a1d9afb703cc52a2d4cda568d4c6">&#9670;&nbsp;</a></span>hal_cooling_set_fan_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_cooling_set_fan_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cambiar el modo de funcionamiento del cooler. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>puede ser: FANMODE_PWM o FANMODE_ONOFF </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aecfd366564faf96825755488a35415a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfd366564faf96825755488a35415a6">&#9670;&nbsp;</a></span>hal_cooling_set_fan_pwm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_cooling_set_fan_pwm </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>pwm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cambiar el duty cycle del cooler. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pwm</td><td>Duty cycle (0 - 255). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a1632e0502fa3fd4991a0fe4c8eee02cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1632e0502fa3fd4991a0fe4c8eee02cf">&#9670;&nbsp;</a></span>_cooling_fan_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a> _cooling_fan_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena el modo del cooler. </p>
+
+</div>
+</div>
+<a id="ad7f96eb962b6395bcb04c54d9a7f8dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f96eb962b6395bcb04c54d9a7f8dc7">&#9670;&nbsp;</a></span>_cooling_fan_pwm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t _cooling_fan_pwm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Almacena el duty cycle de funcionamiento del cooler. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

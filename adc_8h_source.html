@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Fichero Fuente lib/hw_hal/include/adc.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">adc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="adc_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef HALADC_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define HALADC_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;driver/adc.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="hw__define_8h.html">hw_define.h</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="adc_8h.html#ab3765ae1b75ece06dfb9d8893cd81a5e">   21</a></span>&#160;<span class="preprocessor">#define HAL_ADC_VCC_MV 3300.0f</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="adc_8h.html#a9f59b0528dd0b8b527d0aeb97b693729">   27</a></span>&#160;<span class="preprocessor">#define HAL_ADC_RES 4096</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="adc_8h.html#a079fd533b23e14b328595a12e140e702">   33</a></span>&#160;<span class="preprocessor">#define HAL_ADC_CORRECCION_PORCENTUAL 1.0f</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="adc_8h.html#af13ddaec9e227b793239a09e6d7b2e25">   39</a></span>&#160;<span class="preprocessor">#define HAL_ADC_OFFSET 151.18f</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="adc_8h.html#a646561f8ef51dfb0a96f703892801ef8">   45</a></span>&#160;<span class="preprocessor">#define HAL_ADC_PROM_READING 256</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="adc_8h.html#ab64ab7089523495b64c5f8f2a0410390">   51</a></span>&#160;<span class="preprocessor">#define HAL_ADC_VCC_MV_0dB 1100.0f</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="adc_8h.html#acb63020a76467932111edee53f15a749">   57</a></span>&#160;<span class="preprocessor">#define HAL_ADC_OFFSET_0dB 82.66f</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="adc_8h.html#a0fe41853217ebef3911f14c73aca2004">   63</a></span>&#160;<span class="preprocessor">#define HAL_ADC_CORRECCION_PORCENTUAL_0dB 1.0f</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="adc_8h.html#a555afe23d9ec17f8da5e1aaf5d29a2f0">hal_adc_init</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;uint16_t <a class="code" href="adc_8h.html#a1707c0b5644b779d8487f4cee2e65aec">hal_adc_get</a>(adc1_channel_t ch);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="adc_8h.html#a950fa50538c3b64b9395c308d5d1d5b7">   83</a></span>&#160;<span class="preprocessor">#define ADC_GET_MV(reading) (float) (HAL_ADC_CORRECCION_PORCENTUAL * ((float) reading + HAL_ADC_OFFSET) * HAL_ADC_VCC_MV) / (HAL_ADC_RES)</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="adc_8h.html#a645373d9aa49a7751981e7db0db212f1">   89</a></span>&#160;<span class="preprocessor">#define ADC_GET_MV_REV(mV) (uint16_t) ((mV) * ((HAL_ADC_RES) / (HAL_ADC_CORRECCION_PORCENTUAL * VCC_MV)) - HAL_ADC_OFFSET)</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="adc_8h.html#a679438251f8e1c9e07fc844780e1546a">   95</a></span>&#160;<span class="preprocessor">#define ADC_GET_MV_0dB(reading) (float) (HAL_ADC_CORRECCION_PORCENTUAL_0dB * ((float) reading + HAL_ADC_OFFSET_0dB) * HAL_ADC_VCC_MV_0dB) / (HAL_ADC_RES)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="adc_8h.html#a601fcae78ec47f71e654e854247befd8">  101</a></span>&#160;<span class="preprocessor">#define ADC_GET_MV_REV_0dB(mV) (uint16_t) ((mV) * ((HAL_ADC_RES) / (HAL_ADC_CORRECCION_PORCENTUAL_0dB * HAL_ADC_VCC_MV_0dB)) - HAL_ADC_OFFSET_0dB)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aadc_8h_html_a1707c0b5644b779d8487f4cee2e65aec"><div class="ttname"><a href="adc_8h.html#a1707c0b5644b779d8487f4cee2e65aec">hal_adc_get</a></div><div class="ttdeci">uint16_t hal_adc_get(adc1_channel_t ch)</div><div class="ttdoc">Ejecuta HAL_ADC_PROM_READING lecturas y devuelve el promedio.</div><div class="ttdef"><b>Definition:</b> adc.cpp:17</div></div>
+<div class="ttc" id="aadc_8h_html_a555afe23d9ec17f8da5e1aaf5d29a2f0"><div class="ttname"><a href="adc_8h.html#a555afe23d9ec17f8da5e1aaf5d29a2f0">hal_adc_init</a></div><div class="ttdeci">void hal_adc_init()</div><div class="ttdoc">Inicializar adc del dispositivo.</div><div class="ttdef"><b>Definition:</b> adc.cpp:12</div></div>
+<div class="ttc" id="ahw__define_8h_html"><div class="ttname"><a href="hw__define_8h.html">hw_define.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Referencia del Archivo lib/hw_hal/include/relays.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo relays.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Archivo header para cosas vinculadas al manejo de relays.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="hw__define_8h_source.html">hw_define.h</a>&gt;</code><br />
+</div>
+<p><a href="relays_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:abe2442d4d2299d725abf2025c7b52fd9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a> { <a class="el" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9a76fc56c1fcd2865af47619cbf2e1cad7">RELAY_1</a>
+, <a class="el" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9ad1cdc8d161b33cdd0554aaef6232356c">RELAY_2</a>
+ }</td></tr>
+<tr class="memdesc:abe2442d4d2299d725abf2025c7b52fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relay a utilizar.  <a href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">Más...</a><br /></td></tr>
+<tr class="separator:abe2442d4d2299d725abf2025c7b52fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ad24d99c9f46b0c217b1ee848534b7e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relays_8h.html#ad24d99c9f46b0c217b1ee848534b7e3f">hal_relays_init</a> ()</td></tr>
+<tr class="memdesc:ad24d99c9f46b0c217b1ee848534b7e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializar capa HAl para manejo de relays.  <a href="relays_8h.html#ad24d99c9f46b0c217b1ee848534b7e3f">Más...</a><br /></td></tr>
+<tr class="separator:ad24d99c9f46b0c217b1ee848534b7e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880fa1be685ef95c91f163903f1b1268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relays_8h.html#a880fa1be685ef95c91f163903f1b1268">hal_relay_set</a> (<a class="el" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a> r, bool set)</td></tr>
+<tr class="memdesc:a880fa1be685ef95c91f163903f1b1268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cambiar el estado de un relay.  <a href="relays_8h.html#a880fa1be685ef95c91f163903f1b1268">Más...</a><br /></td></tr>
+<tr class="separator:a880fa1be685ef95c91f163903f1b1268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a009ac3151d00d5487da8b4f82697b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="relays_8h.html#a9a009ac3151d00d5487da8b4f82697b5">hal_relay_get</a> (<a class="el" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a> r)</td></tr>
+<tr class="memdesc:a9a009ac3151d00d5487da8b4f82697b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el estado de un relay.  <a href="relays_8h.html#a9a009ac3151d00d5487da8b4f82697b5">Más...</a><br /></td></tr>
+<tr class="separator:a9a009ac3151d00d5487da8b4f82697b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Archivo header para cosas vinculadas al manejo de relays. </p>
+<dl class="section author"><dt>Autor</dt><dd>Enrique Walter Philippeaux (<a href="#" onclick="location.href='mai'+'lto:'+'enr'+'iq'+'uew'+'ph'+'@gm'+'ai'+'l.c'+'om'; return false;">enriq<span style="display: none;">.nosp@m.</span>uewp<span style="display: none;">.nosp@m.</span>h@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2021-05-31 </dd></dl>
+</div><h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="abe2442d4d2299d725abf2025c7b52fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2442d4d2299d725abf2025c7b52fd9">&#9670;&nbsp;</a></span>relay_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Relay a utilizar. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="abe2442d4d2299d725abf2025c7b52fd9a76fc56c1fcd2865af47619cbf2e1cad7"></a>RELAY_1&#160;</td><td class="fielddoc"><p>Conectado a PIN_RELAY_1 (GPIO13) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abe2442d4d2299d725abf2025c7b52fd9ad1cdc8d161b33cdd0554aaef6232356c"></a>RELAY_2&#160;</td><td class="fielddoc"><p>Conectado a PIN_RELAY_2 (GPIO27) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a9a009ac3151d00d5487da8b4f82697b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a009ac3151d00d5487da8b4f82697b5">&#9670;&nbsp;</a></span>hal_relay_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hal_relay_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a>&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devuelve el estado de un relay. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Relay a consultar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true Encendido </dd>
+<dd>
+false Apagado </dd></dl>
+
+</div>
+</div>
+<a id="a880fa1be685ef95c91f163903f1b1268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880fa1be685ef95c91f163903f1b1268">&#9670;&nbsp;</a></span>hal_relay_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_relay_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="relays_8h.html#abe2442d4d2299d725abf2025c7b52fd9">relay_t</a>&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cambiar el estado de un relay. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Relay a utilizar </td></tr>
+    <tr><td class="paramname">set</td><td>Estado ( HIGH[1] / LOW[0] ) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad24d99c9f46b0c217b1ee848534b7e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24d99c9f46b0c217b1ee848534b7e3f">&#9670;&nbsp;</a></span>hal_relays_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_relays_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializar capa HAl para manejo de relays. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

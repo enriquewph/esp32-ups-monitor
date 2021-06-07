@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Fichero Fuente lib/hw_hal/include/cooling.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_0283e7a2e73d2dc3a70b4028dc923a4c.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cooling.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cooling_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef COOLING_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define COOLING_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="hw__define_8h.html">hw_define.h</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">   21</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aaa9063e1d6123693d6e7cfbdfd20cd16b">   23</a></span>&#160;    <a class="code" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aaa9063e1d6123693d6e7cfbdfd20cd16b">FANMODE_PWM</a>,    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aa46d0c5152e9faa7f935cca33dc86fac1">FANMODE_ONOFF</a>   </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aa46d0c5152e9faa7f935cca33dc86fac1">   25</a></span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="cooling_8h.html#ad6a52fd98ae1029ddc5f8ba4ddc72e16">   31</a></span>&#160;<span class="preprocessor">#define HAL_COOLING_DEFAULT_FANMODE FANMODE_PWM</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//PWM Setup</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="cooling_8h.html#a47e16fa4b3ff62e3b2bcc6660b2bb1b5">   40</a></span>&#160;<span class="preprocessor">#define FAN_PWM_CH 0</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="cooling_8h.html#a9058ac8ee7934e89ecbb27b7663e9800">   46</a></span>&#160;<span class="preprocessor">#define FAN_PWM_FR 30</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="cooling_8h.html#a66f3f0715297061756c9ea147e131ba0">   52</a></span>&#160;<span class="preprocessor">#define FAN_PWM_RS 8</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>            <a class="code" href="cooling_8h.html#a34290ed51ba9dece22d0e87d26da191a">hal_cooling_init</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span>            <a class="code" href="cooling_8h.html#aecfd366564faf96825755488a35415a6">hal_cooling_set_fan_pwm</a>(uint8_t pwm);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;uint8_t         <a class="code" href="cooling_8h.html#aa5202efb8c44422ac02ffedf21015fd2">hal_cooling_get_fan_pwm</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">bool</span>            <a class="code" href="cooling_8h.html#aea1ed3fcee255573d1f05795ae04604e">hal_cooling_fan_get_state</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span> *    <a class="code" href="cooling_8h.html#ac5b79bc24eaf59d51789bb4de0fdc675">hal_cooling_fan_get_state_str</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span>            <a class="code" href="cooling_8h.html#ae500a1d9afb703cc52a2d4cda568d4c6">hal_cooling_set_fan_mode</a>(<a class="code" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a> mode);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a>      <a class="code" href="cooling_8h.html#a0c6e96d33d59c318c7a36c170df5b2ed">hal_cooling_get_fan_mode</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">extern</span> <a class="code" href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a> <a class="code" href="cooling_8h.html#a1632e0502fa3fd4991a0fe4c8eee02cf">_cooling_fan_mode</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="cooling_8h.html#ad7f96eb962b6395bcb04c54d9a7f8dc7">_cooling_fan_pwm</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acooling_8h_html_a0c6e96d33d59c318c7a36c170df5b2ed"><div class="ttname"><a href="cooling_8h.html#a0c6e96d33d59c318c7a36c170df5b2ed">hal_cooling_get_fan_mode</a></div><div class="ttdeci">fan_mode_e hal_cooling_get_fan_mode()</div><div class="ttdoc">Retorna el modo de funcionamiento del cooler.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:66</div></div>
+<div class="ttc" id="acooling_8h_html_a1632e0502fa3fd4991a0fe4c8eee02cf"><div class="ttname"><a href="cooling_8h.html#a1632e0502fa3fd4991a0fe4c8eee02cf">_cooling_fan_mode</a></div><div class="ttdeci">fan_mode_e _cooling_fan_mode</div><div class="ttdoc">Almacena el modo del cooler.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:12</div></div>
+<div class="ttc" id="acooling_8h_html_a34290ed51ba9dece22d0e87d26da191a"><div class="ttname"><a href="cooling_8h.html#a34290ed51ba9dece22d0e87d26da191a">hal_cooling_init</a></div><div class="ttdeci">void hal_cooling_init()</div><div class="ttdoc">Inicializar pwm para el cooler.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:15</div></div>
+<div class="ttc" id="acooling_8h_html_aa5202efb8c44422ac02ffedf21015fd2"><div class="ttname"><a href="cooling_8h.html#aa5202efb8c44422ac02ffedf21015fd2">hal_cooling_get_fan_pwm</a></div><div class="ttdeci">uint8_t hal_cooling_get_fan_pwm()</div><div class="ttdoc">Retorna el duty cycle del cooler.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:36</div></div>
+<div class="ttc" id="acooling_8h_html_ab613eefc5f16386523ff10448b5c915a"><div class="ttname"><a href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915a">fan_mode_e</a></div><div class="ttdeci">fan_mode_e</div><div class="ttdoc">Modo de funcionamiento del cooler.</div><div class="ttdef"><b>Definition:</b> cooling.h:22</div></div>
+<div class="ttc" id="acooling_8h_html_ab613eefc5f16386523ff10448b5c915aa46d0c5152e9faa7f935cca33dc86fac1"><div class="ttname"><a href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aa46d0c5152e9faa7f935cca33dc86fac1">FANMODE_ONOFF</a></div><div class="ttdeci">@ FANMODE_ONOFF</div><div class="ttdoc">Solo lo encendemos y apagamos. Se enciende si el duty_cycle &gt; 0.</div><div class="ttdef"><b>Definition:</b> cooling.h:24</div></div>
+<div class="ttc" id="acooling_8h_html_ab613eefc5f16386523ff10448b5c915aaa9063e1d6123693d6e7cfbdfd20cd16b"><div class="ttname"><a href="cooling_8h.html#ab613eefc5f16386523ff10448b5c915aaa9063e1d6123693d6e7cfbdfd20cd16b">FANMODE_PWM</a></div><div class="ttdeci">@ FANMODE_PWM</div><div class="ttdoc">Funciona con PWM.</div><div class="ttdef"><b>Definition:</b> cooling.h:23</div></div>
+<div class="ttc" id="acooling_8h_html_ac5b79bc24eaf59d51789bb4de0fdc675"><div class="ttname"><a href="cooling_8h.html#ac5b79bc24eaf59d51789bb4de0fdc675">hal_cooling_fan_get_state_str</a></div><div class="ttdeci">const char * hal_cooling_fan_get_state_str()</div><div class="ttdoc">Retorna un string que contiene ON/OFF o 0%-100% segun el modo de funcionamiento.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:51</div></div>
+<div class="ttc" id="acooling_8h_html_ad7f96eb962b6395bcb04c54d9a7f8dc7"><div class="ttname"><a href="cooling_8h.html#ad7f96eb962b6395bcb04c54d9a7f8dc7">_cooling_fan_pwm</a></div><div class="ttdeci">uint8_t _cooling_fan_pwm</div><div class="ttdoc">Almacena el duty cycle de funcionamiento del cooler.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:13</div></div>
+<div class="ttc" id="acooling_8h_html_ae500a1d9afb703cc52a2d4cda568d4c6"><div class="ttname"><a href="cooling_8h.html#ae500a1d9afb703cc52a2d4cda568d4c6">hal_cooling_set_fan_mode</a></div><div class="ttdeci">void hal_cooling_set_fan_mode(fan_mode_e mode)</div><div class="ttdoc">Cambiar el modo de funcionamiento del cooler.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:61</div></div>
+<div class="ttc" id="acooling_8h_html_aea1ed3fcee255573d1f05795ae04604e"><div class="ttname"><a href="cooling_8h.html#aea1ed3fcee255573d1f05795ae04604e">hal_cooling_fan_get_state</a></div><div class="ttdeci">bool hal_cooling_fan_get_state()</div><div class="ttdoc">Retorna el estado del cooler.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:46</div></div>
+<div class="ttc" id="acooling_8h_html_aecfd366564faf96825755488a35415a6"><div class="ttname"><a href="cooling_8h.html#aecfd366564faf96825755488a35415a6">hal_cooling_set_fan_pwm</a></div><div class="ttdeci">void hal_cooling_set_fan_pwm(uint8_t pwm)</div><div class="ttdoc">Cambiar el duty cycle del cooler.</div><div class="ttdef"><b>Definition:</b> cooling.cpp:23</div></div>
+<div class="ttc" id="ahw__define_8h_html"><div class="ttname"><a href="hw__define_8h.html">hw_define.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

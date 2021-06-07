@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['param_122',['param',['../structov__s.html#a2dcd9daa64d711061bc825033e92bcc3',1,'ov_s']]],
+  ['pin_5ffan_123',['PIN_FAN',['../hw__define_8h.html#a4f91ce5895190ce91dd6c8a25a603fcb',1,'hw_define.h']]],
+  ['pin_5ffan_5fgpionum_124',['PIN_FAN_GPIONUM',['../hw__define_8h.html#a09b59c06a08be60d06da07af0ec75a60',1,'hw_define.h']]],
+  ['pin_5fibat_125',['PIN_IBAT',['../hw__define_8h.html#a58933a4b8d934c813395352ff6502563',1,'hw_define.h']]],
+  ['pin_5fibat_5fadc_5fch_126',['PIN_IBAT_ADC_CH',['../hw__define_8h.html#a784ab0e01c2d3397c70feb84f70ffdb2',1,'hw_define.h']]],
+  ['pin_5fibat_5fgpionum_127',['PIN_IBAT_GPIONUM',['../hw__define_8h.html#a8ac54196801e24e7da3c71d1edd36c19',1,'hw_define.h']]],
+  ['pin_5frelay_5f1_128',['PIN_RELAY_1',['../hw__define_8h.html#a466d13efc3c0834689cabcb673eb89b6',1,'hw_define.h']]],
+  ['pin_5frelay_5f1_5fgpionum_129',['PIN_RELAY_1_GPIONUM',['../hw__define_8h.html#af0c5bf66325c6a67f900604b9137f360',1,'hw_define.h']]],
+  ['pin_5frelay_5f2_130',['PIN_RELAY_2',['../hw__define_8h.html#afab85bfe308c4329a0002d085f18bfcb',1,'hw_define.h']]],
+  ['pin_5frelay_5f2_5fgpionum_131',['PIN_RELAY_2_GPIONUM',['../hw__define_8h.html#a9f574166ae382a663873603128c2007f',1,'hw_define.h']]],
+  ['pin_5ftbat_132',['PIN_TBAT',['../hw__define_8h.html#afcec643913dcbd6945a4c782157cbadd',1,'hw_define.h']]],
+  ['pin_5ftbat_5fadc_5fch_133',['PIN_TBAT_ADC_CH',['../hw__define_8h.html#a8d81deb87d952b29471b0f021a916cc8',1,'hw_define.h']]],
+  ['pin_5ftbat_5fgpionum_134',['PIN_TBAT_GPIONUM',['../hw__define_8h.html#a1eefa241f4ee59959e660304fc3cc82a',1,'hw_define.h']]],
+  ['pin_5fups_5fcarga_135',['PIN_UPS_CARGA',['../hw__define_8h.html#a6ab3fe48d2029863efc83d3f220321b3',1,'hw_define.h']]],
+  ['pin_5fups_5fcarga_5fgpionum_136',['PIN_UPS_CARGA_GPIONUM',['../hw__define_8h.html#a23ab2b4d1dcae9a5329deef2a3e016ea',1,'hw_define.h']]],
+  ['pin_5fups_5finverter_137',['PIN_UPS_INVERTER',['../hw__define_8h.html#a616c4123030ced241dda9204aa0da7db',1,'hw_define.h']]],
+  ['pin_5fups_5finverter_5fgpionum_138',['PIN_UPS_INVERTER_GPIONUM',['../hw__define_8h.html#ad3f1f953fdcca5229e51541314140f10',1,'hw_define.h']]],
+  ['pin_5fups_5fnormal_139',['PIN_UPS_NORMAL',['../hw__define_8h.html#a1c3435ee5d9ddce81465715b3f53af2e',1,'hw_define.h']]],
+  ['pin_5fups_5fnormal_5fgpionum_140',['PIN_UPS_NORMAL_GPIONUM',['../hw__define_8h.html#a51f5709ad8cd5f8960d8e9be4604d6f6',1,'hw_define.h']]],
+  ['pin_5fups_5foff_141',['PIN_UPS_OFF',['../hw__define_8h.html#a281c060417a971ee78d892bd2d5e3811',1,'hw_define.h']]],
+  ['pin_5fups_5foff_5fgpionum_142',['PIN_UPS_OFF_GPIONUM',['../hw__define_8h.html#a1957924ae21bdcfb185f34ea21c394fa',1,'hw_define.h']]],
+  ['pin_5fvbat_143',['PIN_VBAT',['../hw__define_8h.html#ad9c869803f9fc9e3ffc9e962c19f028d',1,'hw_define.h']]],
+  ['pin_5fvbat_5fadc_5fch_144',['PIN_VBAT_ADC_CH',['../hw__define_8h.html#a0c4c0919724e258c59b7d929430389b8',1,'hw_define.h']]],
+  ['pin_5fvbat_5fgpionum_145',['PIN_VBAT_GPIONUM',['../hw__define_8h.html#ac80f9ecd2399e7a7bc688d90d34dde8a',1,'hw_define.h']]]
+];

@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ESP32 UPS Monitor: Referencia del Archivo lib/hw_hal/src/ups.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ESP32 UPS Monitor
+   &#160;<span id="projectnumber">v0.0.0</span>
+   </div>
+   <div id="projectbrief">Monitor de UPS, con funcionalidad wifi, para el seguimiento de vida util de la bateria.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_dea838ee0dd7f615be175443d295b0a3.html">hw_hal</a></li><li class="navelem"><a class="el" href="dir_9a983c0815bc7edc0eda3719f46316b1.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo ups.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Manejo de interfaz con el UPS.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="ups_8h_source.html">ups.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a5fdf3207d9b3392b54e0e84da57fb1b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ups_8cpp.html#a5fdf3207d9b3392b54e0e84da57fb1b6">hal_ups_init</a> ()</td></tr>
+<tr class="memdesc:a5fdf3207d9b3392b54e0e84da57fb1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializar capa HAl para manejo de UPS.  <a href="ups_8cpp.html#a5fdf3207d9b3392b54e0e84da57fb1b6">Más...</a><br /></td></tr>
+<tr class="separator:a5fdf3207d9b3392b54e0e84da57fb1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e6a68ff802984f7d2705c2a0486398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ups_8cpp.html#af4e6a68ff802984f7d2705c2a0486398">hal_ups_set_on</a> (bool set)</td></tr>
+<tr class="memdesc:af4e6a68ff802984f7d2705c2a0486398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encender / apagar el UPS (y todas las salidas)  <a href="ups_8cpp.html#af4e6a68ff802984f7d2705c2a0486398">Más...</a><br /></td></tr>
+<tr class="separator:af4e6a68ff802984f7d2705c2a0486398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab06a2d7f3b7dc388f35d80352c1976"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ups_8cpp.html#a4ab06a2d7f3b7dc388f35d80352c1976">hal_ups_get_on</a> ()</td></tr>
+<tr class="memdesc:a4ab06a2d7f3b7dc388f35d80352c1976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si se activo el encendido del UPS (no quiere decir que este encendido.)  <a href="ups_8cpp.html#a4ab06a2d7f3b7dc388f35d80352c1976">Más...</a><br /></td></tr>
+<tr class="separator:a4ab06a2d7f3b7dc388f35d80352c1976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06904c50ba1ab3c0573f91e75027b620"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ups_8cpp.html#a06904c50ba1ab3c0573f91e75027b620">hal_ups_get_carga</a> ()</td></tr>
+<tr class="memdesc:a06904c50ba1ab3c0573f91e75027b620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si el UPS encendio el led de carga de bateria.  <a href="ups_8cpp.html#a06904c50ba1ab3c0573f91e75027b620">Más...</a><br /></td></tr>
+<tr class="separator:a06904c50ba1ab3c0573f91e75027b620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ded0a9867aac316400c25de473a0e70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ups_8cpp.html#a9ded0a9867aac316400c25de473a0e70">hal_ups_get_normal</a> ()</td></tr>
+<tr class="memdesc:a9ded0a9867aac316400c25de473a0e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si el UPS encendio el led de estado NORMAL.  <a href="ups_8cpp.html#a9ded0a9867aac316400c25de473a0e70">Más...</a><br /></td></tr>
+<tr class="separator:a9ded0a9867aac316400c25de473a0e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dd3af87dcc66131ad44152babd6bb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ups_8cpp.html#ad8dd3af87dcc66131ad44152babd6bb4">hal_ups_get_falla</a> ()</td></tr>
+<tr class="memdesc:ad8dd3af87dcc66131ad44152babd6bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si el UPS encendio el led de FALLA.  <a href="ups_8cpp.html#ad8dd3af87dcc66131ad44152babd6bb4">Más...</a><br /></td></tr>
+<tr class="separator:ad8dd3af87dcc66131ad44152babd6bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Manejo de interfaz con el UPS. </p>
+<dl class="section author"><dt>Autor</dt><dd>Enrique Walter Philippeaux (<a href="#" onclick="location.href='mai'+'lto:'+'enr'+'iq'+'uew'+'ph'+'@gm'+'ai'+'l.c'+'om'; return false;">enriq<span style="display: none;">.nosp@m.</span>uewp<span style="display: none;">.nosp@m.</span>h@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>2021-06-01 </dd></dl>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a06904c50ba1ab3c0573f91e75027b620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06904c50ba1ab3c0573f91e75027b620">&#9670;&nbsp;</a></span>hal_ups_get_carga()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hal_ups_get_carga </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna si el UPS encendio el led de carga de bateria. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true Encendido </dd>
+<dd>
+false Apagado </dd></dl>
+
+</div>
+</div>
+<a id="ad8dd3af87dcc66131ad44152babd6bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8dd3af87dcc66131ad44152babd6bb4">&#9670;&nbsp;</a></span>hal_ups_get_falla()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hal_ups_get_falla </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna si el UPS encendio el led de FALLA. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true Encendido </dd>
+<dd>
+false Apagado </dd></dl>
+
+</div>
+</div>
+<a id="a9ded0a9867aac316400c25de473a0e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ded0a9867aac316400c25de473a0e70">&#9670;&nbsp;</a></span>hal_ups_get_normal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hal_ups_get_normal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna si el UPS encendio el led de estado NORMAL. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true Encendido </dd>
+<dd>
+false Apagado </dd></dl>
+
+</div>
+</div>
+<a id="a4ab06a2d7f3b7dc388f35d80352c1976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab06a2d7f3b7dc388f35d80352c1976">&#9670;&nbsp;</a></span>hal_ups_get_on()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hal_ups_get_on </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna si se activo el encendido del UPS (no quiere decir que este encendido.) </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true Encendido </dd>
+<dd>
+false Apagado </dd></dl>
+
+</div>
+</div>
+<a id="a5fdf3207d9b3392b54e0e84da57fb1b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fdf3207d9b3392b54e0e84da57fb1b6">&#9670;&nbsp;</a></span>hal_ups_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_ups_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializar capa HAl para manejo de UPS. </p>
+
+</div>
+</div>
+<a id="af4e6a68ff802984f7d2705c2a0486398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e6a68ff802984f7d2705c2a0486398">&#9670;&nbsp;</a></span>hal_ups_set_on()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal_ups_set_on </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Encender / apagar el UPS (y todas las salidas) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">set</td><td>Estado ( ENCENDIDO: HIGH[1] / APAGADO: LOW[0] ) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
