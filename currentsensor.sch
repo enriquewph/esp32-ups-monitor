@@ -76,7 +76,9 @@ AR Path="/6121A9EA/6125F88F" Ref="C16"  Part="1"
 F 0 "C16" H 5715 5196 50  0000 L CNN
 F 1 "100nF" H 5715 5105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5638 5000 50  0001 C CNN
-F 3 "~" H 5600 5150 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5600 5150 50  0001 C CNN
+F 4 "50V" H 5600 5150 50  0001 C CNN "Voltage"
+F 5 "CC1206KRX7R9BB104" H 5600 5150 50  0001 C CNN "manf#"
 	1    5600 5150
 	1    0    0    -1  
 $EndComp
@@ -89,7 +91,9 @@ AR Path="/6121A9EA/6125F889" Ref="C14"  Part="1"
 F 0 "C14" H 5265 5196 50  0000 L CNN
 F 1 "100nF" H 5265 5105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5188 5000 50  0001 C CNN
-F 3 "~" H 5150 5150 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5150 5150 50  0001 C CNN
+F 4 "50V" H 5150 5150 50  0001 C CNN "Voltage"
+F 5 "CC1206KRX7R9BB104" H 5150 5150 50  0001 C CNN "manf#"
 	1    5150 5150
 	1    0    0    -1  
 $EndComp
@@ -100,9 +104,10 @@ P 6400 4900
 AR Path="/6125F883" Ref="U?"  Part="1" 
 AR Path="/6121A9EA/6125F883" Ref="U2"  Part="1" 
 F 0 "U2" H 6600 5150 50  0000 L CNN
-F 1 "ACS759xCB-050B-PFF" H 5450 4600 50  0000 L CNN
+F 1 "ACS759" H 5450 4600 50  0000 L CNN
 F 2 "Sensor_Current:Allegro_CB_PFF" H 6400 4900 50  0001 C CNN
-F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS759-Datasheet.ashx?la=en" H 6400 4900 50  0001 C CNN
+F 3 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS759-Datasheet.ashx" H 6400 4900 50  0001 C CNN
+F 4 "ACS759LCB-050B-PFF-T" H 6400 4900 50  0001 C CNN "manf#"
 	1    6400 4900
 	-1   0    0    -1  
 $EndComp
@@ -140,8 +145,9 @@ P 6500 3050
 F 0 "U3" H 6750 3400 50  0000 C CNN
 F 1 "ACS712" H 6250 2650 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6600 2700 50  0001 L CIN
-F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en" H 6500 3050 50  0001 C CNN
+F 3 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS71240-Data-Sheet.ashx" H 6500 3050 50  0001 C CNN
 F 4 "No" H 6500 3050 50  0001 C CNN "Fitted"
+F 5 "ACS71240LLCBTR-030B3" H 6500 3050 50  0001 C CNN "manf#"
 	1    6500 3050
 	-1   0    0    -1  
 $EndComp
@@ -172,9 +178,10 @@ U 1 1 612A2FF0
 P 5850 3400
 F 0 "C17" H 5965 3446 50  0000 L CNN
 F 1 "1nF" H 5965 3355 50  0000 L CNN
-F 2 "" H 5888 3250 50  0001 C CNN
-F 3 "~" H 5850 3400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5888 3250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/products/datasheet/mlcc/UPY-NP0X7R_HV_1KV-to-3KV_11.pdf" H 5850 3400 50  0001 C CNN
 F 4 "No" H 5850 3400 50  0001 C CNN "Fitted"
+F 5 "CC1206KKX7RCBB102" H 5850 3400 50  0001 C CNN "manf#"
 	1    5850 3400
 	1    0    0    -1  
 $EndComp
@@ -218,9 +225,11 @@ U 1 1 612A49EF
 P 5400 3400
 F 0 "C15" H 5515 3446 50  0000 L CNN
 F 1 "100nF" H 5515 3355 50  0000 L CNN
-F 2 "" H 5438 3250 50  0001 C CNN
-F 3 "~" H 5400 3400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5438 3250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5400 3400 50  0001 C CNN
 F 4 "No" H 5400 3400 50  0001 C CNN "Fitted"
+F 5 "50V" H 5400 3400 50  0001 C CNN "Voltage"
+F 6 "CC1206KRX7R9BB104" H 5400 3400 50  0001 C CNN "manf#"
 	1    5400 3400
 	1    0    0    -1  
 $EndComp
@@ -250,9 +259,10 @@ U 1 1 612A9367
 P 5100 3050
 F 0 "R20" V 5000 2950 50  0000 C CNN
 F 1 "2k" V 5000 3150 50  0000 C CNN
-F 2 "" V 5030 3050 50  0001 C CNN
-F 3 "~" H 5100 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5030 3050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5100 3050 50  0001 C CNN
 F 4 "No" V 5100 3050 50  0001 C CNN "Fitted"
+F 5 "RC1206FR-072KL" H 5100 3050 50  0001 C CNN "manf#"
 	1    5100 3050
 	0    1    1    0   
 $EndComp
@@ -262,9 +272,10 @@ U 1 1 612AA089
 P 4800 3400
 F 0 "R15" H 4870 3446 50  0000 L CNN
 F 1 "1k" H 4870 3355 50  0000 L CNN
-F 2 "" V 4730 3400 50  0001 C CNN
-F 3 "~" H 4800 3400 50  0001 C CNN
-F 4 "No" H 4800 3400 50  0001 C CNN "Fitted"
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4730 3400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4800 3400 50  0001 C CNN
+F 4 "" H 4800 3400 50  0001 C CNN "Fitted"
+F 5 "RC1206FR-071KL" H 4800 3400 50  0001 C CNN "manf#"
 	1    4800 3400
 	1    0    0    -1  
 $EndComp

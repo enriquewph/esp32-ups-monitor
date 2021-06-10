@@ -22,7 +22,8 @@ AR Path="/6137CC2E/6138E9AB" Ref="Q7"  Part="1"
 F 0 "Q7" H 6354 3446 50  0000 L CNN
 F 1 "IRF540N" H 6354 3355 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6400 3325 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 6150 3400 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irf540nspbf.pdf?fileId=5546d462533600a4015355e3a72819a3" H 6150 3400 50  0001 L CNN
+F 4 "IRF540NLPBF" H 6150 3400 50  0001 C CNN "manf#"
 	1    6150 3400
 	1    0    0    -1  
 $EndComp
@@ -51,8 +52,9 @@ AR Path="/6138E9BB" Ref="R?"  Part="1"
 AR Path="/6137CC2E/6138E9BB" Ref="R27"  Part="1" 
 F 0 "R27" V 5250 3600 50  0000 C CNN
 F 1 "1k" V 5250 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5280 3700 50  0001 C CNN
-F 3 "~" H 5350 3700 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5280 3700 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5350 3700 50  0001 C CNN
+F 4 "RC1206FR-071KL" H 5350 3700 50  0001 C CNN "manf#"
 	1    5350 3700
 	0    1    1    0   
 $EndComp
@@ -65,7 +67,8 @@ AR Path="/6137CC2E/6138E9C1" Ref="Q6"  Part="1"
 F 0 "Q6" H 5941 3746 50  0000 L CNN
 F 1 "BC817" H 5941 3655 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 3625 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 5750 3700 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BC817-16LT1-D.PDF" H 5750 3700 50  0001 L CNN
+F 4 "SBC817-40LT1G" H 5750 3700 50  0001 C CNN "manf#"
 	1    5750 3700
 	1    0    0    -1  
 $EndComp
@@ -77,8 +80,9 @@ AR Path="/6138E9C7" Ref="R?"  Part="1"
 AR Path="/6137CC2E/6138E9C7" Ref="R28"  Part="1" 
 F 0 "R28" V 5750 3050 50  0000 C CNN
 F 1 "10k" V 5750 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5780 3150 50  0001 C CNN
-F 3 "~" H 5850 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5780 3150 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5850 3150 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 5850 3150 50  0001 C CNN "manf#"
 	1    5850 3150
 	1    0    0    -1  
 $EndComp
@@ -149,8 +153,9 @@ AR Path="/6138E9EA" Ref="J?"  Part="1"
 AR Path="/6137CC2E/6138E9EA" Ref="J9"  Part="1" 
 F 0 "J9" H 6500 3300 50  0000 L CNN
 F 1 "Conn_01x03" H 6730 3001 50  0001 L CNN
-F 2 "" H 6650 3050 50  0001 C CNN
-F 3 "~" H 6650 3050 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 6650 3050 50  0001 C CNN
+F 3 "https://app.adam-tech.com/products/download/data_sheet/196588/lha-xx-ts-data-sheet.pdf" H 6650 3050 50  0001 C CNN
+F 4 "LHA-03-TS" H 6650 3050 50  0001 C CNN "manf#"
 	1    6650 3050
 	1    0    0    -1  
 $EndComp

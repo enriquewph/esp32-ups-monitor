@@ -25,7 +25,8 @@ AR Path="/61400494/61467145/6144C515" Ref="U10"  Part="1"
 F 0 "U10" H 5550 4375 50  0000 C CNN
 F 1 "4N25" H 5550 4284 50  0000 C CNN
 F 2 "Package_DIP:DIP-6_W7.62mm" H 5350 3850 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 5550 4050 50  0001 L CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-70-99-0010/4N2X%20series%20Datasheet%201115.pdf" H 5550 4050 50  0001 L CNN
+F 4 "4N25" H 5550 4050 50  0001 C CNN "manf#"
 	1    5550 4050
 	1    0    0    -1  
 $EndComp
@@ -80,8 +81,9 @@ AR Path="/61400494/61466DF4/6145DEBF" Ref="R34"  Part="1"
 AR Path="/61400494/61467145/6145DEBF" Ref="R36"  Part="1" 
 F 0 "R36" H 6220 3796 50  0000 L CNN
 F 1 "10k" H 6220 3705 50  0000 L CNN
-F 2 "" V 6080 3750 50  0001 C CNN
-F 3 "~" H 6150 3750 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6080 3750 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6150 3750 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 6150 3750 50  0001 C CNN "manf#"
 	1    6150 3750
 	1    0    0    -1  
 $EndComp
@@ -102,9 +104,10 @@ AR Path="/61400494/61466DF4/61462D44" Ref="R33"  Part="1"
 AR Path="/61400494/61467145/61462D44" Ref="R35"  Part="1" 
 F 0 "R35" V 4800 3550 50  0000 C CNN
 F 1 "1k" V 4800 3750 50  0000 C CNN
-F 2 "" V 4830 3650 50  0001 C CNN
-F 3 "~" H 4900 3650 50  0001 C CNN
-F 4 "No" V 4900 3650 50  0001 C CNN "Fitted"
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4830 3650 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4900 3650 50  0001 C CNN
+F 4 "" V 4900 3650 50  0001 C CNN "Fitted"
+F 5 "RC1206FR-071KL" H 4900 3650 50  0001 C CNN "manf#"
 	1    4900 3650
 	0    1    1    0   
 $EndComp

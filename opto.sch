@@ -41,8 +41,9 @@ AR Path="/61445A2E" Ref="J?"  Part="1"
 AR Path="/61400494/61445A2E" Ref="J10"  Part="1" 
 F 0 "J10" H 6800 4350 50  0000 L CNN
 F 1 "Conn_01x06" H 7030 3901 50  0001 L CNN
-F 2 "" H 6950 4000 50  0001 C CNN
-F 3 "~" H 6950 4000 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 6950 4000 50  0001 C CNN
+F 3 "https://app.adam-tech.com/products/download/data_sheet/196588/lha-xx-ts-data-sheet.pdf" H 6950 4000 50  0001 C CNN
+F 4 "LHA-06-TS" H 6950 4000 50  0001 C CNN "manf#"
 	1    6950 4000
 	1    0    0    -1  
 $EndComp

@@ -20,7 +20,8 @@ P 5550 3450
 F 0 "U1" H 5300 4000 50  0000 C CNN
 F 1 "CH340G" H 5750 2900 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5600 2900 50  0001 L CNN
-F 3 "http://www.datasheet5.com/pdf-local-2195953" H 5200 4250 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF" H 5200 4250 50  0001 C CNN
+F 4 "CH340G" H 5550 3450 50  0001 C CNN "manf#"
 	1    5550 3450
 	1    0    0    -1  
 $EndComp
@@ -30,8 +31,9 @@ U 1 1 60DEA3F8
 P 4450 4400
 F 0 "C2" H 4565 4446 50  0000 L CNN
 F 1 "22pF" H 4565 4355 50  0000 L CNN
-F 2 "" H 4488 4250 50  0001 C CNN
-F 3 "~" H 4450 4400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 4488 4250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf" H 4450 4400 50  0001 C CNN
+F 4 "CC1206KRNPO9BN220" H 4450 4400 50  0001 C CNN "manf#"
 	1    4450 4400
 	1    0    0    -1  
 $EndComp
@@ -41,8 +43,9 @@ U 1 1 60DEAA23
 P 4700 4150
 F 0 "Y1" H 4700 4418 50  0000 C CNN
 F 1 "12MHz" H 4700 4327 50  0000 C CNN
-F 2 "" H 4700 4150 50  0001 C CNN
-F 3 "~" H 4700 4150 50  0001 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 4700 4150 50  0001 C CNN
+F 3 "https://abracon.com/Resonators/ABL.pdf" H 4700 4150 50  0001 C CNN
+F 4 "ABL-12.000MHZ-N2X-T" H 4700 4150 50  0001 C CNN "manf#"
 	1    4700 4150
 	1    0    0    -1  
 $EndComp
@@ -52,8 +55,9 @@ U 1 1 60DEB69D
 P 4950 4400
 F 0 "C3" H 5065 4446 50  0000 L CNN
 F 1 "22pF" H 5065 4355 50  0000 L CNN
-F 2 "" H 4988 4250 50  0001 C CNN
-F 3 "~" H 4950 4400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 4988 4250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf" H 4950 4400 50  0001 C CNN
+F 4 "CC1206KRNPO9BN220" H 4950 4400 50  0001 C CNN "manf#"
 	1    4950 4400
 	1    0    0    -1  
 $EndComp
@@ -140,8 +144,9 @@ U 1 1 60DEF23D
 P 3800 3350
 F 0 "J6" H 3857 3817 50  0000 C CNN
 F 1 "USB_B" H 3857 3726 50  0000 C CNN
-F 2 "" H 3950 3300 50  0001 C CNN
-F 3 " ~" H 3950 3300 50  0001 C CNN
+F 2 "Connector_USB:USB_B_TE_5787834_Vertical" H 3950 3300 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=5787834&DocType=Customer+Drawing&DocLang=English" H 3950 3300 50  0001 C CNN
+F 4 "5787834-1" H 3800 3350 50  0001 C CNN "manf#"
 	1    3800 3350
 	1    0    0    -1  
 $EndComp
@@ -184,7 +189,9 @@ AR Path="/60DD98A5/60DF372B" Ref="C4"  Part="1"
 F 0 "C4" H 6815 3046 50  0000 L CNN
 F 1 "100nF" H 6815 2955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6738 2850 50  0001 C CNN
-F 3 "~" H 6700 3000 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 6700 3000 50  0001 C CNN
+F 4 "50V" H 6700 3000 50  0001 C CNN "Voltage"
+F 5 "CC1206KRX7R9BB104" H 6700 3000 50  0001 C CNN "manf#"
 	1    6700 3000
 	1    0    0    -1  
 $EndComp
@@ -216,8 +223,10 @@ U 1 1 60DF492D
 P 7150 3000
 F 0 "C13" H 7268 3046 50  0000 L CNN
 F 1 "100uF" H 7268 2955 50  0000 L CNN
-F 2 "" H 7188 2850 50  0001 C CNN
-F 3 "~" H 7150 3000 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7188 2850 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/ww/products/capacitors/aluminum-capacitors/aluminum-cap-lead/models/ECEA1CKA101B" H 7150 3000 50  0001 C CNN
+F 4 "16V" H 7150 3000 50  0001 C CNN "Voltage"
+F 5 "ECE-A1CKA101B" H 7150 3000 50  0001 C CNN "manf#"
 	1    7150 3000
 	1    0    0    -1  
 $EndComp
@@ -258,8 +267,9 @@ AR Path="/60E02CFD" Ref="R?"  Part="1"
 AR Path="/60DD98A5/60E02CFD" Ref="R13"  Part="1" 
 F 0 "R13" V 6600 3900 50  0000 C CNN
 F 1 "10k" V 6600 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6630 4000 50  0001 C CNN
-F 3 "~" H 6700 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6630 4000 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6700 4000 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 6700 4000 50  0001 C CNN "manf#"
 	1    6700 4000
 	0    1    1    0   
 $EndComp
@@ -272,7 +282,8 @@ AR Path="/60DD98A5/60E02D03" Ref="Q4"  Part="1"
 F 0 "Q4" H 7291 4046 50  0000 L CNN
 F 1 "BC817" H 7291 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7300 3925 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 7100 4000 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BC817-16LT1-D.PDF" H 7100 4000 50  0001 L CNN
+F 4 "SBC817-40LT1G" H 7100 4000 50  0001 C CNN "manf#"
 	1    7100 4000
 	1    0    0    -1  
 $EndComp
@@ -286,8 +297,9 @@ AR Path="/60E03CCD" Ref="R?"  Part="1"
 AR Path="/60DD98A5/60E03CCD" Ref="R14"  Part="1" 
 F 0 "R14" V 6600 4600 50  0000 C CNN
 F 1 "10k" V 6600 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6630 4700 50  0001 C CNN
-F 3 "~" H 6700 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6630 4700 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6700 4700 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 6700 4700 50  0001 C CNN "manf#"
 	1    6700 4700
 	0    1    1    0   
 $EndComp
@@ -300,7 +312,8 @@ AR Path="/60DD98A5/60E03CD3" Ref="Q5"  Part="1"
 F 0 "Q5" H 7300 4650 50  0000 L CNN
 F 1 "BC817" H 7300 4750 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7300 4625 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 7100 4700 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BC817-16LT1-D.PDF" H 7100 4700 50  0001 L CNN
+F 4 "SBC817-40LT1G" H 7100 4700 50  0001 C CNN "manf#"
 	1    7100 4700
 	1    0    0    1   
 $EndComp

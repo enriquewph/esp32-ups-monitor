@@ -53,9 +53,10 @@ L Device:R R12
 U 1 1 60D22EFD
 P 4400 6750
 F 0 "R12" H 4470 6796 50  0000 L CNN
-F 1 "10K" H 4470 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4330 6750 50  0001 C CNN
-F 3 "~" H 4400 6750 50  0001 C CNN
+F 1 "10k" H 4470 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4330 6750 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4400 6750 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 4400 6750 50  0001 C CNN "manf#"
 	1    4400 6750
 	1    0    0    -1  
 $EndComp
@@ -64,9 +65,10 @@ L Device:R R11
 U 1 1 60D235F5
 P 4100 6750
 F 0 "R11" H 4170 6796 50  0000 L CNN
-F 1 "10K" H 4170 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4030 6750 50  0001 C CNN
-F 3 "~" H 4100 6750 50  0001 C CNN
+F 1 "10k" H 4170 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4030 6750 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4100 6750 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 4100 6750 50  0001 C CNN "manf#"
 	1    4100 6750
 	1    0    0    -1  
 $EndComp
@@ -155,8 +157,9 @@ AR Path="/60D757DD" Ref="R5"  Part="1"
 AR Path="/60CF66AD/60D757DD" Ref="R?"  Part="1" 
 F 0 "R5" H 1770 6896 50  0000 L CNN
 F 1 "22k" H 1770 6805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 6850 50  0001 C CNN
-F 3 "~" H 1700 6850 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1630 6850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1700 6850 50  0001 C CNN
+F 4 "RC1206FR-0722KL" H 1700 6850 50  0001 C CNN "manf#"
 	1    1700 6850
 	1    0    0    -1  
 $EndComp
@@ -168,8 +171,9 @@ AR Path="/60D757E3" Ref="R6"  Part="1"
 AR Path="/60CF66AD/60D757E3" Ref="R?"  Part="1" 
 F 0 "R6" H 1770 7296 50  0000 L CNN
 F 1 "5k6" H 1770 7205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1630 7250 50  0001 C CNN
-F 3 "~" H 1700 7250 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1630 7250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1700 7250 50  0001 C CNN
+F 4 "RC1206FR-075K6L" H 1700 7250 50  0001 C CNN "manf#"
 	1    1700 7250
 	1    0    0    -1  
 $EndComp
@@ -208,7 +212,8 @@ AR Path="/60CF66AD/60D757F5" Ref="J?"  Part="1"
 F 0 "J1" H 700 6750 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 618 6776 50  0001 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 700 6650 50  0001 C CNN
-F 3 "~" H 700 6650 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=796636&DocType=Customer+Drawing&DocLang=English" H 700 6650 50  0001 C CNN
+F 4 "796636-2" H 700 6650 50  0001 C CNN "manf#"
 	1    700  6650
 	-1   0    0    -1  
 $EndComp
@@ -295,8 +300,9 @@ U 1 1 60CF302C
 P 1300 6650
 F 0 "D2" H 1400 6750 50  0000 C CNN
 F 1 "SS14" H 1200 6750 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 1300 6475 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88746/ss12.pdf" H 1300 6650 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 1300 6475 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/ss19-d.pdf" H 1300 6650 50  0001 C CNN
+F 4 "SS14" H 1300 6650 50  0001 C CNN "manf#"
 	1    1300 6650
 	-1   0    0    -1  
 $EndComp
@@ -306,8 +312,9 @@ U 1 1 60CF3B59
 P 1300 6850
 F 0 "D3" H 1400 6950 50  0000 C CNN
 F 1 "ALT" H 1200 6950 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 1300 6675 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88746/ss12.pdf" H 1300 6850 50  0001 C CNN
+F 2 "Diode_THT:D_DO-201_P12.70mm_Horizontal" H 1300 6675 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/26/db/14/60/52/47/47/5b/CD00001625.pdf/files/CD00001625.pdf/jcr:content/translations/en.CD00001625.pdf" H 1300 6850 50  0001 C CNN
+F 4 "1N5819" H 1300 6850 50  0001 C CNN "manf#"
 	1    1300 6850
 	-1   0    0    -1  
 $EndComp
@@ -361,8 +368,9 @@ U 1 1 60C734C6
 P 5100 7150
 F 0 "J4" H 4950 7500 50  0000 L CNN
 F 1 "Conn_01x05" H 5180 7101 50  0001 L CNN
-F 2 "" H 5100 7150 50  0001 C CNN
-F 3 "~" H 5100 7150 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 5100 7150 50  0001 C CNN
+F 3 "https://app.adam-tech.com/products/download/data_sheet/196588/lha-xx-ts-data-sheet.pdf" H 5100 7150 50  0001 C CNN
+F 4 "LHA-05-TS" H 5100 7150 50  0001 C CNN "manf#"
 	1    5100 7150
 	1    0    0    -1  
 $EndComp
@@ -394,7 +402,8 @@ P 9700 3450
 F 0 "U6" H 10150 4800 50  0000 C CNN
 F 1 "ESP32" H 9350 4800 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 9700 1950 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 9400 3500 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf" H 9400 3500 50  0001 C CNN
+F 4 "ESP32-WROOM-32E" H 9700 3450 50  0001 C CNN "manf#"
 	1    9700 3450
 	-1   0    0    -1  
 $EndComp
@@ -405,7 +414,9 @@ P 10550 3100
 F 0 "C1" H 10665 3146 50  0000 L CNN
 F 1 "100nF" H 10665 3055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 10588 2950 50  0001 C CNN
-F 3 "~" H 10550 3100 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 10550 3100 50  0001 C CNN
+F 4 "50V" H 10550 3100 50  0001 C CNN "Voltage"
+F 5 "CC1206KRX7R9BB104" H 10550 3100 50  0001 C CNN "manf#"
 	1    10550 3100
 	1    0    0    -1  
 $EndComp
@@ -475,9 +486,10 @@ U 1 1 60F5F48D
 P 1300 7350
 F 0 "D1" H 1400 7450 50  0000 C CNN
 F 1 "SS14" H 1200 7450 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 1300 7175 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88746/ss12.pdf" H 1300 7350 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 1300 7175 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/ss19-d.pdf" H 1300 7350 50  0001 C CNN
 F 4 "No" H 1300 7350 50  0001 C CNN "Fixed"
+F 5 "SS14" H 1300 7350 50  0001 C CNN "manf#"
 	1    1300 7350
 	-1   0    0    -1  
 $EndComp
@@ -487,9 +499,10 @@ U 1 1 60F5F497
 P 1300 7550
 F 0 "D4" H 1400 7650 50  0000 C CNN
 F 1 "ALT" H 1200 7650 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 1300 7375 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/88746/ss12.pdf" H 1300 7550 50  0001 C CNN
+F 2 "Diode_THT:D_DO-201_P12.70mm_Horizontal" H 1300 7375 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/26/db/14/60/52/47/47/5b/CD00001625.pdf/files/CD00001625.pdf/jcr:content/translations/en.CD00001625.pdf" H 1300 7550 50  0001 C CNN
 F 4 "No" H 1300 7550 50  0001 C CNN "Fixed"
+F 5 "1N5819" H 1300 7550 50  0001 C CNN "manf#"
 	1    1300 7550
 	-1   0    0    -1  
 $EndComp
@@ -545,7 +558,8 @@ P 1950 4650
 F 0 "J2" H 1900 4850 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 2030 4601 50  0001 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1950 4650 50  0001 C CNN
-F 3 "~" H 1950 4650 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=796636&DocType=Customer+Drawing&DocLang=English" H 1950 4650 50  0001 C CNN
+F 4 "796636-3" H 1950 4650 50  0001 C CNN "manf#"
 	1    1950 4650
 	1    0    0    -1  
 $EndComp
@@ -576,7 +590,8 @@ P 1950 5250
 F 0 "J3" H 1900 5450 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 2030 5201 50  0001 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1950 5250 50  0001 C CNN
-F 3 "~" H 1950 5250 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=796636&DocType=Customer+Drawing&DocLang=English" H 1950 5250 50  0001 C CNN
+F 4 "796636-3" H 1950 5250 50  0001 C CNN "manf#"
 	1    1950 5250
 	1    0    0    -1  
 $EndComp
@@ -607,7 +622,8 @@ P 1950 5850
 F 0 "J5" H 1900 6050 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 2030 5801 50  0001 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1950 5850 50  0001 C CNN
-F 3 "~" H 1950 5850 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=796636&DocType=Customer+Drawing&DocLang=English" H 1950 5850 50  0001 C CNN
+F 4 "796636-3" H 1950 5850 50  0001 C CNN "manf#"
 	1    1950 5850
 	1    0    0    -1  
 $EndComp
@@ -681,8 +697,9 @@ U 1 1 60D3B594
 P 2650 5900
 F 0 "SW2" H 2800 6000 50  0000 C CNN
 F 1 "SW_Push" H 2650 6094 50  0001 C CNN
-F 2 "" H 2650 6100 50  0001 C CNN
-F 3 "~" H 2650 6100 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2650 6100 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2650 6100 50  0001 C CNN
+F 4 "1-1825910-0" H 2650 5900 50  0001 C CNN "manf#"
 	1    2650 5900
 	1    0    0    -1  
 $EndComp
@@ -692,8 +709,9 @@ U 1 1 60D3BEF3
 P 2650 5650
 F 0 "SW1" H 2800 5750 50  0000 C CNN
 F 1 "SW_Push" H 2650 5844 50  0001 C CNN
-F 2 "" H 2650 5850 50  0001 C CNN
-F 3 "~" H 2650 5850 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2650 5850 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 2650 5850 50  0001 C CNN
+F 4 "1-1825910-0" H 2650 5650 50  0001 C CNN "manf#"
 	1    2650 5650
 	1    0    0    -1  
 $EndComp
@@ -708,9 +726,10 @@ L Device:R R1
 U 1 1 60D55C7D
 P 2950 5400
 F 0 "R1" H 3020 5446 50  0000 L CNN
-F 1 "10K" H 3020 5355 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2880 5400 50  0001 C CNN
-F 3 "~" H 2950 5400 50  0001 C CNN
+F 1 "10k" H 3020 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2880 5400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2950 5400 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 2950 5400 50  0001 C CNN "manf#"
 	1    2950 5400
 	1    0    0    -1  
 $EndComp
@@ -719,9 +738,10 @@ L Device:R R2
 U 1 1 60D569B0
 P 3250 5400
 F 0 "R2" H 3320 5446 50  0000 L CNN
-F 1 "10K" H 3320 5355 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3180 5400 50  0001 C CNN
-F 3 "~" H 3250 5400 50  0001 C CNN
+F 1 "10k" H 3320 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3180 5400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 3250 5400 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 3250 5400 50  0001 C CNN "manf#"
 	1    3250 5400
 	1    0    0    -1  
 $EndComp

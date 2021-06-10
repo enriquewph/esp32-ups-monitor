@@ -23,7 +23,8 @@ AR Path="/61400494/614555D4/6149516B" Ref="U?"  Part="1"
 F 0 "U4" H 6450 4025 50  0000 C CNN
 F 1 "4N25" H 6450 3934 50  0000 C CNN
 F 2 "Package_DIP:DIP-6_W7.62mm" H 6250 3500 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 6450 3700 50  0001 L CNN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS-70-99-0010/4N2X%20series%20Datasheet%201115.pdf" H 6450 3700 50  0001 L CNN
+F 4 "4N25" H 6450 3700 50  0001 C CNN "manf#"
 	1    6450 3700
 	1    0    0    -1  
 $EndComp
@@ -52,8 +53,9 @@ AR Path="/61400494/61448E8E/6144C525" Ref="R29"  Part="1"
 AR Path="/61400494/614555D4/6144C525" Ref="R?"  Part="1" 
 F 0 "R29" V 5100 3750 50  0000 C CNN
 F 1 "1k" V 5100 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5130 3850 50  0001 C CNN
-F 3 "~" H 5200 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5130 3850 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5200 3850 50  0001 C CNN
+F 4 "RC1206FR-071KL" H 5200 3850 50  0001 C CNN "manf#"
 	1    5200 3850
 	0    1    1    0   
 $EndComp
@@ -67,7 +69,8 @@ AR Path="/61400494/614555D4/6144C52B" Ref="Q?"  Part="1"
 F 0 "Q8" H 5791 3896 50  0000 L CNN
 F 1 "BC817" H 5791 3805 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 3775 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 5600 3850 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BC817-16LT1-D.PDF" H 5600 3850 50  0001 L CNN
+F 4 "SBC817-40LT1G" H 5600 3850 50  0001 C CNN "manf#"
 	1    5600 3850
 	1    0    0    -1  
 $EndComp
@@ -82,8 +85,9 @@ AR Path="/61400494/61448E8E/6144C532" Ref="R30"  Part="1"
 AR Path="/61400494/614555D4/6144C532" Ref="R?"  Part="1" 
 F 0 "R30" V 5600 3300 50  0000 C CNN
 F 1 "10k" V 5600 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5630 3400 50  0001 C CNN
-F 3 "~" H 5700 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5630 3400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5700 3400 50  0001 C CNN
+F 4 "RC1206FR-0710KL" H 5700 3400 50  0001 C CNN "manf#"
 	1    5700 3400
 	1    0    0    -1  
 $EndComp

@@ -22,8 +22,9 @@ AR Path="/612F4D6E/61313C16" Ref="J7"  Part="1"
 AR Path="/61323238/61313C16" Ref="J8"  Part="1" 
 F 0 "J8" H 4800 3200 50  0000 L CNN
 F 1 "Conn_01x03" H 4930 2901 50  0001 L CNN
-F 2 "" H 4850 2950 50  0001 C CNN
-F 3 "~" H 4850 2950 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 4850 2950 50  0001 C CNN
+F 3 "https://app.adam-tech.com/products/download/data_sheet/196588/lha-xx-ts-data-sheet.pdf" H 4850 2950 50  0001 C CNN
+F 4 "LHA-03-TS" H 4850 2950 50  0001 C CNN "manf#"
 	1    4850 2950
 	-1   0    0    -1  
 $EndComp
@@ -87,8 +88,10 @@ AR Path="/612F4D6E/61316DCA" Ref="C18"  Part="1"
 AR Path="/61323238/61316DCA" Ref="C20"  Part="1" 
 F 0 "C20" H 5465 3246 50  0000 L CNN
 F 1 "100nF" H 5465 3155 50  0000 L CNN
-F 2 "" H 5388 3050 50  0001 C CNN
-F 3 "~" H 5350 3200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5388 3050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5350 3200 50  0001 C CNN
+F 4 "50V" H 5350 3200 50  0001 C CNN "Voltage"
+F 5 "CC1206KRX7R9BB104" H 5350 3200 50  0001 C CNN "manf#"
 	1    5350 3200
 	1    0    0    -1  
 $EndComp
@@ -116,8 +119,10 @@ AR Path="/612F4D6E/613172FB" Ref="C19"  Part="1"
 AR Path="/61323238/613172FB" Ref="C21"  Part="1" 
 F 0 "C21" H 5965 3246 50  0000 L CNN
 F 1 "100nF" H 5965 3155 50  0000 L CNN
-F 2 "" H 5888 3050 50  0001 C CNN
-F 3 "~" H 5850 3200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5888 3050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5850 3200 50  0001 C CNN
+F 4 "50V" H 5850 3200 50  0001 C CNN "Voltage"
+F 5 "CC1206KRX7R9BB104" H 5850 3200 50  0001 C CNN "manf#"
 	1    5850 3200
 	1    0    0    -1  
 $EndComp
