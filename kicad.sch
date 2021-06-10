@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 19
 Title "ESP32 Uninterrupted Power Supply Monitor"
-Date "2021-06-06"
+Date "2021-06-10"
 Rev "0.1"
 Comp ""
-Comment1 ""
+Comment1 "https://github.com/enriquewph/esp32-ups-monitor"
 Comment2 ""
 Comment3 ""
 Comment4 ""

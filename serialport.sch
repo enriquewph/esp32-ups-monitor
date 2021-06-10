@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 19
-Title ""
-Date ""
-Rev ""
+Sheet 7 19
+Title "USB - UART Serial Converter"
+Date "2021-06-10"
+Rev "0.1"
 Comp ""
-Comment1 ""
+Comment1 "https://github.com/enriquewph/esp32-ups-monitor"
 Comment2 ""
 Comment3 ""
 Comment4 ""

@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 16 19
-Title ""
-Date ""
-Rev ""
+Title "Opto-coupled Output"
+Date "2021-06-10"
+Rev "0.1"
 Comp ""
-Comment1 ""
+Comment1 "https://github.com/enriquewph/esp32-ups-monitor"
 Comment2 ""
 Comment3 ""
 Comment4 ""

@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 19
-Title ""
-Date ""
-Rev ""
+Title "Input Protection"
+Date "2021-06-10"
+Rev "0.1"
 Comp ""
-Comment1 ""
+Comment1 "https://github.com/enriquewph/esp32-ups-monitor"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -69,7 +69,7 @@ AR Path="/60E45CE9/60E632B2" Ref="#PWR055"  Part="1"
 AR Path="/61276139/60E632B2" Ref="#PWR0130"  Part="1" 
 AR Path="/612F6239/60E632B2" Ref="#PWR0136"  Part="1" 
 AR Path="/6132323D/60E632B2" Ref="#PWR0142"  Part="1" 
-F 0 "#PWR0142" H 6000 3500 50  0001 C CNN
+F 0 "#PWR055" H 6000 3500 50  0001 C CNN
 F 1 "GND" H 6005 3577 50  0000 C CNN
 F 2 "" H 6000 3750 50  0001 C CNN
 F 3 "" H 6000 3750 50  0001 C CNN
@@ -86,7 +86,7 @@ AR Path="/60E45CE9/60E63A61" Ref="#PWR054"  Part="1"
 AR Path="/61276139/60E63A61" Ref="#PWR0131"  Part="1" 
 AR Path="/612F6239/60E63A61" Ref="#PWR0137"  Part="1" 
 AR Path="/6132323D/60E63A61" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR0143" H 6000 2550 50  0001 C CNN
+F 0 "#PWR054" H 6000 2550 50  0001 C CNN
 F 1 "+3V3" H 6015 2873 50  0000 C CNN
 F 2 "" H 6000 2700 50  0001 C CNN
 F 3 "" H 6000 2700 50  0001 C CNN

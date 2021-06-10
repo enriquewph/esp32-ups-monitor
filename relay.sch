@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 19
-Title ""
-Date ""
-Rev ""
+Sheet 5 19
+Title "Relay Output"
+Date "2021-06-10"
+Rev "0.1"
 Comp ""
-Comment1 ""
+Comment1 "https://github.com/enriquewph/esp32-ups-monitor"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -21,7 +21,7 @@ AR Path="/61070A3B" Ref="Q?"  Part="1"
 AR Path="/6102C68D/61070A3B" Ref="Q1"  Part="1" 
 AR Path="/610A0B30/61070A3B" Ref="Q2"  Part="1" 
 AR Path="/610C441E/61070A3B" Ref="Q3"  Part="1" 
-F 0 "Q1" H 5641 4646 50  0000 L CNN
+F 0 "Q2" H 5641 4646 50  0000 L CNN
 F 1 "BC817" H 5641 4555 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5650 4525 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC817-16LT1-D.PDF" H 5450 4600 50  0001 L CNN
@@ -37,7 +37,7 @@ AR Path="/61070A47" Ref="R?"  Part="1"
 AR Path="/6102C68D/61070A47" Ref="R4"  Part="1" 
 AR Path="/610A0B30/61070A47" Ref="R8"  Part="1" 
 AR Path="/610C441E/61070A47" Ref="R10"  Part="1" 
-F 0 "R4" V 4950 4500 50  0000 C CNN
+F 0 "R8" V 4950 4500 50  0000 C CNN
 F 1 "1k" V 4950 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4980 4600 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5050 4600 50  0001 C CNN
@@ -53,7 +53,7 @@ AR Path="/61070A4D" Ref="D?"  Part="1"
 AR Path="/6102C68D/61070A4D" Ref="D8"  Part="1" 
 AR Path="/610A0B30/61070A4D" Ref="D11"  Part="1" 
 AR Path="/610C441E/61070A4D" Ref="D13"  Part="1" 
-F 0 "D8" V 5500 3750 50  0000 L CNN
+F 0 "D11" V 5500 3750 50  0000 L CNN
 F 1 "1N4007" V 5600 3550 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5550 3775 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/NextGen%20Components%20PDFs/DO41N4007GA10A.pdf" H 5550 3950 50  0001 C CNN
@@ -69,7 +69,7 @@ AR Path="/61070A53" Ref="#PWR?"  Part="1"
 AR Path="/6102C68D/61070A53" Ref="#PWR0108"  Part="1" 
 AR Path="/610A0B30/61070A53" Ref="#PWR0110"  Part="1" 
 AR Path="/610C441E/61070A53" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 5550 4600 50  0001 C CNN
+F 0 "#PWR0110" H 5550 4600 50  0001 C CNN
 F 1 "GND" H 5555 4677 50  0000 C CNN
 F 2 "" H 5550 4850 50  0001 C CNN
 F 3 "" H 5550 4850 50  0001 C CNN
@@ -84,7 +84,7 @@ AR Path="/61070A59" Ref="#PWR?"  Part="1"
 AR Path="/6102C68D/61070A59" Ref="#PWR0109"  Part="1" 
 AR Path="/610A0B30/61070A59" Ref="#PWR0111"  Part="1" 
 AR Path="/610C441E/61070A59" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 5550 3350 50  0001 C CNN
+F 0 "#PWR0111" H 5550 3350 50  0001 C CNN
 F 1 "+12V" H 5565 3673 50  0000 C CNN
 F 2 "" H 5550 3500 50  0001 C CNN
 F 3 "" H 5550 3500 50  0001 C CNN
@@ -107,7 +107,7 @@ AR Path="/61070A63" Ref="K?"  Part="1"
 AR Path="/6102C68D/61070A63" Ref="K1"  Part="1" 
 AR Path="/610A0B30/61070A63" Ref="K2"  Part="1" 
 AR Path="/610C441E/61070A63" Ref="K3"  Part="1" 
-F 0 "K1" H 6000 4200 50  0000 L CNN
+F 0 "K2" H 6000 4200 50  0000 L CNN
 F 1 "RELAY" H 6830 3905 50  0001 L CNN
 F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6850 3900 50  0001 L CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf" H 6400 3950 50  0001 C CNN
@@ -156,7 +156,7 @@ AR Path="/60CF66AD/6107B2AB" Ref="D?"  Part="1"
 AR Path="/6102C68D/6107B2AB" Ref="D5"  Part="1" 
 AR Path="/610A0B30/6107B2AB" Ref="D10"  Part="1" 
 AR Path="/610C441E/6107B2AB" Ref="D12"  Part="1" 
-F 0 "D5" V 4889 3632 50  0000 R CNN
+F 0 "D10" V 4889 3632 50  0000 R CNN
 F 1 "LED" V 4798 3632 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 4850 3750 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Stanley%20Electric%20PDFs/1101W_Series.pdf" H 4850 3750 50  0001 C CNN
@@ -173,7 +173,7 @@ AR Path="/60CF66AD/6107B2B1" Ref="R?"  Part="1"
 AR Path="/6102C68D/6107B2B1" Ref="R3"  Part="1" 
 AR Path="/610A0B30/6107B2B1" Ref="R7"  Part="1" 
 AR Path="/610C441E/6107B2B1" Ref="R9"  Part="1" 
-F 0 "R3" H 4920 4196 50  0000 L CNN
+F 0 "R7" H 4920 4196 50  0000 L CNN
 F 1 "1k" H 4920 4105 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4780 4150 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4850 4150 50  0001 C CNN

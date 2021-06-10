@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 19
-Title ""
-Date ""
-Rev ""
+Title "Temperature Sensor Input"
+Date "2021-06-10"
+Rev "0.1"
 Comp ""
-Comment1 ""
+Comment1 "https://github.com/enriquewph/esp32-ups-monitor"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -20,7 +20,7 @@ P 4850 2950
 AR Path="/61313C16" Ref="J?"  Part="1" 
 AR Path="/612F4D6E/61313C16" Ref="J7"  Part="1" 
 AR Path="/61323238/61313C16" Ref="J8"  Part="1" 
-F 0 "J8" H 4800 3200 50  0000 L CNN
+F 0 "J7" H 4800 3200 50  0000 L CNN
 F 1 "Conn_01x03" H 4930 2901 50  0001 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 4850 2950 50  0001 C CNN
 F 3 "https://app.adam-tech.com/products/download/data_sheet/196588/lha-xx-ts-data-sheet.pdf" H 4850 2950 50  0001 C CNN
@@ -45,7 +45,7 @@ P 5850 2750
 AR Path="/61313C25" Ref="#PWR?"  Part="1" 
 AR Path="/612F4D6E/61313C25" Ref="#PWR0132"  Part="1" 
 AR Path="/61323238/61313C25" Ref="#PWR0138"  Part="1" 
-F 0 "#PWR0138" H 5850 2600 50  0001 C CNN
+F 0 "#PWR0132" H 5850 2600 50  0001 C CNN
 F 1 "+3V3" H 5865 2923 50  0000 C CNN
 F 2 "" H 5850 2750 50  0001 C CNN
 F 3 "" H 5850 2750 50  0001 C CNN
@@ -59,7 +59,7 @@ P 5350 3450
 AR Path="/61313C2B" Ref="#PWR?"  Part="1" 
 AR Path="/612F4D6E/61313C2B" Ref="#PWR0133"  Part="1" 
 AR Path="/61323238/61313C2B" Ref="#PWR0139"  Part="1" 
-F 0 "#PWR0139" H 5350 3200 50  0001 C CNN
+F 0 "#PWR0133" H 5350 3200 50  0001 C CNN
 F 1 "GND" H 5355 3277 50  0000 C CNN
 F 2 "" H 5350 3450 50  0001 C CNN
 F 3 "" H 5350 3450 50  0001 C CNN
@@ -73,7 +73,7 @@ P 5150 3450
 AR Path="/61313C31" Ref="#PWR?"  Part="1" 
 AR Path="/612F4D6E/61313C31" Ref="#PWR0134"  Part="1" 
 AR Path="/61323238/61313C31" Ref="#PWR0140"  Part="1" 
-F 0 "#PWR0140" H 5150 3200 50  0001 C CNN
+F 0 "#PWR0134" H 5150 3200 50  0001 C CNN
 F 1 "GND" H 5155 3277 50  0000 C CNN
 F 2 "" H 5150 3450 50  0001 C CNN
 F 3 "" H 5150 3450 50  0001 C CNN
@@ -86,7 +86,7 @@ U 1 1 61316DCA
 P 5350 3200
 AR Path="/612F4D6E/61316DCA" Ref="C18"  Part="1" 
 AR Path="/61323238/61316DCA" Ref="C20"  Part="1" 
-F 0 "C20" H 5465 3246 50  0000 L CNN
+F 0 "C18" H 5465 3246 50  0000 L CNN
 F 1 "100nF" H 5465 3155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5388 3050 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5350 3200 50  0001 C CNN
@@ -104,7 +104,7 @@ P 5850 3450
 AR Path="/613172F1" Ref="#PWR?"  Part="1" 
 AR Path="/612F4D6E/613172F1" Ref="#PWR0135"  Part="1" 
 AR Path="/61323238/613172F1" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 5850 3200 50  0001 C CNN
+F 0 "#PWR0135" H 5850 3200 50  0001 C CNN
 F 1 "GND" H 5855 3277 50  0000 C CNN
 F 2 "" H 5850 3450 50  0001 C CNN
 F 3 "" H 5850 3450 50  0001 C CNN
@@ -117,7 +117,7 @@ U 1 1 613172FB
 P 5850 3200
 AR Path="/612F4D6E/613172FB" Ref="C19"  Part="1" 
 AR Path="/61323238/613172FB" Ref="C21"  Part="1" 
-F 0 "C21" H 5965 3246 50  0000 L CNN
+F 0 "C19" H 5965 3246 50  0000 L CNN
 F 1 "100nF" H 5965 3155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5888 3050 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 5850 3200 50  0001 C CNN
