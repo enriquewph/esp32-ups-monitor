@@ -302,7 +302,7 @@ U 1 1 612AF526
 P 4200 4250
 F 0 "JP2" V 4200 4318 50  0000 L CNN
 F 1 "SolderJumper_3_Bridged12" V 4155 4318 50  0001 L CNN
-F 2 "" H 4200 4250 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 4200 4250 50  0001 C CNN
 F 3 "~" H 4200 4250 50  0001 C CNN
 	1    4200 4250
 	0    1    -1   0   

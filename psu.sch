@@ -119,7 +119,7 @@ AR Path="/60D14C08" Ref="JP?"  Part="1"
 AR Path="/60CF66AD/60D14C08" Ref="JP1"  Part="1" 
 F 0 "JP1" H 6800 3200 50  0000 C CNN
 F 1 "SolderJumper_2_Open" V 6745 3368 50  0001 L CNN
-F 2 "" H 6700 3300 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6700 3300 50  0001 C CNN
 F 3 "~" H 6700 3300 50  0001 C CNN
 	1    6700 3300
 	-1   0    0    1   
