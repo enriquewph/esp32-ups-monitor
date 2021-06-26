@@ -144,7 +144,7 @@ U 1 1 60DEF23D
 P 3800 3350
 F 0 "J6" H 3857 3817 50  0000 C CNN
 F 1 "USB_B" H 3857 3726 50  0000 C CNN
-F 2 "Connector_USB:USB_B_TE_5787834_Vertical" H 3950 3300 50  0001 C CNN
+F 2 "libs:USB-B-VERTICAL-SMD&THT" H 3950 3300 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=5787834&DocType=Customer+Drawing&DocLang=English" H 3950 3300 50  0001 C CNN
 F 4 "5787834-1" H 3800 3350 50  0001 C CNN "manf#"
 	1    3800 3350
