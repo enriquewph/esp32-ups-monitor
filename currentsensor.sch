@@ -145,7 +145,7 @@ P 6500 3050
 F 0 "U3" H 6750 3400 50  0000 C CNN
 F 1 "ACS712" H 6250 2650 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6600 2700 50  0001 L CIN
-F 3 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS71240-Data-Sheet.ashx" H 6500 3050 50  0001 C CNN
+F 3 "https://www.sparkfun.com/datasheets/BreakoutBoards/0712.pdf" H 6500 3050 50  0001 C CNN
 F 4 "No" H 6500 3050 50  0001 C CNN "Fitted"
 F 5 "ACS71240LLCBTR-030B3" H 6500 3050 50  0001 C CNN "manf#"
 	1    6500 3050
@@ -256,28 +256,28 @@ Wire Wire Line
 $Comp
 L Device:R R20
 U 1 1 612A9367
-P 5100 3050
-F 0 "R20" V 5000 2950 50  0000 C CNN
-F 1 "2k" V 5000 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 5030 3050 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5100 3050 50  0001 C CNN
-F 4 "No" V 5100 3050 50  0001 C CNN "Fitted"
-F 5 "RC1206FR-072KL" H 5100 3050 50  0001 C CNN "manf#"
-	1    5100 3050
-	0    1    1    0   
+P 4800 3400
+F 0 "R20" H 4650 3350 50  0000 C CNN
+F 1 "2k" H 4650 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4730 3400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4800 3400 50  0001 C CNN
+F 4 "No" V 4800 3400 50  0001 C CNN "Fitted"
+F 5 "RC1206FR-072KL" H 4800 3400 50  0001 C CNN "manf#"
+	1    4800 3400
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R15
 U 1 1 612AA089
-P 4800 3400
-F 0 "R15" H 4870 3446 50  0000 L CNN
-F 1 "1k" H 4870 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 4730 3400 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4800 3400 50  0001 C CNN
-F 4 "" H 4800 3400 50  0001 C CNN "Fitted"
-F 5 "RC1206FR-071KL" H 4800 3400 50  0001 C CNN "manf#"
-	1    4800 3400
-	1    0    0    -1  
+P 5100 3050
+F 0 "R15" V 5200 3050 50  0000 L CNN
+F 1 "1k" V 5200 2900 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5030 3050 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5100 3050 50  0001 C CNN
+F 4 "" H 5100 3050 50  0001 C CNN "Fitted"
+F 5 "RC1206FR-071KL" H 5100 3050 50  0001 C CNN "manf#"
+	1    5100 3050
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4800 3250 4800 3050
