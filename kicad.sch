@@ -849,12 +849,13 @@ S 3000 4150 650  300
 U 6137CC2E
 F0 "Salida MOSFET" 39
 F1 "mosfet-out.sch" 39
-F2 "ON" I L 3000 4300 39 
+F2 "ON" I L 3000 4400 39 
+F3 "OUT" O R 3650 4400 39 
 $EndSheet
-Text GLabel 2950 4300 0    39   Input ~ 0
+Text GLabel 2950 4400 0    39   Input ~ 0
 FAN_1
 Wire Wire Line
-	2950 4300 3000 4300
+	2950 4400 3000 4400
 Wire Notes Line
 	2400 4650 4200 4650
 Wire Notes Line
@@ -864,7 +865,7 @@ Wire Notes Line
 Wire Notes Line
 	2400 3900 2400 4650
 Text Notes 2450 4000 0    50   Italic 0
-12v SWITCHED OUTPUT
+POWER OUTPUT
 $Sheet
 S 4700 4100 800  400 
 U 61400494
@@ -994,10 +995,10 @@ F 3 "" H 1950 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L components:DS1233 U?
+L components:DS1233 U11
 U 1 1 60E05680
 P 6000 7000
-F 0 "U?" H 5870 7046 50  0000 R CNN
+F 0 "U11" H 5870 7046 50  0000 R CNN
 F 1 "DS1233A-10" H 5870 6955 50  0000 R CNN
 F 2 "Package_TO_SOT_THT:TO-92" H 6000 7000 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/DS1233A.pdf" H 6000 7000 50  0001 C CNN
@@ -1009,10 +1010,10 @@ RESET
 Wire Wire Line
 	6500 7000 6400 7000
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR06
 U 1 1 60E0AA80
 P 6000 6650
-F 0 "#PWR?" H 6000 6500 50  0001 C CNN
+F 0 "#PWR06" H 6000 6500 50  0001 C CNN
 F 1 "+3V3" H 6015 6823 50  0000 C CNN
 F 2 "" H 6000 6650 50  0001 C CNN
 F 3 "" H 6000 6650 50  0001 C CNN
@@ -1022,10 +1023,10 @@ $EndComp
 Wire Wire Line
 	6000 6650 6000 6700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR09
 U 1 1 60E0F89B
 P 6000 7350
-F 0 "#PWR?" H 6000 7100 50  0001 C CNN
+F 0 "#PWR09" H 6000 7100 50  0001 C CNN
 F 1 "GND" H 6005 7177 50  0000 C CNN
 F 2 "" H 6000 7350 50  0001 C CNN
 F 3 "" H 6000 7350 50  0001 C CNN
@@ -1044,4 +1045,51 @@ Wire Notes Line
 	5300 7700 6800 7700
 Wire Notes Line
 	5300 6250 6800 6250
+$Comp
+L power:+BATT #PWR04
+U 1 1 60E3DAA2
+P 1050 6550
+F 0 "#PWR04" H 1050 6400 50  0001 C CNN
+F 1 "+BATT" H 1065 6723 50  0000 C CNN
+F 2 "" H 1050 6550 50  0001 C CNN
+F 3 "" H 1050 6550 50  0001 C CNN
+	1    1050 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6550 1050 6650
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 60E4F195
+P 4100 4300
+AR Path="/60E4F195" Ref="J9"  Part="1" 
+AR Path="/6137CC2E/60E4F195" Ref="J?"  Part="1" 
+F 0 "J9" H 3950 4500 50  0000 L CNN
+F 1 "Conn_01x03" H 4180 4251 50  0001 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 4100 4300 50  0001 C CNN
+F 3 "https://app.adam-tech.com/products/download/data_sheet/196588/lha-xx-ts-data-sheet.pdf" H 4100 4300 50  0001 C CNN
+F 4 "LHA-03-TS" H 4100 4300 50  0001 C CNN "manf#"
+	1    4100 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4150 3750 4200
+Wire Wire Line
+	3750 4200 3900 4200
+Wire Wire Line
+	3650 4400 3900 4400
+NoConn ~ 3900 4300
+$Comp
+L power:+12V #PWR05
+U 1 1 60E6303A
+P 3750 4150
+AR Path="/60E6303A" Ref="#PWR05"  Part="1" 
+AR Path="/60CF66AD/60E6303A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR05" H 3750 4000 50  0001 C CNN
+F 1 "+12V" H 3765 4323 50  0000 C CNN
+F 2 "" H 3750 4150 50  0001 C CNN
+F 3 "" H 3750 4150 50  0001 C CNN
+	1    3750 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

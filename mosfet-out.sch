@@ -112,19 +112,6 @@ F 3 "" H 5850 2900 50  0001 C CNN
 	1    5850 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 6138E9D9
-P 6250 2900
-AR Path="/6138E9D9" Ref="#PWR?"  Part="1" 
-AR Path="/6137CC2E/6138E9D9" Ref="#PWR0147"  Part="1" 
-F 0 "#PWR0147" H 6250 2750 50  0001 C CNN
-F 1 "+12V" H 6265 3073 50  0000 C CNN
-F 2 "" H 6250 2900 50  0001 C CNN
-F 3 "" H 6250 2900 50  0001 C CNN
-	1    6250 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 3500 5850 3400
 Wire Wire Line
@@ -135,32 +122,15 @@ Connection ~ 5850 3400
 Wire Wire Line
 	5850 3000 5850 2900
 Wire Wire Line
-	6250 2900 6250 2950
-Wire Wire Line
-	6250 2950 6450 2950
-Wire Wire Line
 	6450 3150 6250 3150
 Wire Wire Line
 	6250 3150 6250 3200
 Wire Wire Line
 	6250 3950 6250 3600
-NoConn ~ 6450 3050
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 6138E9EA
-P 6650 3050
-AR Path="/6138E9EA" Ref="J?"  Part="1" 
-AR Path="/6137CC2E/6138E9EA" Ref="J9"  Part="1" 
-F 0 "J9" H 6500 3300 50  0000 L CNN
-F 1 "Conn_01x03" H 6730 3001 50  0001 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 6650 3050 50  0001 C CNN
-F 3 "https://app.adam-tech.com/products/download/data_sheet/196588/lha-xx-ts-data-sheet.pdf" H 6650 3050 50  0001 C CNN
-F 4 "LHA-03-TS" H 6650 3050 50  0001 C CNN "manf#"
-	1    6650 3050
-	1    0    0    -1  
-$EndComp
 Text HLabel 4900 3700 0    39   Input ~ 0
 ON
 Wire Wire Line
 	4900 3700 5200 3700
+Text HLabel 6450 3150 2    39   Output ~ 0
+OUT
 $EndSCHEMATC
