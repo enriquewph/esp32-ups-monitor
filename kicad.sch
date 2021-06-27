@@ -993,4 +993,55 @@ F 3 "" H 1950 6550 50  0001 C CNN
 	1    1950 6550
 	1    0    0    -1  
 $EndComp
+$Comp
+L components:DS1233 U?
+U 1 1 60E05680
+P 6000 7000
+F 0 "U?" H 5870 7046 50  0000 R CNN
+F 1 "DS1233A-10" H 5870 6955 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 6000 7000 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1233A.pdf" H 6000 7000 50  0001 C CNN
+	1    6000 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 7000 2    39   Input ~ 0
+RESET
+Wire Wire Line
+	6500 7000 6400 7000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60E0AA80
+P 6000 6650
+F 0 "#PWR?" H 6000 6500 50  0001 C CNN
+F 1 "+3V3" H 6015 6823 50  0000 C CNN
+F 2 "" H 6000 6650 50  0001 C CNN
+F 3 "" H 6000 6650 50  0001 C CNN
+	1    6000 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 6650 6000 6700
+$Comp
+L power:GND #PWR?
+U 1 1 60E0F89B
+P 6000 7350
+F 0 "#PWR?" H 6000 7100 50  0001 C CNN
+F 1 "GND" H 6005 7177 50  0000 C CNN
+F 2 "" H 6000 7350 50  0001 C CNN
+F 3 "" H 6000 7350 50  0001 C CNN
+	1    6000 7350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7350 6000 7300
+Text Notes 5350 6350 0    50   Italic 0
+POWER MONITOR
+Wire Notes Line
+	5300 7700 5300 6250
+Wire Notes Line
+	6800 6250 6800 7700
+Wire Notes Line
+	5300 7700 6800 7700
+Wire Notes Line
+	5300 6250 6800 6250
 $EndSCHEMATC
