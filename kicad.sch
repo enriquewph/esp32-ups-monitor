@@ -161,7 +161,7 @@ AR Path="/60D757F5" Ref="J1"  Part="1"
 AR Path="/60CF66AD/60D757F5" Ref="J?"  Part="1" 
 F 0 "J1" H 700 6750 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 618 6776 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 700 6650 50  0001 C CNN
+F 2 "libs:TerminalBlock_bornier-2_P5.08mm" H 700 6650 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=796636&DocType=Customer+Drawing&DocLang=English" H 700 6650 50  0001 C CNN
 F 4 "796636-2" H 700 6650 50  0001 C CNN "manf#"
 	1    700  6650
@@ -312,7 +312,7 @@ U 1 1 60EA8F40
 P 8800 2900
 F 0 "U6" H 9250 4250 50  0000 C CNN
 F 1 "ESP32" H 8450 4250 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 8800 1400 50  0001 C CNN
+F 2 "esp32-wroom-roover:ESP32-WROOM-WROVER-NC" H 8800 1400 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf" H 8500 2950 50  0001 C CNN
 F 4 "ESP32-WROOM-32E" H 8800 2900 50  0001 C CNN "manf#"
 	1    8800 2900
@@ -468,7 +468,7 @@ U 1 1 6102D893
 P 1950 4650
 F 0 "J2" H 1900 4850 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 2030 4601 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1950 4650 50  0001 C CNN
+F 2 "libs:TerminalBlock_bornier-3_P5.08mm" H 1950 4650 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=796636&DocType=Customer+Drawing&DocLang=English" H 1950 4650 50  0001 C CNN
 F 4 "796636-3" H 1950 4650 50  0001 C CNN "manf#"
 	1    1950 4650
@@ -500,7 +500,7 @@ U 1 1 610A0B36
 P 1950 5250
 F 0 "J3" H 1900 5450 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 2030 5201 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1950 5250 50  0001 C CNN
+F 2 "libs:TerminalBlock_bornier-3_P5.08mm" H 1950 5250 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=796636&DocType=Customer+Drawing&DocLang=English" H 1950 5250 50  0001 C CNN
 F 4 "796636-3" H 1950 5250 50  0001 C CNN "manf#"
 	1    1950 5250
@@ -532,7 +532,7 @@ U 1 1 610C4424
 P 1950 5850
 F 0 "J5" H 1900 6050 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 2030 5801 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1950 5850 50  0001 C CNN
+F 2 "libs:TerminalBlock_bornier-3_P5.08mm" H 1950 5850 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=796636&DocType=Customer+Drawing&DocLang=English" H 1950 5850 50  0001 C CNN
 F 4 "796636-3" H 1950 5850 50  0001 C CNN "manf#"
 	1    1950 5850

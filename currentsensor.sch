@@ -105,7 +105,7 @@ AR Path="/6125F883" Ref="U?"  Part="1"
 AR Path="/6121A9EA/6125F883" Ref="U2"  Part="1" 
 F 0 "U2" H 6600 5150 50  0000 L CNN
 F 1 "ACS759" H 5450 4600 50  0000 L CNN
-F 2 "Sensor_Current:Allegro_CB_PFF" H 6400 4900 50  0001 C CNN
+F 2 "libs:Allegro_CB_PFF" H 6400 4900 50  0001 C CNN
 F 3 "https://www.allegromicro.com/~/media/Files/Datasheets/ACS759-Datasheet.ashx" H 6400 4900 50  0001 C CNN
 F 4 "ACS759LCB-050B-PFF-T" H 6400 4900 50  0001 C CNN "manf#"
 	1    6400 4900
