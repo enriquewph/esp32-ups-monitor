@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 19
+Sheet 14 18
 Title "12V Power Output"
 Date "2021-06-10"
 Rev "0.1"
@@ -13,20 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Transistor_FET:IRF540N Q?
-U 1 1 6138E9AB
-P 6150 3400
-AR Path="/6138E9AB" Ref="Q?"  Part="1" 
-AR Path="/6137CC2E/6138E9AB" Ref="Q7"  Part="1" 
-F 0 "Q7" H 6354 3446 50  0000 L CNN
-F 1 "IRF540N" H 6354 3355 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6400 3325 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/irf540nspbf.pdf?fileId=5546d462533600a4015355e3a72819a3" H 6150 3400 50  0001 L CNN
-F 4 "IRF540NLPBF" H 6150 3400 50  0001 C CNN "manf#"
-	1    6150 3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6138E9B1
@@ -133,4 +119,16 @@ Wire Wire Line
 	4900 3700 5200 3700
 Text HLabel 6450 3150 2    39   Output ~ 0
 OUT
+$Comp
+L Transistor_FET:IRLML0030 Q7
+U 1 1 60DD41B1
+P 6150 3400
+F 0 "Q7" H 6354 3446 50  0000 L CNN
+F 1 "IRLML2502" H 6354 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 3325 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml2502pbf.pdf?fileId=5546d462533600a401535668048e2606" H 6150 3400 50  0001 L CNN
+F 4 "IRLML2502TRPBF" H 6150 3400 50  0001 C CNN "manf#"
+	1    6150 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

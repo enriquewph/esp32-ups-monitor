@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 19
+Sheet 5 18
 Title "Relay Output"
 Date "2021-06-10"
 Rev "0.1"
@@ -54,10 +54,10 @@ AR Path="/6102C68D/61070A4D" Ref="D8"  Part="1"
 AR Path="/610A0B30/61070A4D" Ref="D11"  Part="1" 
 AR Path="/610C441E/61070A4D" Ref="D13"  Part="1" 
 F 0 "D13" V 5500 3750 50  0000 L CNN
-F 1 "1N4007" V 5600 3550 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5550 3775 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/NextGen%20Components%20PDFs/DO41N4007GA10A.pdf" H 5550 3950 50  0001 C CNN
-F 4 "1N4007G" H 5550 3950 50  0001 C CNN "manf#"
+F 1 "M7" V 5600 3750 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 5550 3775 50  0001 C CNN
+F 3 "https://www.vtrons.com/images/DIODE%20M7.pdf" H 5550 3950 50  0001 C CNN
+F 4 "M7" H 5550 3950 50  0001 C CNN "manf#"
 	1    5550 3950
 	0    1    1    0   
 $EndComp
