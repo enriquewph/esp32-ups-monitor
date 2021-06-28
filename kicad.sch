@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 18
+Sheet 1 21
 Title "ESP32 Uninterrupted Power Supply Monitor"
 Date "2021-06-10"
 Rev "0.1"
@@ -807,14 +807,6 @@ Wire Notes Line
 	2400 3900 2400 4650
 Text Notes 2450 4000 0    50   Italic 0
 POWER OUTPUT
-Text GLabel 6250 1550 0    39   Input ~ 0
-OUT0
-Text GLabel 6250 2650 0    39   Output ~ 0
-IN1
-Text GLabel 6250 2100 0    39   Output ~ 0
-IN0
-Text GLabel 6250 3200 0    39   Output ~ 0
-IN2
 Text GLabel 9100 6400 0    39   Input ~ 0
 UPS_NORMAL
 Text GLabel 9100 6000 0    39   Input ~ 0
@@ -1007,118 +999,6 @@ F 3 "" H 3600 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 2450 7400 2450
-Wire Wire Line
-	7400 2450 7400 2750
-Wire Wire Line
-	7500 2550 7600 2550
-Wire Wire Line
-	7150 3150 7150 2600
-Wire Wire Line
-	7150 2050 7150 2350
-Connection ~ 7150 2600
-Wire Wire Line
-	7600 2350 7150 2350
-Connection ~ 7150 2350
-Wire Wire Line
-	7150 2350 7150 2600
-Wire Wire Line
-	7600 2150 7400 2150
-Wire Wire Line
-	7500 2050 7600 2050
-$Comp
-L Connector_Generic:Conn_01x06 J10
-U 1 1 60DA21C9
-P 7800 2250
-AR Path="/60DA21C9" Ref="J10"  Part="1" 
-AR Path="/61400494/60DA21C9" Ref="J?"  Part="1" 
-F 0 "J10" H 7650 2600 50  0000 L CNN
-F 1 "Conn_01x06" H 7880 2151 50  0001 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 7800 2250 50  0001 C CNN
-F 3 "https://app.adam-tech.com/products/download/data_sheet/196588/lha-xx-ts-data-sheet.pdf" H 7800 2250 50  0001 C CNN
-F 4 "LHA-06-TS" H 7800 2250 50  0001 C CNN "manf#"
-	1    7800 2250
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 6350 1400 550  350 
-U 60DA21CE
-F0 "opto-out-1" 39
-F1 "opto-out.sch" 39
-F2 "ON" I L 6350 1550 39 
-F3 "C" U R 6900 1500 39 
-F4 "E" U R 6900 1650 39 
-$EndSheet
-Wire Wire Line
-	7400 2150 7400 1650
-$Sheet
-S 6350 1950 550  350 
-U 60DA21D5
-F0 "opto-in-1" 39
-F1 "opto-in.sch" 39
-F2 "!OUT" O L 6350 2100 39 
-F3 "A" U R 6900 2050 39 
-F4 "K" U R 6900 2200 39 
-$EndSheet
-$Sheet
-S 6350 2500 550  350 
-U 60DA21DD
-F0 "opto-in-2" 39
-F1 "opto-in.sch" 39
-F2 "!OUT" O L 6350 2650 39 
-F3 "A" U R 6900 2600 39 
-F4 "K" U R 6900 2750 39 
-$EndSheet
-$Sheet
-S 6350 3050 550  350 
-U 60DA21E2
-F0 "opto-in-3" 39
-F1 "opto-in.sch" 39
-F2 "!OUT" O L 6350 3200 39 
-F3 "A" U R 6900 3150 39 
-F4 "K" U R 6900 3300 39 
-$EndSheet
-Wire Wire Line
-	6900 3300 7500 3300
-Wire Wire Line
-	7500 3300 7500 2550
-Wire Wire Line
-	6900 2750 7400 2750
-Wire Wire Line
-	6900 2200 7300 2200
-Wire Wire Line
-	7300 2200 7300 2250
-Wire Wire Line
-	7300 2250 7600 2250
-Wire Wire Line
-	6900 2050 7150 2050
-Wire Wire Line
-	6900 2600 7150 2600
-Wire Wire Line
-	6900 3150 7150 3150
-Wire Wire Line
-	6900 1650 7400 1650
-Wire Wire Line
-	6900 1500 7500 1500
-Wire Wire Line
-	7500 1500 7500 2050
-Text Notes 6250 1500 2    50   ~ 0
-ups_on
-Wire Wire Line
-	6250 3200 6350 3200
-Wire Wire Line
-	6250 2650 6350 2650
-Wire Wire Line
-	6250 2100 6350 2100
-Wire Wire Line
-	6250 1550 6350 1550
-Text Notes 6250 2050 2    50   ~ 0
-ups_normal
-Text Notes 6250 2600 2    50   ~ 0
-ups_carga
-Text Notes 6250 3150 2    50   ~ 0
-ups_inverter
-Wire Wire Line
 	1450 6650 1550 6650
 Wire Wire Line
 	850  7450 1150 7450
@@ -1129,4 +1009,159 @@ Wire Wire Line
 Connection ~ 1550 6650
 Wire Wire Line
 	1550 6650 1700 6650
+$Comp
+L Device:C C22
+U 1 1 60D9F4EC
+P 10700 5950
+F 0 "C22" H 10815 5996 50  0000 L CNN
+F 1 "1uF" H 10815 5905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 10738 5800 50  0001 C CNN
+F 3 "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf" H 10700 5950 50  0001 C CNN
+F 4 "50V" H 10700 5950 50  0001 C CNN "Voltage"
+F 5 "CL31F105ZBFNNNE" H 10700 5950 50  0001 C CNN "manf#"
+	1    10700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 60D9F504
+P 10700 6100
+F 0 "#PWR0154" H 10700 5850 50  0001 C CNN
+F 1 "GND" H 10705 5927 50  0000 C CNN
+F 2 "" H 10700 6100 50  0001 C CNN
+F 3 "" H 10700 6100 50  0001 C CNN
+	1    10700 6100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0155
+U 1 1 60D9F50E
+P 10700 5800
+F 0 "#PWR0155" H 10700 5650 50  0001 C CNN
+F 1 "+3V3" H 10715 5973 50  0000 C CNN
+F 2 "" H 10700 5800 50  0001 C CNN
+F 3 "" H 10700 5800 50  0001 C CNN
+	1    10700 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:PCF8574 U12
+U 1 1 60DA62E6
+P 10250 2850
+F 0 "U12" H 10600 3500 50  0000 C CNN
+F 1 "PCF8574" H 10000 3500 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 10250 2850 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/pcf8574a.pdf" H 10250 2850 50  0001 C CNN
+	1    10250 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0156
+U 1 1 60DA77D4
+P 10250 3550
+F 0 "#PWR0156" H 10250 3300 50  0001 C CNN
+F 1 "GND" H 10255 3377 50  0000 C CNN
+F 2 "" H 10250 3550 50  0001 C CNN
+F 3 "" H 10250 3550 50  0001 C CNN
+	1    10250 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0157
+U 1 1 60DA7E00
+P 10250 2150
+F 0 "#PWR0157" H 10250 2000 50  0001 C CNN
+F 1 "+3V3" H 10265 2323 50  0000 C CNN
+F 2 "" H 10250 2150 50  0001 C CNN
+F 3 "" H 10250 2150 50  0001 C CNN
+	1    10250 2150
+	-1   0    0    -1  
+$EndComp
+Text GLabel 10950 2450 2    39   BiDi ~ 0
+SCL
+Text GLabel 10950 2550 2    39   BiDi ~ 0
+SDA
+$Comp
+L power:GND #PWR011
+U 1 1 60DB6AE4
+P 10800 3350
+F 0 "#PWR011" H 10800 3100 50  0001 C CNN
+F 1 "GND" H 10805 3177 50  0000 C CNN
+F 2 "" H 10800 3350 50  0001 C CNN
+F 3 "" H 10800 3350 50  0001 C CNN
+	1    10800 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 2550 10950 2550
+Wire Wire Line
+	10750 2450 10950 2450
+$Comp
+L power:+3V3 #PWR012
+U 1 1 60DC3058
+P 10900 2350
+F 0 "#PWR012" H 10900 2200 50  0001 C CNN
+F 1 "+3V3" H 10915 2523 50  0000 C CNN
+F 2 "" H 10900 2350 50  0001 C CNN
+F 3 "" H 10900 2350 50  0001 C CNN
+	1    10900 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 2350 10900 2950
+Wire Wire Line
+	10900 2950 10750 2950
+Wire Wire Line
+	10800 3350 10800 2850
+Wire Wire Line
+	10800 2750 10750 2750
+Wire Wire Line
+	10750 2850 10800 2850
+Connection ~ 10800 2850
+Wire Wire Line
+	10800 2850 10800 2750
+$Sheet
+S 5800 2300 800  500 
+U 6174A55C
+F0 "Opto I/O" 50
+F1 "io.sch" 50
+F2 "!OUT0" I L 5800 2400 39 
+F3 "OUT1" I L 5800 2500 39 
+F4 "IN0" O R 6600 2400 39 
+F5 "IN1" O R 6600 2500 39 
+F6 "IN2" O R 6600 2600 39 
+F7 "IN3" O R 6600 2700 39 
+$EndSheet
+Text GLabel 5700 2400 0    39   Input ~ 0
+OUT0
+Wire Wire Line
+	5700 2400 5800 2400
+Text GLabel 5700 2500 0    39   Input ~ 0
+OUT1
+Wire Wire Line
+	5700 2500 5800 2500
+Text GLabel 6700 2400 2    39   Output ~ 0
+IN0
+Text GLabel 6700 2500 2    39   Output ~ 0
+IN1
+Text GLabel 6700 2600 2    39   Output ~ 0
+IN2
+Text GLabel 6700 2700 2    39   Output ~ 0
+IN3
+Wire Wire Line
+	6600 2400 6700 2400
+Wire Wire Line
+	6600 2500 6700 2500
+Wire Wire Line
+	6600 2600 6700 2600
+Wire Wire Line
+	6600 2700 6700 2700
+Text Notes 5750 2350 2    50   ~ 0
+ups_on
+Text Notes 6850 2400 0    50   ~ 0
+ups_normal
+Text Notes 6850 2500 0    50   ~ 0
+ups_carga
+Text Notes 6850 2600 0    50   ~ 0
+ups_inverter
 $EndSCHEMATC

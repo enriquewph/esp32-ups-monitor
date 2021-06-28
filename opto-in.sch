@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 18
+Sheet 18 21
 Title "Opto-coupled Input"
 Date "2021-06-10"
 Rev "0.1"
@@ -25,7 +25,20 @@ AR Path="/61400494/61467145/6144C538" Ref="#PWR0155"  Part="1"
 AR Path="/60DA21D5/6144C538" Ref="#PWR0148"  Part="1" 
 AR Path="/60DA21DD/6144C538" Ref="#PWR0150"  Part="1" 
 AR Path="/60DA21E2/6144C538" Ref="#PWR0152"  Part="1" 
-F 0 "#PWR0152" H 6150 3300 50  0001 C CNN
+AR Path="/60DE5E6F/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/60DE5E74/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/60DE5E79/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/60E3635C/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/60F08B54/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/60F0F467/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/60F15DBE/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/60F70D86/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/60F70D96/6144C538" Ref="#PWR?"  Part="1" 
+AR Path="/6174A55C/617C9243/6144C538" Ref="#PWR019"  Part="1" 
+AR Path="/6174A55C/617C9268/6144C538" Ref="#PWR022"  Part="1" 
+AR Path="/6174A55C/617C926D/6144C538" Ref="#PWR024"  Part="1" 
+AR Path="/6174A55C/617C9272/6144C538" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 6150 3300 50  0001 C CNN
 F 1 "+3V3" H 6165 3623 50  0000 C CNN
 F 2 "" H 6150 3450 50  0001 C CNN
 F 3 "" H 6150 3450 50  0001 C CNN
@@ -50,7 +63,20 @@ AR Path="/61400494/61467145/6145BF52" Ref="#PWR0156"  Part="1"
 AR Path="/60DA21D5/6145BF52" Ref="#PWR0149"  Part="1" 
 AR Path="/60DA21DD/6145BF52" Ref="#PWR0151"  Part="1" 
 AR Path="/60DA21E2/6145BF52" Ref="#PWR0153"  Part="1" 
-F 0 "#PWR0153" H 5950 4000 50  0001 C CNN
+AR Path="/60DE5E6F/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/60DE5E74/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/60DE5E79/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/60E3635C/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/60F08B54/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/60F0F467/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/60F15DBE/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/60F70D86/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/60F70D96/6145BF52" Ref="#PWR?"  Part="1" 
+AR Path="/6174A55C/617C9243/6145BF52" Ref="#PWR018"  Part="1" 
+AR Path="/6174A55C/617C9268/6145BF52" Ref="#PWR021"  Part="1" 
+AR Path="/6174A55C/617C926D/6145BF52" Ref="#PWR023"  Part="1" 
+AR Path="/6174A55C/617C9272/6145BF52" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 5950 4000 50  0001 C CNN
 F 1 "GND" H 5955 4077 50  0000 C CNN
 F 2 "" H 5950 4250 50  0001 C CNN
 F 3 "" H 5950 4250 50  0001 C CNN
@@ -71,7 +97,20 @@ AR Path="/61400494/61467145/6145DEBF" Ref="R36"  Part="1"
 AR Path="/60DA21D5/6145DEBF" Ref="R31"  Part="1" 
 AR Path="/60DA21DD/6145DEBF" Ref="R33"  Part="1" 
 AR Path="/60DA21E2/6145DEBF" Ref="R35"  Part="1" 
-F 0 "R35" H 6220 3696 50  0000 L CNN
+AR Path="/60DE5E6F/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/60DE5E74/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/60DE5E79/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/60E3635C/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/60F08B54/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/60F0F467/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/60F15DBE/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/60F70D86/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/60F70D96/6145DEBF" Ref="R?"  Part="1" 
+AR Path="/6174A55C/617C9243/6145DEBF" Ref="R30"  Part="1" 
+AR Path="/6174A55C/617C9268/6145DEBF" Ref="R33"  Part="1" 
+AR Path="/6174A55C/617C926D/6145DEBF" Ref="R35"  Part="1" 
+AR Path="/6174A55C/617C9272/6145DEBF" Ref="R37"  Part="1" 
+F 0 "R37" H 6220 3696 50  0000 L CNN
 F 1 "10k" H 6220 3605 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6080 3650 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6150 3650 50  0001 C CNN
@@ -96,11 +135,24 @@ AR Path="/61400494/61467145/61462D44" Ref="R35"  Part="1"
 AR Path="/60DA21D5/61462D44" Ref="R30"  Part="1" 
 AR Path="/60DA21DD/61462D44" Ref="R32"  Part="1" 
 AR Path="/60DA21E2/61462D44" Ref="R34"  Part="1" 
-F 0 "R34" V 4800 3550 50  0000 C CNN
+AR Path="/60DE5E6F/61462D44" Ref="R?"  Part="1" 
+AR Path="/60DE5E74/61462D44" Ref="R?"  Part="1" 
+AR Path="/60DE5E79/61462D44" Ref="R?"  Part="1" 
+AR Path="/60E3635C/61462D44" Ref="R?"  Part="1" 
+AR Path="/60F08B54/61462D44" Ref="R?"  Part="1" 
+AR Path="/60F0F467/61462D44" Ref="R?"  Part="1" 
+AR Path="/60F15DBE/61462D44" Ref="R?"  Part="1" 
+AR Path="/60F70D86/61462D44" Ref="R?"  Part="1" 
+AR Path="/60F70D96/61462D44" Ref="R?"  Part="1" 
+AR Path="/6174A55C/617C9243/61462D44" Ref="R29"  Part="1" 
+AR Path="/6174A55C/617C9268/61462D44" Ref="R32"  Part="1" 
+AR Path="/6174A55C/617C926D/61462D44" Ref="R34"  Part="1" 
+AR Path="/6174A55C/617C9272/61462D44" Ref="R36"  Part="1" 
+F 0 "R36" V 4800 3550 50  0000 C CNN
 F 1 "1k" V 4800 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4830 3650 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4900 3650 50  0001 C CNN
-F 4 "" V 4900 3650 50  0001 C CNN "Fitted"
+F 4 "No" V 4900 3650 50  0001 C CNN "Fitted"
 F 5 "RC1206FR-071KL" H 4900 3650 50  0001 C CNN "manf#"
 	1    4900 3650
 	0    1    1    0   
@@ -127,7 +179,20 @@ AR Path="/61400494/61467145/61464300" Ref="JP5"  Part="1"
 AR Path="/60DA21D5/61464300" Ref="JP3"  Part="1" 
 AR Path="/60DA21DD/61464300" Ref="JP4"  Part="1" 
 AR Path="/60DA21E2/61464300" Ref="JP5"  Part="1" 
-F 0 "JP5" H 4900 4063 50  0000 C CNN
+AR Path="/60DE5E6F/61464300" Ref="JP?"  Part="1" 
+AR Path="/60DE5E74/61464300" Ref="JP?"  Part="1" 
+AR Path="/60DE5E79/61464300" Ref="JP?"  Part="1" 
+AR Path="/60E3635C/61464300" Ref="JP?"  Part="1" 
+AR Path="/60F08B54/61464300" Ref="JP?"  Part="1" 
+AR Path="/60F0F467/61464300" Ref="JP?"  Part="1" 
+AR Path="/60F15DBE/61464300" Ref="JP?"  Part="1" 
+AR Path="/60F70D86/61464300" Ref="JP?"  Part="1" 
+AR Path="/60F70D96/61464300" Ref="JP?"  Part="1" 
+AR Path="/6174A55C/617C9243/61464300" Ref="JP22"  Part="1" 
+AR Path="/6174A55C/617C9268/61464300" Ref="JP23"  Part="1" 
+AR Path="/6174A55C/617C926D/61464300" Ref="JP24"  Part="1" 
+AR Path="/6174A55C/617C9272/61464300" Ref="JP25"  Part="1" 
+F 0 "JP25" H 4900 4063 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 4900 4064 50  0001 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4900 3950 50  0001 C CNN
 F 3 "~" H 4900 3950 50  0001 C CNN
@@ -150,7 +215,20 @@ AR Path="/60DA21CE/60DC8627" Ref="U?"  Part="1"
 AR Path="/60DA21D5/60DC8627" Ref="U5"  Part="1" 
 AR Path="/60DA21DD/60DC8627" Ref="U8"  Part="1" 
 AR Path="/60DA21E2/60DC8627" Ref="U10"  Part="1" 
-F 0 "U10" H 5550 4375 50  0000 C CNN
+AR Path="/60DE5E6F/60DC8627" Ref="U?"  Part="1" 
+AR Path="/60DE5E74/60DC8627" Ref="U?"  Part="1" 
+AR Path="/60DE5E79/60DC8627" Ref="U?"  Part="1" 
+AR Path="/60E3635C/60DC8627" Ref="U?"  Part="1" 
+AR Path="/60F08B54/60DC8627" Ref="U?"  Part="1" 
+AR Path="/60F0F467/60DC8627" Ref="U?"  Part="1" 
+AR Path="/60F15DBE/60DC8627" Ref="U?"  Part="1" 
+AR Path="/60F70D86/60DC8627" Ref="U?"  Part="1" 
+AR Path="/60F70D96/60DC8627" Ref="U?"  Part="1" 
+AR Path="/6174A55C/617C9243/60DC8627" Ref="U4"  Part="1" 
+AR Path="/6174A55C/617C9268/60DC8627" Ref="U8"  Part="1" 
+AR Path="/6174A55C/617C926D/60DC8627" Ref="U10"  Part="1" 
+AR Path="/6174A55C/617C9272/60DC8627" Ref="U13"  Part="1" 
+F 0 "U13" H 5550 4375 50  0000 C CNN
 F 1 "PC817XI" H 5550 4284 50  0000 C CNN
 F 2 "Package_DIP:SMDIP-4_W9.53mm" H 5350 3850 50  0001 L CIN
 F 3 "https://www.farnell.com/datasheets/73758.pdf" H 5550 4050 50  0001 L CNN
