@@ -2771,8 +2771,8 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060ea8f40)
     (property "Reference" "U2" (id 0) (at 238.76 105.41 0))
-    (property "Value" "" (id 1) (at 259.08 105.41 0))
-    (property "Footprint" "" (id 2) (at 250.19 177.8 0)
+    (property "Value" "ESP32" (id 1) (at 259.08 105.41 0))
+    (property "Footprint" "esp32-wroom-roover:ESP32-WROOM-WROVER-NC" (id 2) (at 250.19 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf" (id 3) (at 257.81 138.43 0)
@@ -3529,6 +3529,9 @@
     )
     (path "/00000000-0000-0000-0000-00006174a55c/00000000-0000-0000-0000-0000617c9272/00000000-0000-0000-0000-00006144c538"
       (reference "#PWR077") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006174a55c/add4f416-1cd8-4b85-b16a-fdd542b7564e"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060ca50a5"
       (reference "C1") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
