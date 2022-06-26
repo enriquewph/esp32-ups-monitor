@@ -432,7 +432,17 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
-        "nets": [],
+        "nets": [
+          "/Opto I/O/input-0/A",
+          "/Opto I/O/input-0/K",
+          "/Opto I/O/input-1/K",
+          "/Opto I/O/input-2/K",
+          "/Opto I/O/input-3/K",
+          "/Opto I/O/output-0/C",
+          "/Opto I/O/output-0/E",
+          "/Opto I/O/output-1/C",
+          "/Opto I/O/output-1/E"
+        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.6,
