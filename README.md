@@ -1,3 +1,7 @@
+# Migrated
+Pleas check [https://github.com/enriquewph/esp-map](https://github.com/enriquewph/esp-map)
+
+
 # ups-central-fw
 Firmware para ESP32 en UPS Central
 
